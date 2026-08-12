@@ -58,7 +58,7 @@ in the wild, not assumed:**
    Cursor-side tools (`SearchPlugins`, `InstallPlugin`, `AddMcpServer`, `AuthenticateMcpServer`), surfaced in
    **App Settings → Plugins → Marketplace / Yours**. We'll flip this the moment a real `plugin.json` targeting
    the open spec shows up for Grok Bot — see [awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins),
-   our sister list, which already tracks 17 verified plugins on the open standard.
+   our sister list, which already tracks 31 verified plugins on the open standard.
 2. **Computer use.** Bots operate apps and websites directly — including ones with no clean API or MCP
    connection at all — by driving the browser/desktop the same way a person would.
 3. **Learned routines.** Demonstrate a workflow once; the Bot saves the path as a routine and repeats/adapts
@@ -135,7 +135,7 @@ state of a brand-new launch; empty subsections are labeled as such rather than s
 
 If Grok Bot's plugin ecosystem moves onto the open standard (see above — it hasn't, as of this writing),
 those plugins will be interoperable with every other launch client. Track that standard at our sister list:
-**[ZeroPointRepo/awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins)** — 17 verified
+**[ZeroPointRepo/awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins)** — 31 verified
 Agent Plugins across ChatGPT, Codex, Cursor, GitHub Copilot, Kiro and VS Code.
 
 ## 🛡️ Security notice
