@@ -1,0 +1,27 @@
+name: Report a broken entry
+description: Flag a dead link, stale/abandoned repo, or inaccurate description in the list
+title: "[Broken]: "
+labels: ["broken-entry"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      description: Name or link exactly as it appears in the README
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: What's wrong?
+      options:
+        - Link is dead (404 / repo deleted or made private)
+        - Repo archived / clearly abandoned
+        - Description is inaccurate or outdated
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details

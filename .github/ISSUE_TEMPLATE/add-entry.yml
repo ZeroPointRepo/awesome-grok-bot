@@ -1,0 +1,39 @@
+name: Suggest a new entry
+description: Suggest a skill, plugin, tool, or guide to add to the list
+title: "[Add]: "
+labels: ["new-entry"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Repository URL
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Suggested category
+      description: e.g. Skills, Plugins & MCP, Runtimes/bridges/self-hosted alternatives, Guides & tutorials
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-line description
+      description: Plain, no marketing language — what does it do?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This is genuinely about Grok Bot (not Grok Build, not an unrelated same-named bot)
+        - label: This isn't already listed in the README
+        - label: I'm not the author, or I've disclosed that I am in the description above

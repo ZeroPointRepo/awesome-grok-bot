@@ -1,0 +1,48 @@
+name: PR validate
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check entry format on changed lines
+        id: format
+        run: |
+          set +e
+          git fetch origin ${{ github.base_ref }} --depth=1
+          added=$(git diff "origin/${{ github.base_ref }}"...HEAD -- README.md | grep -E '^\+- \[' )
+          bad=0
+          echo "$added" | while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            echo "$line" | grep -qE '^\+- \[[^]]+\]\([^)]+\) by \[[^]]+\]\([^)]+\) — .+\*\*\[[a-z-]+\]\*\*$' \
+              || { echo "::warning::Possible format issue: $line"; bad=1; }
+          done
+          echo "bad=$bad" >> "$GITHUB_OUTPUT"
+
+      - name: Friendly comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const bad = "${{ steps.format.outputs.bad }}" === "1";
+            const body = bad
+              ? "Thanks for the PR! 🎉 A couple of added lines don't quite match the entry format:\n\n" +
+                "`- [name](repo-url) by [author](author-url) — description. **[tag]**`\n\n" +
+                "Check the warnings in the Actions log above — a maintainer may also just fix it inline. " +
+                "This is a heads-up, not a blocker."
+              : "Thanks for the PR! 🎉 Format looks good — a maintainer will verify the link and merge soon.";
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body,
+            });

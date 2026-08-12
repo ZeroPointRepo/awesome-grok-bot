@@ -1,0 +1,69 @@
+name: Weekly link check
+
+on:
+  schedule:
+    - cron: "23 6 * * 1" # Mondays 06:23 UTC
+  workflow_dispatch: {}
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract links from README
+        id: extract
+        run: |
+          grep -oE '\(https?://[^)]+\)' README.md | tr -d '()' | sort -u > links.txt
+          echo "count=$(wc -l < links.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Check each link
+        id: check
+        run: |
+          set +e
+          fail=0
+          : > broken.txt
+          while IFS= read -r url; do
+            code=$(curl -s -o /dev/null -L -w "%{http_code}" --max-time 15 -A "Mozilla/5.0 (link-check-bot)" "$url")
+            if [ "$code" -ge 400 ] || [ "$code" -eq 000 ]; then
+              echo "$url -> $code" >> broken.txt
+              fail=1
+            fi
+          done < links.txt
+          echo "fail=$fail" >> "$GITHUB_OUTPUT"
+
+      - name: Open issue if anything is broken
+        if: steps.check.outputs.fail == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('broken.txt', 'utf8');
+            const title = `Weekly link check: broken links found (${new Date().toISOString().slice(0,10)})`;
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'broken-entry,automated',
+            });
+            const dup = existing.find(i => i.title.startsWith('Weekly link check'));
+            if (dup) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: dup.number,
+                body: "Still broken as of this week's run:\n\n```\n" + body + "\n```",
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body: "The following links in README.md returned an error or timed out:\n\n```\n" + body + "\n```\n\nSee CONTRIBUTING.md for how entries get fixed or pulled.",
+                labels: ['broken-entry', 'automated'],
+              });
+            }
