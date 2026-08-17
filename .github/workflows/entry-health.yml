@@ -1,0 +1,52 @@
+name: Entry health
+
+# Catches the rot a link checker structurally cannot see.
+#
+# A renamed GitHub repo redirects and returns 200. An archived repo returns 200.
+# The weekly lychee sweep passes both, so they sit in the list indefinitely:
+# the renamed one credits the wrong owner, the archived one is dead weight.
+#
+# Advisory by design. This never runs on pull_request and never fails a build.
+# Link rot is not a contributor's fault and must not block their PR.
+
+on:
+  schedule:
+    # Mondays, 07:00 UTC (one hour after the link check)
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  entry-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Resolve every linked repo through the GitHub API
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/entry-health.mjs README.md CONTRIBUTING.md
+
+      - name: Add result to the run summary
+        if: always()
+        run: cat entry-health-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the entry-health issue
+        if: steps.check.outputs.findings != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🔁 Renamed, archived or deleted entries found"
+          content-filepath: ./entry-health-report.md
+          labels: broken-entry, automated
+
+      - name: Report clean run
+        if: steps.check.outputs.findings == '0'
+        run: echo "No renamed, archived or deleted entries."
