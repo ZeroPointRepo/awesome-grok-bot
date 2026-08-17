@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
-  <img src="https://img.shields.io/badge/entries-11-blueviolet" alt="Entry count" />
+  <img src="https://img.shields.io/badge/entries-19-blueviolet" alt="Entry count" />
   <img src="https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-grok-bot" alt="Last commit" />
   <img src="https://img.shields.io/badge/Grok%20Bot-beta%20(2026--08--11)-informational" alt="Grok Bot status" />
   <img src="https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey" alt="License" />
@@ -24,6 +24,7 @@
 - [What is Grok Bot? (and how do you actually extend it?)](#what-is-grok-bot-and-how-do-you-actually-extend-it)
 - [Getting started & pricing reality](#getting-started--pricing-reality)
 - [Grok Bot vs OpenClaw vs Hermes Agent](#grok-bot-vs-openclaw-vs-hermes-agent)
+- [⭐ Pick of the Week](#-pick-of-the-week)
 - [The catalog](#the-catalog)
 - [🛡️ Security notice](#️-security-notice)
 - [🤝 Contributing](#-contributing)
@@ -52,11 +53,17 @@ in the wild, not assumed:**
    proprietary `.cursor-plugin/plugin.json` marketplace format** (or a Bot-specific `.grok-plugin/plugin.json`
    variant) — **not** the new open [Agent Plugins](https://agentplugins.codes/) standard that Cursor itself
    helped launch five days before Grok Bot shipped, despite one repo's README describing itself as
-   "agent-plugins.org spec." A live runtime inventory of an installed Bot
-   ([`groksense/grok-bot-runtime`](https://github.com/groksense/grok-bot-runtime)) confirms the same picture
-   independently: plugins are "marketplace bundle[s] of connectors and skills," managed through
-   Cursor-side tools (`SearchPlugins`, `InstallPlugin`, `AddMcpServer`, `AuthenticateMcpServer`), surfaced in
-   **App Settings → Plugins → Marketplace / Yours**. We'll flip this the moment a real `plugin.json` targeting
+   "agent-plugins.org spec." xAI's own
+   [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) settles it: its manifests live in
+   `.grok-plugin/` (`marketplace.json` plus a per-plugin `plugin.json`), and **not one of its 18 published
+   plugins carries the open spec's required `$schema`** — we checked every manifest on 2026-08-17. Plugins are
+   marketplace bundles of connectors and skills, managed through Cursor-side tools (`SearchPlugins`,
+   `InstallPlugin`, `AddMcpServer`, `AuthenticateMcpServer`) and surfaced in
+   **App Settings → Plugins → Marketplace / Yours**.
+
+   *(An earlier revision of this list cited a third-party runtime inventory, `groksense/grok-bot-runtime`, for
+   the same conclusion. That repository was deleted by its owner, so the citation has been replaced with
+   xAI's own marketplace — a primary source, and a stronger one.)* We'll flip this the moment a real `plugin.json` targeting
    the open spec shows up for Grok Bot — see [awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins),
    our sister list, which already tracks 31 verified plugins on the open standard.
 2. **Computer use.** Bots operate apps and websites directly — including ones with no clean API or MCP
@@ -99,14 +106,31 @@ number you see elsewhere as unconfirmed until xAI states it.
 
 Star counts fetched live via the GitHub API at the time of writing — re-check before citing them months later.
 
+## ⭐ Pick of the Week
+
+**[superpowers](https://github.com/obra/superpowers)** by [obra](https://github.com/obra) — the biggest thing
+in xAI's official marketplace, and the one worth installing first. It's a large collection of general working
+skills — planning a change before touching code, debugging from evidence rather than guesswork, writing that
+survives review — rather than an integration with one vendor's API. For a Bot that runs unattended on its own
+cloud machine, that matters more than it does in an interactive editor: the failure mode of an always-on agent
+is confidently doing the wrong thing for an hour, and most of these skills exist to interrupt exactly that.
+
+Install it from **App Settings → Plugins → Marketplace** and search `superpowers`, or point a client at the
+[marketplace repo](https://github.com/xai-org/plugin-marketplace).
+
+*Rotates weekly. Nominate an entry by opening an issue.*
+
+---
+
 ## The catalog
 
 Format: `- [name](repo-url) by [author](author-url) — one-line description. **[tag]**`
 Tags: **production** · **beta** · **experimental** · **guide** (docs/notes, not runnable)
 
-*The whole ecosystem is under 48 hours old at the time of writing — every repo below was created 2026-08-11 or
-2026-08-12 and none has more than a handful of stars yet. That's not a padding problem, that's the actual
-state of a brand-new launch; empty subsections are labeled as such rather than stretched to look fuller.*
+*The community half of this ecosystem is under a week old — most third-party repos below were created
+2026-08-11 or 2026-08-12 and still have a handful of stars. The official marketplace plugins are the
+exception: those are established vendor tools that xAI has published into `.grok-plugin` format. We label
+which is which rather than blurring them together, and empty subsections stay labeled rather than stretched.*
 
 ### Skills
 
@@ -118,10 +142,25 @@ state of a brand-new launch; empty subsections are labeled as such rather than s
 - [GrokBotfun](https://github.com/GrokBotfun/GrokBotfun) by [GrokBotfun](https://github.com/GrokBotfun) — deploy pump.fun tokens from your agent; ships an MCP server plus a Cursor-marketplace-format plugin (not the open agent-plugins.org spec, despite the repo description). **[experimental]**
 - [orgx-grokbot-plugin](https://github.com/useorgx/orgx-grokbot-plugin) by [OrgX](https://useorgx.com) — OrgX MCP wiring, initiative-aware skills and specialist agent packs, packaged in Cursor's `.grok-plugin` manifest format. **[beta]**
 
+#### Official xAI marketplace
+
+xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) — 18 vendor plugins in
+`.grok-plugin` format, the same plugin surface Grok Bot inherits under Cursor's plugin/MCP policy. A curated
+selection follows; browse the marketplace for the full set.
+
+- [chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp) by [Chrome DevTools](https://github.com/ChromeDevTools) — drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors. **[production]**
+- [cloudflare](https://github.com/cloudflare/skills) by [Cloudflare](https://github.com/cloudflare) — manage Workers, KV, R2, DNS and deployments from the agent. **[production]**
+- [figma](https://github.com/figma/mcp-server-guide) by [Figma](https://github.com/figma) — read designs, variables and components straight out of Figma files. **[production]**
+- [mongodb](https://github.com/mongodb/agent-skills) by [MongoDB](https://github.com/mongodb) — query collections, inspect schemas and manage Atlas clusters. **[production]**
+- [railway](https://github.com/railwayapp/railway-skills) by [Railway](https://github.com/railwayapp) — deploy services, read build logs and manage environment variables. **[production]**
+- [stripe](https://github.com/stripe/ai) by [Stripe](https://github.com/stripe) — payments, subscriptions and billing objects from the agent, test mode included. **[production]**
+- [superpowers](https://github.com/obra/superpowers) by [obra](https://github.com/obra) — the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows. **[production]**
+- [vercel](https://github.com/vercel/vercel-plugin) by [Vercel](https://github.com/vercel) — manage deployments, check build status, read logs, configure domains. **[production]**
+- [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) by [xAI](https://github.com/xai-org) — the official marketplace itself: 18 vendor plugins plus the `.grok-plugin` manifest format they all use. **[production]**
+
 ### Runtimes, bridges & self-hosted alternatives
 
 - [grok-bot-flake](https://github.com/jordangarrison/grok-bot-flake) by [jordangarrison](https://github.com/jordangarrison) — Nix flake that repackages the official Linux `.deb` (no source build). **[experimental]**
-- [grok-bot-runtime](https://github.com/groksense/grok-bot-runtime) by [groksense](https://github.com/groksense) — a real, running Bot's sandbox/runtime inventory: sysinfo, benchmarks, plugin/MCP model notes, agent status. **[guide]**
 - [grok-bot-setup](https://github.com/BlockedPath/grok-bot-setup) by [BlockedPath](https://github.com/BlockedPath) — adapters CLI and custom model-provider bridges (DeepSeek, Claude, Grok, OpenAI). **[beta]**
 - [OpenGrokBot](https://github.com/wolfqing/OpenGrokBot) by [wolfqing](https://github.com/wolfqing) — self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials. **[beta]**
 - [sand](https://github.com/alokwhitewolf/sand) by [alokwhitewolf](https://github.com/alokwhitewolf) — unofficial terminal bridge to message your Bots from the CLI, since Grok Bot doesn't ship one. **[experimental]**
@@ -135,7 +174,7 @@ state of a brand-new launch; empty subsections are labeled as such rather than s
 
 If Grok Bot's plugin ecosystem moves onto the open standard (see above — it hasn't, as of this writing),
 those plugins will be interoperable with every other launch client. Track that standard at our sister list:
-**[ZeroPointRepo/awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins)** — 31 verified
+**[ZeroPointRepo/awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins)** — 33 verified
 Agent Plugins across ChatGPT, Codex, Cursor, GitHub Copilot, Kiro and VS Code.
 
 ## 🛡️ Security notice
