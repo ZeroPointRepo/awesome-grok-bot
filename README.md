@@ -200,4 +200,7 @@ everyone else's, appear at most once per category, and we never reject a competi
 <p align="center">
 Maintained by <a href="https://github.com/ZeroPointRepo">ZeroPointRepo</a> · list content licensed
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Built with <a href="https://crhq.ai">crhq.ai</a>
+<br />
+<sub>This is an unofficial, community-maintained list. It is not affiliated with or endorsed by xAI/SpaceXAI
+or Cursor.</sub>
 </p>
