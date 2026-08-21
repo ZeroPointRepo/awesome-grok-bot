@@ -196,10 +196,7 @@ this list to change quickly along with it.
 
 PRs are very welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the format and the acceptance rules.
 **Disclosure:** the maintainer of this list also builds developer tools
-([TranscriptAPI](https://transcriptapi.com), [StayingAPI](https://stayingapi.com), [Zillapi](https://zillapi.com))
-and may list them here once a genuinely working Grok Bot skill/plugin/MCP exists for one of them — none does
-yet, so none are listed. Our entries, if and when they appear, follow the exact same format and bar as
-everyone else's, appear at most once per category, and we never reject a competing entry to protect ours.
+([TranscriptAPI](https://transcriptapi.com), [StayingAPI](https://stayingapi.com), [Zillapi](https://zillapi.com)).
 
 ---
 
