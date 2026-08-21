@@ -7,27 +7,33 @@
   <img src="https://img.shields.io/badge/entries-19-blueviolet" alt="Entry count" />
   <img src="https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-grok-bot" alt="Last commit" />
   <img src="https://img.shields.io/badge/Grok%20Bot-beta%20(2026--08--11)-informational" alt="Grok Bot status" />
+  <img src="https://img.shields.io/badge/status-unofficial-lightgrey" alt="Unofficial, not affiliated with xAI or Cursor" />
   <img src="https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey" alt="License" />
 </p>
 
-<p align="center">
-  <b>A curated, verified directory for <a href="https://docs.x.ai/grok-bot/overview">Grok Bot</a></b> — xAI/SpaceXAI and Cursor's
-  always-on AI teammates, each with their own persistent cloud computer. Launched in beta 2026-08-11. This list
-  tracks the ecosystem from day one: skills, plugins, MCP wiring, self-hosted alternatives, and an honest read
-  on how it's actually extended — verified against primary sources, not guessed.
-</p>
+# Awesome Grok Bot
+
+**A curated, verified directory of 19 Grok Bot skills, plugins, MCP servers and self-hosted alternatives.**
+[Grok Bot](https://docs.x.ai/grok-bot/overview) is xAI/SpaceXAI and Cursor's always-on AI teammates, each
+with their own persistent cloud computer. It launched in beta on 2026-08-11 and this list has tracked the
+ecosystem from day one.
+
+Everything here is checked against a primary source, including the honest read on how Grok Bot is actually
+extended, which is not what most write-ups assume. This is an unofficial, community-maintained list and is
+not affiliated with or endorsed by xAI/SpaceXAI or Cursor.
 
 ---
 
 ## Contents
 
 - [What is Grok Bot? (and how do you actually extend it?)](#what-is-grok-bot-and-how-do-you-actually-extend-it)
-- [Getting started & pricing reality](#getting-started--pricing-reality)
+- [Grok Bot pricing and how to get it](#grok-bot-pricing-and-how-to-get-it)
 - [Grok Bot vs OpenClaw vs Hermes Agent](#grok-bot-vs-openclaw-vs-hermes-agent)
 - [⭐ Pick of the Week](#-pick-of-the-week)
-- [The catalog](#the-catalog)
+- [The catalog: Grok Bot skills, plugins and MCP](#the-catalog-grok-bot-skills-plugins-and-mcp)
 - [🛡️ Security notice](#️-security-notice)
 - [🤝 Contributing](#-contributing)
+- [Related lists](#related-lists)
 
 ---
 
@@ -65,7 +71,7 @@ in the wild, not assumed:**
    the same conclusion. That repository was deleted by its owner, so the citation has been replaced with
    xAI's own marketplace — a primary source, and a stronger one.)* We'll flip this the moment a real `plugin.json` targeting
    the open spec shows up for Grok Bot — see [awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins),
-   our sister list, which already tracks 31 verified plugins on the open standard.
+   our sister list, which already tracks 33 verified plugins on the open standard.
 2. **Computer use.** Bots operate apps and websites directly — including ones with no clean API or MCP
    connection at all — by driving the browser/desktop the same way a person would.
 3. **Learned routines.** Demonstrate a workflow once; the Bot saves the path as a routine and repeats/adapts
@@ -74,7 +80,7 @@ in the wild, not assumed:**
    optional scripts) — confirmed in docs and in real installs like
    [`jeffhuber/grokbot-imessage-skill`](https://github.com/jeffhuber/grokbot-imessage-skill).
 
-## Getting started & pricing reality
+## Grok Bot pricing and how to get it
 
 Grok Bot is **not sold standalone** — it rides on three existing premium plans, and there's no free tier:
 
@@ -122,7 +128,7 @@ Install it from **App Settings → Plugins → Marketplace** and search `superpo
 
 ---
 
-## The catalog
+## The catalog: Grok Bot skills, plugins and MCP
 
 Format: `- [name](repo-url) by [author](author-url) — one-line description. **[tag]**`
 Tags: **production** · **beta** · **experimental** · **guide** (docs/notes, not runnable)
@@ -132,17 +138,17 @@ Tags: **production** · **beta** · **experimental** · **guide** (docs/notes, n
 exception: those are established vendor tools that xAI has published into `.grok-plugin` format. We label
 which is which rather than blurring them together, and empty subsections stay labeled rather than stretched.*
 
-### Skills
+### Grok Bot skills
 
 - [grok-bot-super](https://github.com/AgentMindCloud/grok-bot-super) by [AgentMindCloud](https://github.com/AgentMindCloud) — community skill library (daily standup, email triage, meeting-to-actions, research brief, weekly review, X-thread builder). **[beta]**
 - [grokbot-imessage-skill](https://github.com/jeffhuber/grokbot-imessage-skill) by [jeffhuber](https://github.com/jeffhuber) — read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync). **[beta]**
 
-### Plugins & MCP
+### Grok Bot plugins and MCP servers
 
 - [GrokBotfun](https://github.com/GrokBotfun/GrokBotfun) by [GrokBotfun](https://github.com/GrokBotfun) — deploy pump.fun tokens from your agent; ships an MCP server plus a Cursor-marketplace-format plugin (not the open agent-plugins.org spec, despite the repo description). **[experimental]**
 - [orgx-grokbot-plugin](https://github.com/useorgx/orgx-grokbot-plugin) by [OrgX](https://useorgx.com) — OrgX MCP wiring, initiative-aware skills and specialist agent packs, packaged in Cursor's `.grok-plugin` manifest format. **[beta]**
 
-#### Official xAI marketplace
+#### Official xAI plugin marketplace
 
 xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) — 18 vendor plugins in
 `.grok-plugin` format, the same plugin surface Grok Bot inherits under Cursor's plugin/MCP policy. A curated
@@ -158,14 +164,14 @@ selection follows; browse the marketplace for the full set.
 - [vercel](https://github.com/vercel/vercel-plugin) by [Vercel](https://github.com/vercel) — manage deployments, check build status, read logs, configure domains. **[production]**
 - [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) by [xAI](https://github.com/xai-org) — the official marketplace itself: 18 vendor plugins plus the `.grok-plugin` manifest format they all use. **[production]**
 
-### Runtimes, bridges & self-hosted alternatives
+### Self-hosted Grok Bot alternatives, runtimes and bridges
 
 - [grok-bot-flake](https://github.com/jordangarrison/grok-bot-flake) by [jordangarrison](https://github.com/jordangarrison) — Nix flake that repackages the official Linux `.deb` (no source build). **[experimental]**
 - [grok-bot-setup](https://github.com/BlockedPath/grok-bot-setup) by [BlockedPath](https://github.com/BlockedPath) — adapters CLI and custom model-provider bridges (DeepSeek, Claude, Grok, OpenAI). **[beta]**
 - [OpenGrokBot](https://github.com/wolfqing/OpenGrokBot) by [wolfqing](https://github.com/wolfqing) — self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials. **[beta]**
 - [sand](https://github.com/alokwhitewolf/sand) by [alokwhitewolf](https://github.com/alokwhitewolf) — unofficial terminal bridge to message your Bots from the CLI, since Grok Bot doesn't ship one. **[experimental]**
 
-### Guides & tutorials
+### Grok Bot guides and tutorials
 
 - [grok-bot-info](https://github.com/Uncle-Gizmo/grok-bot-info) by [Uncle-Gizmo](https://github.com/Uncle-Gizmo) — public notes on what Grok Bot is for, safe example workflows, and how it fits alongside Grok Build and Grok Heavy. **[guide]**
 - [grok-bot-intro-v2](https://github.com/520xiaomumu/grok-bot-intro-v2) by [520xiaomumu](https://github.com/520xiaomumu) — 12-chapter Chinese-language autoplay intro deck. **[guide]**
@@ -194,6 +200,16 @@ PRs are very welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the format a
 and may list them here once a genuinely working Grok Bot skill/plugin/MCP exists for one of them — none does
 yet, so none are listed. Our entries, if and when they appear, follow the exact same format and bar as
 everyone else's, appear at most once per category, and we never reject a competing entry to protect ours.
+
+---
+
+## Related lists
+
+Three sister lists, same standard, same maintainer. Each one covers a different agent ecosystem.
+
+- [awesome-hermes-skills](https://github.com/ZeroPointRepo/awesome-hermes-skills): skills, plugins, agent profiles and memory providers for Hermes Agent.
+- [awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins): plugins on the open Agent Plugins standard, every entry checked for a real `plugin.json`.
+- [awesome-dsh-usecases](https://github.com/ZeroPointRepo/awesome-dsh-usecases): what people actually build with DeepSeek Harness, each entry with a working install command.
 
 ---
 
