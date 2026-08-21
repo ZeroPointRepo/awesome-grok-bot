@@ -67,9 +67,7 @@ in the wild, not assumed:**
    `InstallPlugin`, `AddMcpServer`, `AuthenticateMcpServer`) and surfaced in
    **App Settings → Plugins → Marketplace / Yours**.
 
-   *(An earlier revision of this list cited a third-party runtime inventory, `groksense/grok-bot-runtime`, for
-   the same conclusion. That repository was deleted by its owner, so the citation has been replaced with
-   xAI's own marketplace — a primary source, and a stronger one.)* We'll flip this the moment a real `plugin.json` targeting
+   We'll flip this the moment a real `plugin.json` targeting
    the open spec shows up for Grok Bot — see [awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins),
    our sister list, which already tracks 33 verified plugins on the open standard.
 2. **Computer use.** Bots operate apps and websites directly — including ones with no clean API or MCP
