@@ -193,8 +193,6 @@ this list to change quickly along with it.
 ## 🤝 Contributing
 
 PRs are very welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the format and the acceptance rules.
-**Disclosure:** the maintainer of this list also builds developer tools
-([TranscriptAPI](https://transcriptapi.com), [StayingAPI](https://stayingapi.com), [Zillapi](https://zillapi.com)).
 
 ---
 
