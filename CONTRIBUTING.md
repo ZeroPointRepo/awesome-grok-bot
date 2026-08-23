@@ -4,19 +4,16 @@ Thanks for considering a contribution. Grok Bot is a days-old product with an ec
 so we're strict about verification but fast about merging — target under 7 days to a first response on every
 PR.
 
-## Disclosure
+## Entries from ZeroPointRepo
 
-The maintainer of this repository builds and sells developer tools — [TranscriptAPI](https://transcriptapi.com)
-(YouTube search & transcripts), [StayingAPI](https://stayingapi.com) (hotel/vacation-rental data), and
-[Zillapi](https://zillapi.com) (US property data) — and may list them here if/when one ships a genuinely
-working Grok Bot skill, plugin, or MCP integration. None does at the time of writing, so none are listed. When
-we do add one:
+No entry in this list is built by ZeroPointRepo yet. Nothing we ship has a working Grok Bot skill, plugin, or
+MCP integration at the time of writing, so nothing of ours is listed. If one lands, it is held to the same
+rules as every other entry, and to a higher bar on one point:
 
-- It appears **at most once per category**, in the exact same format as every other entry — no bold, no
-  emoji, no "featured" styling, placed alphabetically.
-- It's held to a **higher** bar than contributed entries: no working install path, no real README, it doesn't
-  go in.
-- We will **never reject or downrank a competing entry** to protect one of ours.
+- Same entry format as everyone else. No bold, no emoji, no "featured" styling, placed alphabetically.
+- At most one per category.
+- A higher acceptance bar: no working install path, no real README, it does not go in.
+- A competing entry is never rejected or downranked to protect one of ours.
 
 ## Adding an entry
 
