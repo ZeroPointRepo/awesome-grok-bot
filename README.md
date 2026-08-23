@@ -198,11 +198,12 @@ PRs are very welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the format a
 
 ## Related lists
 
-Three sister lists, same standard, same maintainer. Each one covers a different agent ecosystem.
+Sister lists, same standard, same maintainer. Each one covers a different agent ecosystem.
 
 - [awesome-hermes-skills](https://github.com/ZeroPointRepo/awesome-hermes-skills): skills, plugins, agent profiles and memory providers for Hermes Agent.
 - [awesome-agent-plugins](https://github.com/ZeroPointRepo/awesome-agent-plugins): plugins on the open Agent Plugins standard, every entry checked for a real `plugin.json`.
 - [awesome-dsh-usecases](https://github.com/ZeroPointRepo/awesome-dsh-usecases): what people actually build with DeepSeek Harness, each entry with a working install command.
+- [awesome-fx-skills](https://github.com/ZeroPointRepo/awesome-fx-skills): skills, MCP servers and subagents for Vercel's fx coding agent, every install command machine-checked weekly.
 
 ---
 
