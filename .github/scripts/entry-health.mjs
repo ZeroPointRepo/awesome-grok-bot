@@ -32,6 +32,29 @@ const RESERVED = new Set([
   'trending', 'codespaces', 'issues', 'pulls', 'dashboard', 'new', 'account',
 ]);
 
+// Documentation placeholders. CONTRIBUTING.md shows contributors the entry shape
+// using github.com/owner/repo, which 404s and is reported as a deleted entry —
+// a false finding that would reopen the same issue every week until it is ignored,
+// taking the real findings with it.
+//
+// Deliberately NOT solved by skipping fenced code blocks. On the lists whose entries
+// carry install commands, the command IS the entry, it lives in a fenced block, and a
+// stale owner in it is a real finding: this run caught omdsh-dev/dsh-at-file (renamed
+// to FSMargoo) sitting in exactly that position. Skipping fences would have hidden it.
+// So filter the placeholder tokens, not the syntax they happen to sit in.
+const PLACEHOLDER_OWNER = new Set([
+  'owner', 'user', 'username', 'your-username', 'yourusername', 'yourname',
+  'org', 'your-org', 'your-organization', 'example', 'example-org', 'author',
+]);
+const PLACEHOLDER_REPO = new Set([
+  'repo', 'repository', 'your-repo', 'your-repository', 'project', 'your-project',
+  'example', 'example-repo', 'repo-name', 'skill-name', 'plugin-name',
+]);
+const isPlaceholder = (owner, repo) =>
+  PLACEHOLDER_OWNER.has(owner.toLowerCase()) ||
+  PLACEHOLDER_REPO.has(repo.toLowerCase()) ||
+  /[<>{}]/.test(owner + repo);
+
 const slugs = new Map(); // slug -> Set(source files)
 
 for (const file of files) {
@@ -53,6 +76,7 @@ for (const file of files) {
     const repo = m[2].replace(/\.git$/i, '');
     if (RESERVED.has(owner.toLowerCase())) continue;
     if (!owner || !repo) continue;
+    if (isPlaceholder(owner, repo)) continue;
     const slug = `${owner}/${repo}`;
     if (!slugs.has(slug)) slugs.set(slug, new Set());
     slugs.get(slug).add(file);
