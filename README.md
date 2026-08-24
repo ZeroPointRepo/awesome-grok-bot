@@ -61,8 +61,15 @@ in the wild, not assumed:**
    helped launch five days before Grok Bot shipped, despite one repo's README describing itself as
    "agent-plugins.org spec." xAI's own
    [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) settles it: its manifests live in
-   `.grok-plugin/` (`marketplace.json` plus a per-plugin `plugin.json`), and **not one of its 18 published
-   plugins carries the open spec's required `$schema`** — we checked every manifest on 2026-08-17. Plugins are
+   `.grok-plugin/` (`marketplace.json` plus a per-plugin `plugin.json`), and **not one of its 20 published
+   plugins carries the open spec's required `$schema`** — every manifest re-checked 2026-08-24, unchanged
+   from the 2026-08-17 check apart from two new plugins.
+   The cleanest evidence is a vendor that ships both: **Neon** publishes
+   [`neondatabase/agent-skills`](https://github.com/neondatabase/agent-skills) with the canonical
+   `https://agent-plugins.org/schemas/1.0.0/plugin.schema.json` `$schema`, and separately ships
+   `external_plugins/neon/.grok-plugin/plugin.json` into xAI's marketplace with **no `$schema` at all**.
+   Same company, same product, two manifest formats, one per ecosystem. That is the gap, stated by
+   someone other than us. Plugins are
    marketplace bundles of connectors and skills, managed through Cursor-side tools (`SearchPlugins`,
    `InstallPlugin`, `AddMcpServer`, `AuthenticateMcpServer`) and surfaced in
    **App Settings → Plugins → Marketplace / Yours**.
@@ -104,23 +111,28 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Model | Proprietary (Grok), xAI-hosted | Bring-your-own-model | Model-agnostic |
 | Hosting | xAI/Cursor-managed shared cloud computer | Self-hosted, your hardware | Self-hosted / hybrid |
 | Cost | $120–$300/mo, bundled into existing plans, no free tier | Free, open source | Free, open source |
-| GitHub stars | Closed product — the open ecosystem *around* it is <48h old, every repo below 3★ | **386,044★** ([openclaw/openclaw](https://github.com/openclaw/openclaw)) | **229,372★** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)) |
+| GitHub stars | Closed product, so not comparable — the third-party ecosystem is 13 days old and its largest repo is xAI's own marketplace at 173★ | **387,285★** ([openclaw/openclaw](https://github.com/openclaw/openclaw)) | **235,348★** ([NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)) |
 | Extends via | Cursor plugin/MCP marketplace, computer use, learned routines | Multi-channel plugins (WhatsApp, Telegram, Slack, Discord) | Skills, tools, memory providers, plugins |
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
-Star counts fetched live via the GitHub API at the time of writing — re-check before citing them months later.
+Star counts re-pulled from the GitHub API 2026-08-24. On repos this size they move daily, so treat them as a snapshot rather than a fact.
 
 ## ⭐ Pick of the Week
 
-**[superpowers](https://github.com/obra/superpowers)** by [obra](https://github.com/obra) — the biggest thing
-in xAI's official marketplace, and the one worth installing first. It's a large collection of general working
-skills — planning a change before touching code, debugging from evidence rather than guesswork, writing that
-survives review — rather than an integration with one vendor's API. For a Bot that runs unattended on its own
-cloud machine, that matters more than it does in an interactive editor: the failure mode of an always-on agent
-is confidently doing the wrong thing for an hour, and most of these skills exist to interrupt exactly that.
+**[chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp)** by
+[Chrome DevTools](https://github.com/ChromeDevTools) — the pick that actually exploits what makes a Bot
+different. Every other agent runs a browser it has to start, drive and tear down; a Bot already has one
+running on a machine that stays up when your laptop is closed, with your logins still in it. This plugin
+gives it the DevTools protocol on top: record a performance trace, read network requests, pull console
+errors with source-mapped stack traces.
 
-Install it from **App Settings → Plugins → Marketplace** and search `superpowers`, or point a client at the
-[marketplace repo](https://github.com/xai-org/plugin-marketplace).
+The practical consequence is that "the page is slow" and "it breaks for some users" stop being things you
+describe to the agent and become things it measures. Note it drives a **live, shared** browser with your
+real sessions in it, so scope what you ask for accordingly.
+
+Install from **App Settings → Plugins → Marketplace** and search `chrome-devtools`.
+
+Last week's pick, [superpowers](https://github.com/obra/superpowers), remains in the catalog.
 
 *Rotates weekly. Nominate an entry by opening an issue.*
 
