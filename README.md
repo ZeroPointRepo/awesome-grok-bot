@@ -30,6 +30,7 @@ not affiliated with or endorsed by xAI/SpaceXAI or Cursor.
 - [Grok Bot pricing and how to get it](#grok-bot-pricing-and-how-to-get-it)
 - [Grok Bot vs OpenClaw vs Hermes Agent](#grok-bot-vs-openclaw-vs-hermes-agent)
 - [⭐ Pick of the Week](#-pick-of-the-week)
+- [Grok Bot events and community](#grok-bot-events-and-community)
 - [The catalog: Grok Bot skills, plugins and MCP](#the-catalog-grok-bot-skills-plugins-and-mcp)
 - [🛡️ Security notice](#️-security-notice)
 - [🤝 Contributing](#-contributing)
@@ -135,6 +136,30 @@ Install from **App Settings → Plugins → Marketplace** and search `chrome-dev
 Last week's pick, [superpowers](https://github.com/obra/superpowers), remains in the catalog.
 
 *Rotates weekly. Nominate an entry by opening an issue.*
+
+---
+
+## Grok Bot events and community
+
+### Upcoming Grok Bot meetups, workshops and hackathons
+
+| Where | Event | When (local) | |
+|---|---|---|---|
+| Shenzhen, CN | Grok Bot Meetup Shenzhen | Aug 30, 14:00 (UTC+8) | [Register](https://luma.com/5vkzzvqk) |
+| Barranquilla, CO | Grokbot Hackathon Barranquilla | Sep 3, 16:00 (UTC-5) | [Register](https://luma.com/lgttu49h) |
+| San Francisco, US | Grok Bot build night for women | Sep 3, 17:00 (UTC-7) | [Register](https://luma.com/cursor-rset) |
+| Macau | Grok Bot Macau Student Workshop | Sep 5, 14:30 (UTC+8) | [Waitlist](https://luma.com/cursor-macau-creativity-workshop-2026-sep) |
+| Tel Aviv, IL | Grok Bot Meetup Tel Aviv | Sep 8, 18:00 (UTC+3) | [Register](https://luma.com/cursor-qdl0) |
+| Monterrey, MX | Grok Meetup Monterrey | Sep 10, 18:00 (UTC-6) | [Register](https://luma.com/cursor-wgsj) |
+| Las Vegas, US | Grok Bot Meetup Las Vegas | Sep 15, 18:00 (UTC-7) | [Register](https://luma.com/cursor-kaua) |
+| Monterrey, MX | Grok Monterrey Hackathon | Oct 3, 10:00 (UTC-6) | [Register](https://luma.com/5ohq71b3) |
+
+### Where the Grok Bot community talks
+
+- [Cursor Community Forum, `grok-bot` tag](https://forum.cursor.com/tag/grok-bot) — where Grok Bot bug reports, plugin OAuth failures, feature requests and every meetup above get posted.
+- [Cursor Discord](https://discord.gg/cursor) — 38,000+ members, real-time chat with the people using it.
+- [r/cursor](https://www.reddit.com/r/cursor/) — release chatter, setups and workflows.
+- [Cursor Community events calendar](https://luma.com/cursorcommunity) — every meetup worldwide, Grok Bot and otherwise, as it gets scheduled.
 
 ---
 

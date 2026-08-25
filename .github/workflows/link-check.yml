@@ -29,6 +29,13 @@ jobs:
           : > broken.txt
           while IFS= read -r url; do
             code=$(curl -s -o /dev/null -L -w "%{http_code}" --max-time 15 -A "Mozilla/5.0 (link-check-bot)" "$url")
+            # Reddit serves 403 to every datacenter IP. That is a bot wall, not a dead link,
+            # so a 403 from these hosts is not reported. Any other status still counts.
+            case "$url" in
+              https://www.reddit.com/*|https://reddit.com/*)
+                [ "$code" -eq 403 ] && continue
+                ;;
+            esac
             if [ "$code" -ge 400 ] || [ "$code" -eq 000 ]; then
               echo "$url -> $code" >> broken.txt
               fail=1
