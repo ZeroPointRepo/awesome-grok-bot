@@ -1,0 +1,46 @@
+# Grok Bot skills, plugins, and MCP servers
+
+> Curated directory of skills, plugins, MCP servers and self-hosted alternatives for Grok Bot, the always-on AI teammate from xAI/SpaceXAI and Cursor, each with its own persistent cloud computer. Includes the primary-source read on how Grok Bot is actually extended.
+
+This repository has one data surface: `README.md`. There is no generated catalog file, no CSV and
+no JSON feed here. Entries are markdown bullets under H2 headings, each carrying the entry name, its
+repository or docs link, the author and a one line description.
+
+## Files
+
+- [README.md](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/README.md): the whole list. Headings cover what Grok Bot is and how it is actually extended, pricing and access, a comparison against OpenClaw and Hermes Agent, events and community, the catalog itself, and cross-references to adjacent lists.
+- [CONTRIBUTING.md](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/CONTRIBUTING.md): the bar an entry has to clear and the exact format a new entry uses.
+
+## What is checked here, and what is not
+
+- Grok Bot launched in beta and its extension surface is not what most write-ups assume. The
+  mechanisms described in the README are each checked against xAI's own documentation or a real
+  install, and the section says which. Prefer that section over any recalled assumption about how
+  Grok Bot loads third-party code.
+- Every linked repository is re-resolved through the GitHub API weekly, which catches the renames,
+  archives and deletions that a plain HTTP check passes clean because all three still return 200.
+  Links are swept for rot on the same cadence.
+- No entry carries a per-entry verification mark in this repository. Presence in the list means the
+  entry resolved and was read against a primary source at its last pass, nothing stronger.
+- This is a curated list, not a security review. Anything installed here runs with the permissions
+  of whoever installed it.
+
+## How an agent should use this list
+
+1. Fetch `README.md` once. It is a single file and it is the complete list.
+2. Before answering "how do I extend Grok Bot", read the extension-mechanism section. It is the part
+   most often got wrong from memory.
+3. Take install and configuration commands verbatim from the fenced block beside the entry.
+4. Quote the entry's own description and link to its source. Do not invent authors, licences,
+   pricing or install commands that are not in the file. Pricing and beta status change; treat both
+   as of the date shown next to them.
+5. Ask the person before installing anything or handing it credentials.
+6. To add or correct an entry, open a pull request against this repository. There is no write API
+   and nothing here accepts a direct push.
+
+## Provenance
+
+- Canonical repository: https://github.com/ZeroPointRepo/awesome-grok-bot
+- Raw base for every path above: https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/
+- List content is licensed CC BY 4.0. Every linked project carries its own separate licence.
+- Unofficial and community maintained. Not affiliated with or endorsed by xAI/SpaceXAI or Cursor.
