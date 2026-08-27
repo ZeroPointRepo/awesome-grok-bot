@@ -2,7 +2,7 @@ name: Weekly link check
 
 on:
   schedule:
-    - cron: "23 6 * * 1" # Mondays 06:23 UTC
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
   workflow_dispatch: {}
 
 permissions:
@@ -12,65 +12,77 @@ permissions:
 jobs:
   link-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
-      - name: Extract links from README
-        id: extract
-        run: |
-          grep -oE '\(https?://[^)]+\)' README.md | tr -d '()' | sort -u > links.txt
-          echo "count=$(wc -l < links.txt)" >> "$GITHUB_OUTPUT"
-
-      - name: Check each link
+      # Prints all four buckets to the run summary every week, whether or not anything is broken.
+      # A third state that only appears when something else fails is a third state nobody reads.
+      - name: Check every link on the curated page
         id: check
-        run: |
-          set +e
-          fail=0
-          : > broken.txt
-          while IFS= read -r url; do
-            code=$(curl -s -o /dev/null -L -w "%{http_code}" --max-time 15 -A "Mozilla/5.0 (link-check-bot)" "$url")
-            # Reddit serves 403 to every datacenter IP. That is a bot wall, not a dead link,
-            # so a 403 from these hosts is not reported. Any other status still counts.
-            case "$url" in
-              https://www.reddit.com/*|https://reddit.com/*)
-                [ "$code" -eq 403 ] && continue
-                ;;
-            esac
-            if [ "$code" -ge 400 ] || [ "$code" -eq 000 ]; then
-              echo "$url -> $code" >> broken.txt
-              fail=1
-            fi
-          done < links.txt
-          echo "fail=$fail" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/check-links.mjs README.md
 
-      - name: Open issue if anything is broken
-        if: steps.check.outputs.fail == '1'
+      - name: Open or update the issue when something is genuinely broken
+        if: steps.check.outputs.broken != '0'
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const body = fs.readFileSync('broken.txt', 'utf8');
+            const broken = fs.readFileSync('broken.txt', 'utf8').trim();
+            const other = fs.existsSync('challenged.txt') ? fs.readFileSync('challenged.txt', 'utf8').trim() : '';
+            const context_note = other
+              ? "\n\n<details>\n<summary>Also seen this run, and NOT broken</summary>\n\n" +
+                "These hosts answered a datacenter IP with a bot wall rather than with the page. That is not a " +
+                "statement about the link, so they are reported here and never counted as breakage. Rows marked " +
+                "`[confirmed]` were checked a second time against the registry that owns the resource.\n\n```\n" +
+                other + "\n```\n\n</details>"
+              : '';
+            const body =
+              "These links returned an error that is not a bot wall, so they look genuinely broken:\n\n```\n" +
+              broken + "\n```" + context_note +
+              "\n\nSee CONTRIBUTING.md for how entries get fixed or pulled.";
             const title = `Weekly link check: broken links found (${new Date().toISOString().slice(0,10)})`;
             const { data: existing } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'broken-entry,automated',
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'broken-entry,automated',
             });
             const dup = existing.find(i => i.title.startsWith('Weekly link check'));
             if (dup) {
               await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: dup.number,
-                body: "Still broken as of this week's run:\n\n```\n" + body + "\n```",
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: dup.number, body: "Still broken as of this week's run:\n\n" + body,
               });
             } else {
               await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title,
-                body: "The following links in README.md returned an error or timed out:\n\n```\n" + body + "\n```\n\nSee CONTRIBUTING.md for how entries get fixed or pulled.",
-                labels: ['broken-entry', 'automated'],
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['broken-entry', 'automated'],
+              });
+            }
+
+      # An automated alarm that stays open after the thing it reported is gone teaches people to
+      # ignore the alarm. If this week found nothing broken, last week's issue gets closed with the
+      # reason, not left for someone to wonder about.
+      - name: Close the automated issue when nothing is broken any more
+        if: steps.check.outputs.broken == '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const other = fs.existsSync('challenged.txt') ? fs.readFileSync('challenged.txt', 'utf8').trim() : '';
+            const { data: existing } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'broken-entry,automated',
+            });
+            for (const issue of existing.filter(i => i.title.startsWith('Weekly link check'))) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number,
+                body: "This week's run found no broken links, so this is closed automatically." +
+                  (other ? "\n\nHosts that answered with a bot wall rather than the page, reported for completeness and not as breakage:\n\n```\n" + other + "\n```" : ''),
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number, state: 'closed', state_reason: 'completed',
               });
             }
