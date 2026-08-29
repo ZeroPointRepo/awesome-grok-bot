@@ -177,6 +177,7 @@ which is which rather than blurring them together, and empty subsections stay la
 
 - [grok-bot-super](https://github.com/AgentMindCloud/grok-bot-super) by [AgentMindCloud](https://github.com/AgentMindCloud) — community skill library (daily standup, email triage, meeting-to-actions, research brief, weekly review, X-thread builder). **[beta]**
 - [grokbot-imessage-skill](https://github.com/jeffhuber/grokbot-imessage-skill) by [jeffhuber](https://github.com/jeffhuber) — read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync). **[beta]**
+- [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) by [galleonlabs](https://github.com/galleonlabs) — seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review. **[beta]**
 
 ### Grok Bot plugins and MCP servers
 
