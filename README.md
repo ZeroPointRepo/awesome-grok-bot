@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
-  <img src="https://img.shields.io/badge/entries-19-blueviolet" alt="Entry count" />
+  <img src="https://img.shields.io/badge/entries-20-blueviolet" alt="Entry count" />
   <img src="https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-grok-bot" alt="Last commit" />
   <img src="https://img.shields.io/badge/Grok%20Bot-beta%20(2026--08--11)-informational" alt="Grok Bot status" />
   <img src="https://img.shields.io/badge/status-unofficial-lightgrey" alt="Unofficial, not affiliated with xAI or Cursor" />
@@ -13,7 +13,7 @@
 
 # Awesome Grok Bot
 
-**A curated, verified directory of 19 Grok Bot skills, plugins, MCP servers and self-hosted alternatives.**
+**A curated, verified directory of 20 Grok Bot skills, plugins, MCP servers and self-hosted alternatives.**
 [Grok Bot](https://docs.x.ai/grok-bot/overview) is xAI/SpaceXAI and Cursor's always-on AI teammates, each
 with their own persistent cloud computer. It launched in beta on 2026-08-11 and this list has tracked the
 ecosystem from day one.
@@ -176,6 +176,7 @@ which is which rather than blurring them together, and empty subsections stay la
 ### Grok Bot skills
 
 - [grok-bot-super](https://github.com/AgentMindCloud/grok-bot-super) by [AgentMindCloud](https://github.com/AgentMindCloud) — community skill library (daily standup, email triage, meeting-to-actions, research brief, weekly review, X-thread builder). **[beta]**
+- [grok-bot-templates](https://github.com/cobusgreyling/grok-bot-templates) by [cobusgreyling](https://github.com/cobusgreyling) — scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team. **[beta]**
 - [grokbot-imessage-skill](https://github.com/jeffhuber/grokbot-imessage-skill) by [jeffhuber](https://github.com/jeffhuber) — read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync). **[beta]**
 
 ### Grok Bot plugins and MCP servers
