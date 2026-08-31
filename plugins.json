@@ -399,12 +399,10 @@
       "license": null,
       "archived": false,
       "added": "2026-08-31",
-      "ships": [
-        ".grok-plugin"
-      ],
-      "skills": 3,
-      "mcp_component": true,
-      "open_agent_plugins_schema": false,
+      "ships": null,
+      "skills": 0,
+      "mcp_component": null,
+      "open_agent_plugins_schema": null,
       "marketplace_pinned_ref": "HEAD"
     },
     {
@@ -744,12 +742,10 @@
       "license": null,
       "archived": false,
       "added": "2026-08-31",
-      "ships": [
-        ".grok-plugin"
-      ],
-      "skills": 3,
-      "mcp_component": true,
-      "open_agent_plugins_schema": false,
+      "ships": null,
+      "skills": 0,
+      "mcp_component": null,
+      "open_agent_plugins_schema": null,
       "marketplace_pinned_ref": null
     },
     {
