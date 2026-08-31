@@ -2,7 +2,7 @@
 
 Every entry on [README.md](README.md), re-resolved from its own repository on 2026-08-31. This file is the whole set.
 
-**19** ship a `.grok-plugin` manifest, the format Grok Bot loads. **6** carry a `plugin.json` on the open Agent Plugins standard. **26** bring an MCP server component.
+**17** ship a `.grok-plugin` manifest, the format Grok Bot loads. **6** carry a `plugin.json` on the open Agent Plugins standard. **24** bring an MCP server component. **2** could not be established this run.
 
 `Ships` is manifest presence in that repository, read from its file tree. Nothing is inferred from a name or a description. Marketplace entries are read at the commit xAI pins, not at HEAD.
 
@@ -25,7 +25,7 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [mcp-fetch-worker](https://github.com/jkpe/mcp-fetch-worker) | Grok Bot plugins and MCP servers | jkpe | 1 | No manifest |  |  | 2026-08-31 |
 | [mongodb](https://github.com/mongodb/agent-skills/tree/HEAD/plugins/mongodb) | Official xAI plugin marketplace | MongoDB | 181 | .grok-plugin, .cursor-plugin, .claude-plugin, .codex-plugin | 14 | Apache-2.0 | 2026-08-31 |
 | [mongodb-atlas](https://github.com/mongodb/agent-skills/tree/HEAD/plugins/mongodb-atlas) | Official xAI plugin marketplace | MongoDB | 181 | .grok-plugin, .cursor-plugin, .claude-plugin, .codex-plugin | 12 | Apache-2.0 | 2026-08-31 |
-| [neon](https://github.com/xai-org/plugin-marketplace/tree/HEAD/external_plugins/neon) | Official xAI plugin marketplace | Neon | 201 | .grok-plugin | 3 |  | 2026-08-31 |
+| [neon](https://github.com/xai-org/plugin-marketplace/tree/HEAD/external_plugins/neon) | Official xAI plugin marketplace | Neon | 201 | Not established |  |  | 2026-08-31 |
 | [netlify](https://github.com/netlify/context-and-tools) | Official xAI plugin marketplace | Netlify | 36 | .grok-plugin, .cursor-plugin, .claude-plugin, open plugin.json | 46 | MIT | 2026-08-31 |
 | [nexfade-grok-plugin](https://github.com/NexFade/nexfade-grok-plugin) | Grok Bot plugins and MCP servers | NexFade | 0 | .grok-plugin | 1 | MIT | 2026-08-31 |
 | [orgx-grokbot-plugin](https://github.com/useorgx/orgx-grokbot-plugin) | Grok Bot plugins and MCP servers | OrgX | 0 | .grok-plugin, .cursor-plugin | 3 | MIT | 2026-08-31 |
@@ -40,7 +40,7 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [tinyfish](https://github.com/tinyfish-io/tinyfish-web-agent-integrations/tree/HEAD/grok) | Official xAI plugin marketplace | TinyFish | 18 | .grok-plugin | 5 | MIT | 2026-08-31 |
 | [vercel](https://github.com/vercel/vercel-plugin) | Official xAI plugin marketplace | Vercel | 270 | .cursor-plugin, .claude-plugin | 52 | NOASSERTION | 2026-08-31 |
 | [wix](https://github.com/wix/skills) | Official xAI plugin marketplace | Wix | 27 | .cursor-plugin, .claude-plugin, .codex-plugin, plugin.json | 21 | MIT | 2026-08-31 |
-| [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) | Official xAI plugin marketplace | xAI | 201 | .grok-plugin | 3 |  | 2026-08-31 |
+| [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) | Official xAI plugin marketplace | xAI | 201 | Not established |  |  | 2026-08-31 |
 | [yourai-context-plugin](https://github.com/Melade-Inc/yourai-context-plugin) | Grok Bot plugins and MCP servers | Melade | 0 | .claude-plugin, open plugin.json | 1 | Apache-2.0 | 2026-08-31 |
 | [botskills](https://github.com/PramodDutta/botskills) | Grok Bot skills | PramodDutta | 2 | skills only | 1 | MIT | 2026-08-31 |
 | [botteams](https://github.com/ellelion/botteams) | Grok Bot skills | ellelion | 0 | skills only | 1 | MIT | 2026-08-31 |

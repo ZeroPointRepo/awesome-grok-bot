@@ -124,7 +124,7 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **388,195★** and Hermes Agent at **238,765★**, pulled from the GitHub API on 2026-08-31. Grok
+OpenClaw is at **388,195★** and Hermes Agent at **238,766★**, pulled from the GitHub API on 2026-08-31. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
 marketplace at **201★**, 20 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
@@ -166,7 +166,7 @@ Next 8, soonest first. All 17 upcoming, with hosts, venues and times, are in **[
 - **Sep 3** · San Francisco, US — [Grok Bot build night for women](https://luma.com/a16zgrokbotbuildnight)
 - **Sep 3** · Villahermosa, MX — [Grok Bot Villahermosa Meetup](https://luma.com/cursor-9mh5)
 - **Sep 4** · Pasig, PH — [Grok Bot Meetup Manila](https://luma.com/grok-bot-manila-01)
-- **Sep 4** · Singapore, SG — [Grok Bot Meetup Singapore](https://luma.com/grokbotsg) *(1 spot left)*
+- **Sep 4** · Singapore, SG — [Grok Bot Meetup Singapore](https://luma.com/grokbotsg) *(waitlist, sold out)*
 - **Sep 4** · Online — [Grok Bot Meetup Istanbul (Online)](https://luma.com/grok-bot-istanbul)
 - **Sep 5** · Vadodara, IN — [Grok Bot Meetup Vadodara](https://luma.com/grokbot-vad-1)
 <!-- events:end -->
@@ -185,13 +185,14 @@ Next 8, soonest first. All 17 upcoming, with hosts, venues and times, are in **[
 <!-- coverage:start -->
 | What an entry ships | Entries |
 |---|---:|
-| `.grok-plugin/` manifest, the format Grok Bot loads | 19 |
+| `.grok-plugin/` manifest, the format Grok Bot loads | 17 |
 | `.cursor-plugin/` manifest, so it also loads in Cursor | 19 |
 | `.claude-plugin/` manifest, so it also loads in Claude Code | 15 |
 | `.codex-plugin/` manifest, so it also loads in Codex | 7 |
 | `plugin.json` on the open Agent Plugins standard | 6 |
-| An MCP server component | 26 |
+| An MCP server component | 24 |
 | `SKILL.md` skills and no plugin manifest | 11 |
+| Could not be established this run | 2 |
 
 Read from each repository's own file tree on 2026-08-31. Marketplace entries are read at the commit xAI pins, not at HEAD.
 <!-- coverage:end -->

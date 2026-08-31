@@ -47,7 +47,7 @@ Hosted by Cursor Manila, Philippines, John Paul Poliquit, Migi D. [Registration 
 ### Grok Bot Meetup Singapore
 <!-- event: grokbotsg -->
 
-**Singapore, SG** · Sep 4, 18:00 local (UTC+8) · 10:00 UTC · Singapore · 1 spot left
+**Singapore, SG** · Sep 4, 18:00 local (UTC+8) · 10:00 UTC · Singapore · waitlist, sold out
 
 Hosted by Cursor Singapore, Brian Chew, Sherry Jiang. [Registration page](https://luma.com/grokbotsg)
 
