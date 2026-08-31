@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
-  <img src="https://img.shields.io/badge/entries-20-blueviolet" alt="Entry count" />
+  <img src="https://img.shields.io/badge/entries-22-blueviolet" alt="Entry count" />
   <img src="https://img.shields.io/github/last-commit/ZeroPointRepo/awesome-grok-bot" alt="Last commit" />
   <img src="https://img.shields.io/badge/Grok%20Bot-beta%20(2026--08--11)-informational" alt="Grok Bot status" />
   <img src="https://img.shields.io/badge/status-unofficial-lightgrey" alt="Unofficial, not affiliated with xAI or Cursor" />
@@ -13,7 +13,7 @@
 
 # Awesome Grok Bot
 
-**A curated, verified directory of 20 Grok Bot skills, plugins, MCP servers and self-hosted alternatives.**
+**A curated, verified directory of 22 Grok Bot skills, plugins, MCP servers and self-hosted alternatives.**
 [Grok Bot](https://docs.x.ai/grok-bot/overview) is xAI/SpaceXAI and Cursor's always-on AI teammates, each
 with their own persistent cloud computer. It launched in beta on 2026-08-11 and this list has tracked the
 ecosystem from day one.
@@ -120,20 +120,24 @@ Star counts re-pulled from the GitHub API 2026-08-24. On repos this size they mo
 
 ## ⭐ Pick of the Week
 
-**[chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp)** by
-[Chrome DevTools](https://github.com/ChromeDevTools) — the pick that actually exploits what makes a Bot
-different. Every other agent runs a browser it has to start, drive and tear down; a Bot already has one
-running on a machine that stays up when your laptop is closed, with your logins still in it. This plugin
-gives it the DevTools protocol on top: record a performance trace, read network requests, pull console
-errors with source-mapped stack traces.
+**[HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk)** by
+[galleonlabs](https://github.com/galleonlabs) — merged this week, and the first entry here that treats a
+Bot as staff rather than as a tool. It is seven specialist roles (research, sizing, execution, review and
+three more) with full system prompts and sixteen skills for working with Hyperliquid, wired together as a
+Trading Floor group chat.
 
-The practical consequence is that "the page is slow" and "it breaks for some users" stop being things you
-describe to the agent and become things it measures. Note it drives a **live, shared** browser with your
-real sessions in it, so scope what you ask for accordingly.
+What it does in thirty seconds: point your Bot at `SETUP.md`, let it create the seven Bots and the group
+chat, and you have a desk that argues with itself before it does anything. It starts in **research mode**
+with no wallet attached, so you can watch the whole thing run before any money is involved.
 
-Install from **App Settings → Plugins → Marketplace** and search `chrome-devtools`.
+The reason it is the pick rather than just a good entry: it ships a real `.grok-plugin/` manifest **and**
+a root `plugin.json` carrying the canonical Agent Plugins `$schema` — still rare in this ecosystem, where
+almost everything is marketplace-only. Its own description is careful to say it is instructions and
+resources, not a bot that trades for you. Trading is risky and this does not change that.
 
-Last week's pick, [superpowers](https://github.com/obra/superpowers), remains in the catalog.
+Install by pointing your Bot at [`SETUP.md`](https://github.com/galleonlabs/hypergrok-trading-desk/blob/main/SETUP.md).
+
+Last week's pick, [chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp), remains in the catalog.
 
 *Rotates weekly. Nominate an entry by opening an issue.*
 
@@ -145,9 +149,10 @@ Last week's pick, [superpowers](https://github.com/obra/superpowers), remains in
 
 | Where | Event | When (local) | |
 |---|---|---|---|
-| Shenzhen, CN | Grok Bot Meetup Shenzhen | Aug 30, 14:00 (UTC+8) | [Register](https://luma.com/5vkzzvqk) |
+| Nijmegen, NL | Build with Grok Bot: Nijmegen | Sep 2, 16:00 (UTC+2) | [Waitlist](https://luma.com/fw7ovtge) |
 | Barranquilla, CO | Grokbot Hackathon Barranquilla | Sep 3, 16:00 (UTC-5) | [Register](https://luma.com/lgttu49h) |
 | San Francisco, US | Grok Bot build night for women | Sep 3, 17:00 (UTC-7) | [Register](https://luma.com/cursor-rset) |
+| Villahermosa, MX | Grok Bot Villahermosa Meetup | Sep 3, 19:00 (UTC-6) | [Waitlist](https://luma.com/cursor-9mh5) |
 | Macau | Grok Bot Macau Student Workshop | Sep 5, 14:30 (UTC+8) | [Waitlist](https://luma.com/cursor-macau-creativity-workshop-2026-sep) |
 | Tel Aviv, IL | Grok Bot Meetup Tel Aviv | Sep 8, 18:00 (UTC+3) | [Register](https://luma.com/cursor-qdl0) |
 | Monterrey, MX | Grok Meetup Monterrey | Sep 10, 18:00 (UTC-6) | [Register](https://luma.com/cursor-wgsj) |
@@ -175,7 +180,7 @@ which is which rather than blurring them together, and empty subsections stay la
 
 ### Grok Bot skills
 
-- [grok-bot-super](https://github.com/AgentMindCloud/grok-bot-super) by [AgentMindCloud](https://github.com/AgentMindCloud) — community skill library (daily standup, email triage, meeting-to-actions, research brief, weekly review, X-thread builder). **[beta]**
+- [grok-bot-super](https://github.com/AgentMindCloud/grok-bot-super) by [AgentMindCloud](https://github.com/AgentMindCloud) — community skill library (daily standup, email triage, meeting-to-actions, research brief, weekly review, X-thread builder). Archived upstream on 2026-08-17 and no longer maintained; the skills still work, but nothing here will be fixed. **[beta]**
 - [grok-bot-templates](https://github.com/cobusgreyling/grok-bot-templates) by [cobusgreyling](https://github.com/cobusgreyling) — scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team. **[beta]**
 - [grokbot-imessage-skill](https://github.com/jeffhuber/grokbot-imessage-skill) by [jeffhuber](https://github.com/jeffhuber) — read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync). **[beta]**
 - [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) by [galleonlabs](https://github.com/galleonlabs) — seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review. **[beta]**
