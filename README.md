@@ -185,13 +185,14 @@ Next 8, soonest first. All 17 upcoming, with hosts, venues and times, are in **[
 <!-- coverage:start -->
 | What an entry ships | Entries |
 |---|---:|
-| `.grok-plugin/` manifest, the format Grok Bot loads | 19 |
+| `.grok-plugin/` manifest, the format Grok Bot loads | 17 |
 | `.cursor-plugin/` manifest, so it also loads in Cursor | 19 |
 | `.claude-plugin/` manifest, so it also loads in Claude Code | 15 |
 | `.codex-plugin/` manifest, so it also loads in Codex | 7 |
 | `plugin.json` on the open Agent Plugins standard | 6 |
-| An MCP server component | 26 |
+| An MCP server component | 24 |
 | `SKILL.md` skills and no plugin manifest | 11 |
+| Could not be established this run | 2 |
 
 Read from each repository's own file tree on 2026-08-31. Marketplace entries are read at the commit xAI pins, not at HEAD.
 <!-- coverage:end -->
