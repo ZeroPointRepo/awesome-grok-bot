@@ -136,11 +136,51 @@ async function treeAt(slug, ref) {
   const key = `${slug}@${ref}`;
   if (treeCache.has(key)) return treeCache.get(key);
   const t = await gh(`/repos/${slug}/git/trees/${ref}?recursive=1`);
-  /* truncated is NOT ok: a truncated tree looks exactly like a repo that ships no manifest */
-  const out = { ok: !!(t && t.tree) && !t.truncated, paths: t && t.tree ? t.tree.filter((x) => x.type === 'blob').map((x) => x.path) : [] };
+  /* TRUNCATED IS NOT OK, because a truncated tree looks exactly like a repo that ships no
+     manifest. GitHub truncates a recursive tree on size, so whether a big repository answers
+     completely varies run to run — which showed up here as the marketplace flipping between
+     19 and 17 .grok-plugin manifests on consecutive runs of the same commit. Numbers that
+     wobble on their own are worse than a gap: they make a real change indistinguishable from
+     noise, and on a DAILY cadence they would manufacture a commit most days. */
+  /* FORCE_TRUNCATED exercises the subtree fallback on demand: `1` for every repository, or a
+     substring to hit one. The truncation that motivated the fallback is size-dependent and so
+     not reproducible to order, and a fallback nobody can run is a fallback nobody knows is
+     broken. The control that matters is FORCE_TRUNCATED=xai-org: the numbers it produces must
+     match the ordinary run exactly. */
+  const f = process.env.FORCE_TRUNCATED || '';
+  const forced = f === '1' || (!!f && slug.includes(f));
+  const out = { ok: !!(t && t.tree) && !t.truncated && !forced, truncated: forced || !!(t && t.truncated), paths: t && t.tree ? t.tree.filter((x) => x.type === 'blob').map((x) => x.path) : [] };
   treeCache.set(key, out);
   return out;
 }
+
+/* The fallback for a truncated tree, and it is deliberately a COMPLETE read rather than a cheap
+   one. GitHub truncates a recursive tree on total size, but it will happily return a recursive
+   listing of a SUBTREE, so the fix is to walk down to the entry's own directory and ask again
+   from there. Bounded by that directory's size and complete below it.
+
+   The first attempt at this read only one level down. Its forced-shallow control caught it: the
+   manifest-directory columns matched the full read exactly, and the skill, MCP and open-manifest
+   columns silently under-counted, because those files sit deeper. A fallback that answers three
+   of six questions and reports all six as established is the same defect as the truncated tree
+   it was written to repair. If the subtree cannot be resolved, the entry stays Not established.
+
+   An entry whose base path IS the repository root has no smaller subtree to fall back to, so it
+   correctly stays Not established rather than being papered over. */
+async function subtreeAt(slug, ref, base) {
+  if (!base) return null;
+  let sha = ref;
+  for (const seg of base.split('/').filter(Boolean)) {
+    const t = await gh(`/repos/${slug}/git/trees/${encodeURIComponent(sha)}`);
+    const hit = t && t.tree && t.tree.find((x) => x.path === seg && x.type === 'tree');
+    if (!hit) return null;
+    sha = hit.sha;
+  }
+  const sub = await gh(`/repos/${slug}/git/trees/${sha}?recursive=1`);
+  if (!sub || !sub.tree || sub.truncated) return null;
+  return { ok: true, paths: sub.tree.filter((x) => x.type === 'blob').map((x) => x.path) };
+}
+
 async function carriesOpenSchema(slug, ref, file) {
   const t = await getText(`https://raw.githubusercontent.com/${slug}/${ref}/${file}`, GH, 2, 15000);
   if (!t) return null;
@@ -165,9 +205,17 @@ const worker = async () => {
        both come from the marketplace manifest, never from a guess. */
     const ref = pin ? pin.ref : meta.default_branch;
     const base = pin ? pin.base : pathOf(e.url);
-    const tree = await treeAt(pin ? pin.repo : slug, ref);
-    const prefix = base ? base.replace(/\/$/, '') + '/' : '';
-    const rel = tree.paths.filter((p) => !prefix || p.startsWith(prefix)).map((p) => (prefix ? p.slice(prefix.length) : p));
+    let tree = await treeAt(pin ? pin.repo : slug, ref);
+    let prefix = base ? base.replace(/\/$/, '') + '/' : '';
+    let rel = tree.paths.filter((p) => !prefix || p.startsWith(prefix)).map((p) => (prefix ? p.slice(prefix.length) : p));
+    let shallow = false;
+    if (tree.truncated) {
+      /* prefix strips the base off a TREE path; filePrefix (below) puts it back on for a raw file
+         read. Conflating the two sends every pinned sub-path read to the repository root, which
+         the forced-shallow control caught before it could ship. */
+      const sub = await subtreeAt(pin ? pin.repo : slug, ref, base);
+      if (sub) { tree = sub; prefix = ''; rel = sub.paths; shallow = true; }
+    }
     const set = new Set(rel);
 
     const ships = {};
@@ -179,12 +227,13 @@ const worker = async () => {
     /* Enumerate EVERY plugin.json under the entry and read each one, rather than testing a single
        guessed path. This is the read that found netlify and stripe shipping an open manifest in
        the same commit xAI pins a schema-less one. */
+    const filePrefix = base ? base.replace(/\/$/, '') + '/' : '';
     const manifestFiles = rel.filter((p) => /(^|\/)plugin\.json$/.test(p)).slice(0, 8);
     let openSchema = false;
     const openSchemaPaths = [];
     let schemaReadFailed = false;
     for (const f of manifestFiles) {
-      const carries = await carriesOpenSchema(pin ? pin.repo : slug, ref, prefix + f);
+      const carries = await carriesOpenSchema(pin ? pin.repo : slug, ref, filePrefix + f);
       if (carries === null) { schemaReadFailed = true; continue; }
       if (carries) { openSchema = true; openSchemaPaths.push(f); }
     }
@@ -198,7 +247,7 @@ const worker = async () => {
        pin. Scoping only to the pinned path answers "what gets loaded" and would report that as a
        no, which is true but not the whole truth. Both numbers are reported, never merged. */
     let openSchemaRepoWide = pin ? openSchema : null;
-    if (pin && !openSchemaRepoWide && tree.ok) {
+    if (pin && !openSchemaRepoWide && tree.ok && !shallow) {
       for (const f of tree.paths.filter((p) => /(^|\/)plugin\.json$/.test(p)).slice(0, 12)) {
         if (await carriesOpenSchema(pin.repo, ref, f)) { openSchemaRepoWide = true; break; }
       }
@@ -209,7 +258,7 @@ const worker = async () => {
       slug: meta.full_name, repo: meta.full_name, base, ref,
       stars: meta.stars, license: meta.license, archived: meta.archived, pushedAt: meta.pushed_at,
       repoDescription: meta.description, pinned: !!pin, pinnedRef: pin ? pin.ref : null,
-      ships, skills, mcp: mcpFiles.length > 0, mcpFiles: mcpFiles.length,
+      ships, skills, shallow, mcp: mcpFiles.length > 0, mcpFiles: mcpFiles.length,
       rootManifest: set.has('plugin.json'), openSchema, openSchemaPaths, consumedOpen, openSchemaRepoWide,
       known: tree.ok && !schemaReadFailed,
       why: tree.ok ? (schemaReadFailed ? 'a plugin.json could not be read' : '') : 'file tree unreadable or truncated',
