@@ -168,7 +168,6 @@ async function treeAt(slug, ref) {
    An entry whose base path IS the repository root has no smaller subtree to fall back to, so it
    correctly stays Not established rather than being papered over. */
 async function subtreeAt(slug, ref, base) {
-  if (!base) return null;
   let sha = ref;
   for (const seg of base.split('/').filter(Boolean)) {
     const t = await gh(`/repos/${slug}/git/trees/${encodeURIComponent(sha)}`);
@@ -176,9 +175,23 @@ async function subtreeAt(slug, ref, base) {
     if (!hit) return null;
     sha = hit.sha;
   }
-  const sub = await gh(`/repos/${slug}/git/trees/${sha}?recursive=1`);
-  if (!sub || !sub.tree || sub.truncated) return null;
-  return { ok: true, paths: sub.tree.filter((x) => x.type === 'blob').map((x) => x.path) };
+  const sub = await gh(`/repos/${slug}/git/trees/${encodeURIComponent(sha)}?recursive=1`);
+  if (sub && sub.tree && !sub.truncated) return { ok: true, paths: sub.tree.filter((x) => x.type === 'blob').map((x) => x.path) };
+
+  /* The subtree is itself too big, which is the case for an entry sitting at a repository root.
+     Rebuild it from bounded pieces instead: one non-recursive listing (never truncated) plus one
+     recursive listing per top-level child. Concatenating those is the same complete answer, just
+     assembled. If any single piece still comes back truncated the whole read is abandoned, because
+     a tree assembled from some of its parts is exactly the partial answer this guards against. */
+  const top = await gh(`/repos/${slug}/git/trees/${encodeURIComponent(sha)}`);
+  if (!top || !top.tree || top.truncated) return null;
+  const paths = top.tree.filter((x) => x.type === 'blob').map((x) => x.path);
+  for (const dir of top.tree.filter((x) => x.type === 'tree')) {
+    const part = await gh(`/repos/${slug}/git/trees/${dir.sha}?recursive=1`);
+    if (!part || !part.tree || part.truncated) return null;
+    for (const b of part.tree) if (b.type === 'blob') paths.push(`${dir.path}/${b.path}`);
+  }
+  return { ok: true, paths };
 }
 
 async function carriesOpenSchema(slug, ref, file) {
@@ -203,7 +216,11 @@ const worker = async () => {
     /* THE PINNED READ. For a marketplace entry the honest question is not "what is in this repo
        today" but "what is in the commit the marketplace loads", so the ref and the path prefix
        both come from the marketplace manifest, never from a guess. */
-    const ref = pin ? pin.ref : meta.default_branch;
+    /* The git trees API wants a real ref or a SHA; the literal string HEAD does not resolve there
+       even though raw.githubusercontent accepts it. A marketplace plugin vendored INTO the
+       marketplace repo has no pinned SHA, so it lands on that path, and the mismatch showed up
+       only under truncation, where the subtree walk is the code that calls the trees API. */
+    const ref = pin ? (/^[0-9a-f]{7,40}$/i.test(pin.ref) ? pin.ref : meta.default_branch) : meta.default_branch;
     const base = pin ? pin.base : pathOf(e.url);
     let tree = await treeAt(pin ? pin.repo : slug, ref);
     let prefix = base ? base.replace(/\/$/, '') + '/' : '';
