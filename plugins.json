@@ -1,0 +1,1391 @@
+{
+  "name": "awesome-grok-bot",
+  "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
+  "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
+  "updated": "2026-08-31",
+  "count": 63,
+  "entries": [
+    {
+      "name": "grok-bot-info",
+      "section": "Grok Bot guides and tutorials",
+      "url": "https://github.com/Uncle-Gizmo/grok-bot-info",
+      "repo": "Uncle-Gizmo/grok-bot-info",
+      "author": "Uncle-Gizmo",
+      "tag": "guide",
+      "description": {
+        "en": "public notes on what Grok Bot is for, safe example workflows, and how it fits alongside Grok Build and Grok Heavy."
+      },
+      "stars": 0,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-intro-v2",
+      "section": "Grok Bot guides and tutorials",
+      "url": "https://github.com/520xiaomumu/grok-bot-intro-v2",
+      "repo": "520xiaomumu/grok-bot-intro-v2",
+      "author": "520xiaomumu",
+      "tag": "guide",
+      "description": {
+        "en": "12-chapter Chinese-language autoplay intro deck."
+      },
+      "stars": 0,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "agentcouch",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/stoyan-stoyanov/agentcouch-plugins",
+      "repo": "stoyan-stoyanov/agentcouch-plugins",
+      "author": "AgentCouch",
+      "tag": "production",
+      "description": {
+        "en": "hosted messaging rooms for Grok Bot to talk with other people's agents across clients and machines."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin",
+        ".codex-plugin",
+        "open plugin.json"
+      ],
+      "skills": 2,
+      "mcp_component": true,
+      "open_agent_plugins_schema": true,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "axiom",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/axiomhq/skills",
+      "repo": "axiomhq/skills",
+      "author": "Axiom",
+      "tag": "production",
+      "description": {
+        "en": "query logs and metrics in APL, run SRE investigations, build dashboards and manage monitors."
+      },
+      "stars": 15,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 7,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "0e98ebaeec76a70c8fda9a7737605800c2f1245d"
+    },
+    {
+      "name": "base44",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/base44/skills",
+      "repo": "base44/skills",
+      "author": "Base44",
+      "tag": "production",
+      "description": {
+        "en": "build and deploy Base44 full-stack apps through the CLI and the JavaScript/TypeScript SDK."
+      },
+      "stars": 88,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin",
+        ".codex-plugin"
+      ],
+      "skills": 9,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "0d3b72a76e91d920f4a151b68dd224510ca5dc14"
+    },
+    {
+      "name": "browser-use",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/browser-use/plugins",
+      "repo": "browser-use/plugins",
+      "author": "Browser Use",
+      "tag": "production",
+      "description": {
+        "en": "give the Bot a real browser, either the user's own Chrome with its logins or an isolated cloud one."
+      },
+      "stars": 15,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 1,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "4749bcbfe456e5384b98281a8a66119352197f59"
+    },
+    {
+      "name": "campfiresms-grok-bot",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/campfiresms/campfiresms-grok-bot",
+      "repo": "campfiresms/campfiresms-grok-bot",
+      "author": "CampfireSMS",
+      "tag": "beta",
+      "description": {
+        "en": "hosted SMS bridge over five MCP tools plus a safety skill, on one revocable phone-bound credential."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin"
+      ],
+      "skills": 1,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "chrome-devtools",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "author": "Chrome DevTools",
+      "tag": "production",
+      "description": {
+        "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
+      },
+      "stars": 50250,
+      "license": "Apache-2.0",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin"
+      ],
+      "skills": 6,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "45f187b1e3202c9f32ddba913be5d68751c3caa3"
+    },
+    {
+      "name": "cloudflare",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/cloudflare/skills",
+      "repo": "cloudflare/skills",
+      "author": "Cloudflare",
+      "tag": "production",
+      "description": {
+        "en": "manage Workers, KV, R2, DNS and deployments from the agent."
+      },
+      "stars": 2747,
+      "license": "Apache-2.0",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin"
+      ],
+      "skills": 8,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "60147cbb773649eadca89cee92b4e0caf02234b4"
+    },
+    {
+      "name": "exa",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/exa-labs/exa-grok-plugin",
+      "repo": "exa-labs/exa-grok-plugin",
+      "author": "Exa",
+      "tag": "production",
+      "description": {
+        "en": "real-time web search that reads the pages it finds and answers with current sources."
+      },
+      "stars": 1,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 1,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "879fae0c814765c43f39ea8f56aae1d44e9d9bc8"
+    },
+    {
+      "name": "figma",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/figma/mcp-server-guide",
+      "repo": "figma/mcp-server-guide",
+      "author": "Figma",
+      "tag": "production",
+      "description": {
+        "en": "read designs, variables and components straight out of Figma files."
+      },
+      "stars": 1940,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin"
+      ],
+      "skills": 14,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "7f6562c4900fafb46e5e8fd3cc8ced954779bab3"
+    },
+    {
+      "name": "firecrawl",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/firecrawl/firecrawl-grok-plugin",
+      "repo": "firecrawl/firecrawl-grok-plugin",
+      "author": "Firecrawl",
+      "tag": "production",
+      "description": {
+        "en": "turn any site into clean markdown or structured data: search, scrape, map, crawl and extract."
+      },
+      "stars": 9,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 10,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "af6c6c083ccfd74ae476761068ee4311a56e8282"
+    },
+    {
+      "name": "GrokBotfun",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/GrokBotfun/GrokBotfun",
+      "repo": "GrokBotfun/GrokBotfun",
+      "author": "GrokBotfun",
+      "tag": "experimental",
+      "description": {
+        "en": "deploy pump.fun tokens from your agent; ships an MCP server plus a Cursor-marketplace-format plugin (not the open agent-plugins.org spec, despite the repo description)."
+      },
+      "stars": 0,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin"
+      ],
+      "skills": 0,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "imagine-mcp",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/Archive228/imagine-mcp",
+      "repo": "Archive228/imagine-mcp",
+      "author": "Archive228",
+      "tag": "beta",
+      "description": {
+        "en": "remote MCP for xAI image, video and speech generation that returns a persistent blob URL and a per-call cost receipt."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "mcp-fetch-worker",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/jkpe/mcp-fetch-worker",
+      "repo": "jkpe/mcp-fetch-worker",
+      "author": "jkpe",
+      "tag": "beta",
+      "description": {
+        "en": "one `http_fetch` MCP tool behind Cloudflare Access, so a Bot reaches your self-hosted APIs on a scoped token you can revoke."
+      },
+      "stars": 1,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "mongodb",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/mongodb/agent-skills/tree/HEAD/plugins/mongodb",
+      "repo": "mongodb/agent-skills",
+      "author": "MongoDB",
+      "tag": "production",
+      "description": {
+        "en": "connect any self-managed MongoDB deployment through its own MCP server using your connection string."
+      },
+      "stars": 181,
+      "license": "Apache-2.0",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin",
+        ".cursor-plugin",
+        ".claude-plugin",
+        ".codex-plugin"
+      ],
+      "skills": 14,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "b4ea8150a020b9babaddc6c271c6dc177c06a83f"
+    },
+    {
+      "name": "mongodb-atlas",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/mongodb/agent-skills/tree/HEAD/plugins/mongodb-atlas",
+      "repo": "mongodb/agent-skills",
+      "author": "MongoDB",
+      "tag": "production",
+      "description": {
+        "en": "the managed Atlas half: sign in to explore data and manage clusters, projects, users and network access."
+      },
+      "stars": 181,
+      "license": "Apache-2.0",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin",
+        ".cursor-plugin",
+        ".claude-plugin",
+        ".codex-plugin"
+      ],
+      "skills": 12,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "b4ea8150a020b9babaddc6c271c6dc177c06a83f"
+    },
+    {
+      "name": "neon",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/xai-org/plugin-marketplace/tree/HEAD/external_plugins/neon",
+      "repo": "xai-org/plugin-marketplace",
+      "author": "Neon",
+      "tag": "production",
+      "description": {
+        "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
+      },
+      "stars": 200,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 3,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "HEAD"
+    },
+    {
+      "name": "netlify",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/netlify/context-and-tools",
+      "repo": "netlify/context-and-tools",
+      "author": "Netlify",
+      "tag": "production",
+      "description": {
+        "en": "serverless and edge functions, Blobs storage, managed Postgres, forms, caching and the Netlify CLI."
+      },
+      "stars": 36,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin",
+        ".cursor-plugin",
+        ".claude-plugin",
+        "open plugin.json"
+      ],
+      "skills": 46,
+      "mcp_component": true,
+      "open_agent_plugins_schema": true,
+      "marketplace_pinned_ref": "32a261b6b2437464aca7e51bf9b48bcac1e2835c"
+    },
+    {
+      "name": "nexfade-grok-plugin",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/NexFade/nexfade-grok-plugin",
+      "repo": "NexFade/nexfade-grok-plugin",
+      "author": "NexFade",
+      "tag": "beta",
+      "description": {
+        "en": "one-time encrypted share links: the file is encrypted on the Bot's computer and only ciphertext leaves it."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 1,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "orgx-grokbot-plugin",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/useorgx/orgx-grokbot-plugin",
+      "repo": "useorgx/orgx-grokbot-plugin",
+      "author": "OrgX",
+      "tag": "beta",
+      "description": {
+        "en": "OrgX MCP wiring, initiative-aware skills and specialist agent packs, packaged in Cursor's `.grok-plugin` manifest format."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin",
+        ".cursor-plugin"
+      ],
+      "skills": 3,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "pstack",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/cursor/plugins/tree/HEAD/pstack",
+      "repo": "cursor/plugins",
+      "author": "Cursor",
+      "tag": "production",
+      "description": {
+        "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
+      },
+      "stars": 6322,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin"
+      ],
+      "skills": 47,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "bdf7aa355337897f167153e05069aca505dae17c"
+    },
+    {
+      "name": "railway",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/railwayapp/railway-skills/tree/HEAD/plugins/railway",
+      "repo": "railwayapp/railway-skills",
+      "author": "Railway",
+      "tag": "production",
+      "description": {
+        "en": "deploy services, read build logs and manage environment variables."
+      },
+      "stars": 319,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin",
+        ".cursor-plugin",
+        ".claude-plugin",
+        ".codex-plugin"
+      ],
+      "skills": 1,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "5d1e97178f86c82795d6737928bd641e0552166a"
+    },
+    {
+      "name": "recallsmith",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/koreysmith123/recallsmith",
+      "repo": "koreysmith123/recallsmith",
+      "author": "koreysmith123",
+      "tag": "experimental",
+      "description": {
+        "en": "private experiential memory per Bot on local embeddings and pgvector, installed by handing a new Bot the repo URL."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin",
+        ".cursor-plugin",
+        "open plugin.json"
+      ],
+      "skills": 2,
+      "mcp_component": true,
+      "open_agent_plugins_schema": true,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "sentry",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/getsentry/plugin-grok",
+      "repo": "getsentry/plugin-grok",
+      "author": "Sentry",
+      "tag": "production",
+      "description": {
+        "en": "read error reports, analyze stack traces and search issues by fingerprint from the agent."
+      },
+      "stars": 1,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 8,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "7f9d7823a68a7668867786a573ef587ef2783f7d"
+    },
+    {
+      "name": "stripe",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/stripe/ai/tree/HEAD/providers/grok/plugin",
+      "repo": "stripe/ai",
+      "author": "Stripe",
+      "tag": "production",
+      "description": {
+        "en": "payments, subscriptions and billing objects from the agent, test mode included."
+      },
+      "stars": 1781,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 8,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "1dc126b93cc62e28aff7e00e51406dfeb8ac88d5"
+    },
+    {
+      "name": "superpowers",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/obra/superpowers",
+      "repo": "obra/superpowers",
+      "author": "obra",
+      "tag": "production",
+      "description": {
+        "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
+      },
+      "stars": 279891,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin",
+        ".codex-plugin"
+      ],
+      "skills": 14,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797"
+    },
+    {
+      "name": "tavily",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/tavily-ai/tavily-grok-plugin",
+      "repo": "tavily-ai/tavily-grok-plugin",
+      "author": "Tavily",
+      "tag": "production",
+      "description": {
+        "en": "web search, content extraction, crawling and deep research over a hosted MCP server with OAuth."
+      },
+      "stars": 2,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 8,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "0cfd0c2be2df4a2a90c683abaadaf36ef7f2f59d"
+    },
+    {
+      "name": "tesla-fleet-mcp",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/supervised-nl/tesla-fleet-mcp",
+      "repo": "supervised-nl/tesla-fleet-mcp",
+      "author": "supervised-nl",
+      "tag": "beta",
+      "description": {
+        "en": "Tesla Fleet API over Streamable HTTP; climate, charge and lock need Tesla's own proxy and a virtual key on the car."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "MCP only"
+      ],
+      "skills": 3,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "tinyfish",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/tinyfish-io/tinyfish-web-agent-integrations/tree/HEAD/grok",
+      "repo": "tinyfish-io/tinyfish-web-agent-integrations",
+      "author": "TinyFish",
+      "tag": "production",
+      "description": {
+        "en": "goal-driven browser automation on live sites, including authenticated ones, via saved browser profiles."
+      },
+      "stars": 18,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 5,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "89457fba3fa44c7b2227807948628011983ab668"
+    },
+    {
+      "name": "vercel",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/vercel/vercel-plugin",
+      "repo": "vercel/vercel-plugin",
+      "author": "Vercel",
+      "tag": "production",
+      "description": {
+        "en": "manage deployments, check build status, read logs, configure domains."
+      },
+      "stars": 270,
+      "license": "NOASSERTION",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin"
+      ],
+      "skills": 52,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "c4a1c4e2e16feefb1d9f2ad2a4a451abd0ae91c6"
+    },
+    {
+      "name": "wix",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/wix/skills",
+      "repo": "wix/skills",
+      "author": "Wix",
+      "tag": "production",
+      "description": {
+        "en": "build, manage and deploy Wix sites and apps: eCommerce, CMS and dashboard extensions."
+      },
+      "stars": 27,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        ".claude-plugin",
+        ".codex-plugin",
+        "plugin.json"
+      ],
+      "skills": 21,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": "6277ddff7bc62102d06d969d76e41f81eb86d48e"
+    },
+    {
+      "name": "xai-org/plugin-marketplace",
+      "section": "Official xAI plugin marketplace",
+      "url": "https://github.com/xai-org/plugin-marketplace",
+      "repo": "xai-org/plugin-marketplace",
+      "author": "xAI",
+      "tag": "production",
+      "description": {
+        "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
+      },
+      "stars": 200,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 3,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "yourai-context-plugin",
+      "section": "Grok Bot plugins and MCP servers",
+      "url": "https://github.com/Melade-Inc/yourai-context-plugin",
+      "repo": "Melade-Inc/yourai-context-plugin",
+      "author": "Melade",
+      "tag": "beta",
+      "description": {
+        "en": "read-only hosted connector for an organization's published knowledge library and the user's own recent computer activity."
+      },
+      "stars": 0,
+      "license": "Apache-2.0",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".claude-plugin",
+        "open plugin.json"
+      ],
+      "skills": 1,
+      "mcp_component": true,
+      "open_agent_plugins_schema": true,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "botskills",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/PramodDutta/botskills",
+      "repo": "PramodDutta/botskills",
+      "author": "PramodDutta",
+      "tag": "beta",
+      "description": {
+        "en": "paste-ready `BOT.md` setups for Grok Bot and Rakazo; every listing declares the one irreversible action it never takes without you."
+      },
+      "stars": 2,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "botteams",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/ellelion/botteams",
+      "repo": "ellelion/botteams",
+      "author": "ellelion",
+      "tag": "beta",
+      "description": {
+        "en": "fifteen company teams as single markdown files: one installer prompt creates the named Bots, the group chat and the routines."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-profiles",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/HAEGONG/grok-bot-profiles",
+      "repo": "HAEGONG/grok-bot-profiles",
+      "author": "HAEGONG",
+      "tag": "beta",
+      "description": {
+        "en": "spec writer, bug reproducer, PR producer and PR verifier as separate Bots, each with an explicit point where its authority ends."
+      },
+      "stars": 6,
+      "license": "CC-BY-4.0",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-skill",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/adamanz/grok-bot-skill",
+      "repo": "adamanz/grok-bot-skill",
+      "author": "adamanz",
+      "tag": "beta",
+      "description": {
+        "en": "list, message and create Grok Bots from the terminal using the local desktop session, no token copying."
+      },
+      "stars": 7,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".claude-plugin"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-super",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/AgentMindCloud/grok-bot-super",
+      "repo": "AgentMindCloud/grok-bot-super",
+      "author": "AgentMindCloud",
+      "tag": "beta",
+      "description": {
+        "en": "community skill library (daily standup, email triage, meeting-to-actions, research brief, weekly review, X-thread builder). Archived upstream on 2026-08-17 and no longer maintained; the skills still work, but nothing here will be fixed."
+      },
+      "stars": 1,
+      "license": "MIT",
+      "archived": true,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 9,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-templates",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/cobusgreyling/grok-bot-templates",
+      "repo": "cobusgreyling/grok-bot-templates",
+      "author": "cobusgreyling",
+      "tag": "beta",
+      "description": {
+        "en": "scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team."
+      },
+      "stars": 4,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 47,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grokbot-for-gtm",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/bcharleson/grokbot-for-gtm",
+      "repo": "bcharleson/grokbot-for-gtm",
+      "author": "bcharleson",
+      "tag": "beta",
+      "description": {
+        "en": "numbered outbound motion for a Bot: intake, sending infrastructure, list build, email, LinkedIn, reply handling, daily ops."
+      },
+      "stars": 4,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 11,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grokbot-imessage-skill",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/jeffhuber/grokbot-imessage-skill",
+      "repo": "jeffhuber/grokbot-imessage-skill",
+      "author": "jeffhuber",
+      "tag": "beta",
+      "description": {
+        "en": "read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync)."
+      },
+      "stars": 18,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grokmd",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/Aiworkflow360/grokmd",
+      "repo": "Aiworkflow360/grokmd",
+      "author": "Aiworkflow360",
+      "tag": "beta",
+      "description": {
+        "en": "twenty `GROK.md` character files written from primary sources, plus the spec and review checklist for writing your own."
+      },
+      "stars": 0,
+      "license": "NOASSERTION",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "HyperGrok",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/galleonlabs/hypergrok-trading-desk",
+      "repo": "galleonlabs/hypergrok-trading-desk",
+      "author": "galleonlabs",
+      "tag": "beta",
+      "description": {
+        "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
+      },
+      "stars": 34,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin",
+        ".cursor-plugin",
+        ".claude-plugin",
+        "open plugin.json"
+      ],
+      "skills": 16,
+      "mcp_component": false,
+      "open_agent_plugins_schema": true,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "overnight",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/Archive228/overnight",
+      "repo": "Archive228/overnight",
+      "author": "Archive228",
+      "tag": "experimental",
+      "description": {
+        "en": "six-bot crew for sourced short-form video, with one role per boundary and a human gate before anything publishes."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "thin-grok-bot-deep-work-on-cli",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/Luca-Blight/thin-grok-bot-deep-work-on-cli",
+      "repo": "Luca-Blight/thin-grok-bot-deep-work-on-cli",
+      "author": "Luca-Blight",
+      "tag": "beta",
+      "description": {
+        "en": "keeps the Bot mesh for routing and hands long builds to Cursor CLI, Cursor cloud agents or the grok CLI."
+      },
+      "stars": 1,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".cursor-plugin",
+        "open plugin.json"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": true,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "werewolf-gamemaster",
+      "section": "Grok Bot skills",
+      "url": "https://github.com/Heyvhuang/werewolf-gamemaster",
+      "repo": "Heyvhuang/werewolf-gamemaster",
+      "author": "Heyvhuang",
+      "tag": "experimental",
+      "description": {
+        "en": "one Bot runs a stateful game of Werewolf: roles and night actions stay in 1:1 chats, turn tokens stop out-of-order replies."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "foreman",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/Archive228/foreman",
+      "repo": "Archive228/foreman",
+      "author": "Archive228",
+      "tag": "beta",
+      "description": {
+        "en": "declares a Bot crew in git, reconciles it against the account, and reports where work stopped, repeated or waited on you."
+      },
+      "stars": 2,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 6,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-cli",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/ScriptedAlchemy/grok-bot-cli",
+      "repo": "ScriptedAlchemy/grok-bot-cli",
+      "author": "ScriptedAlchemy",
+      "tag": "beta",
+      "description": {
+        "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
+      },
+      "stars": 30,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-discord",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/davefmurray/grok-bot-discord",
+      "repo": "davefmurray/grok-bot-discord",
+      "author": "davefmurray",
+      "tag": "beta",
+      "description": {
+        "en": "Discord Gateway bridge so a Bot shows online and wakes on `@mention`, with fail-closed guild, channel and author allowlists."
+      },
+      "stars": 2,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-flake",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/jordangarrison/grok-bot-flake",
+      "repo": "jordangarrison/grok-bot-flake",
+      "author": "jordangarrison",
+      "tag": "experimental",
+      "description": {
+        "en": "Nix flake that repackages the official Linux `.deb` (no source build)."
+      },
+      "stars": 3,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-for-linux-and-android",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/1nc0gn30/grok-bot-for-linux-and-android",
+      "repo": "1nc0gn30/grok-bot-for-linux-and-android",
+      "author": "1nc0gn30",
+      "tag": "experimental",
+      "description": {
+        "en": "unofficial client covering the two seats xAI does not ship, with a workspace on your own machine and LAN phone pairing."
+      },
+      "stars": 1,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-setup",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/BlockedPath/grok-bot-setup",
+      "repo": "BlockedPath/grok-bot-setup",
+      "author": "BlockedPath",
+      "tag": "beta",
+      "description": {
+        "en": "adapters CLI and custom model-provider bridges (DeepSeek, Claude, Grok, OpenAI)."
+      },
+      "stars": 10,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-bot-usage",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/Kargatharaakash/grok-bot-usage",
+      "repo": "Kargatharaakash/grok-bot-usage",
+      "author": "Kargatharaakash",
+      "tag": "beta",
+      "description": {
+        "en": "`gbu`: weekly usage and on-demand spend for several Cursor accounts in one terminal, zero dependencies."
+      },
+      "stars": 1,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grok-codex-router",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/IgorWarzocha/grok-codex-router",
+      "repo": "IgorWarzocha/grok-codex-router",
+      "author": "IgorWarzocha",
+      "tag": "experimental",
+      "description": {
+        "en": "routes Bot inference to a ChatGPT Codex subscription by patching the VM; the author warns it can break installs or get an account restricted."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "grokbot-shim",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/codeaashu/grokbot-shim",
+      "repo": "codeaashu/grokbot-shim",
+      "author": "codeaashu",
+      "tag": "experimental",
+      "description": {
+        "en": "runs the installed Grok Bot app against a local host runtime, a local Chrome/XFCE desktop and Codex or OpenAI-compatible models."
+      },
+      "stars": 19,
+      "license": "ISC",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "guaca",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/madebywelch/guaca",
+      "repo": "madebywelch/guaca",
+      "author": "madebywelch",
+      "tag": "beta",
+      "description": {
+        "en": "local desktop app where a crew of agents message each other in their own worktrees; everything runs on your machine."
+      },
+      "stars": 27,
+      "license": "AGPL-3.0",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "omarchy-grok-bot",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/glorics/omarchy-grok-bot",
+      "repo": "glorics/omarchy-grok-bot",
+      "author": "glorics",
+      "tag": "experimental",
+      "description": {
+        "en": "Omarchy bar widget that launches and focuses the Grok Bot Linux client and fetches newer AppImages."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "open-grok-bot",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/Anil-matcha/open-grok-bot",
+      "repo": "Anil-matcha/open-grok-bot",
+      "author": "Anil-matcha",
+      "tag": "experimental",
+      "description": {
+        "en": "local-first bot workspace on FastAPI and Next.js with a deny-by-default action gateway and an audit trail."
+      },
+      "stars": 2,
+      "license": null,
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "open-grokbot",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/ishandutta2007/open-grokbot",
+      "repo": "ishandutta2007/open-grokbot",
+      "author": "ishandutta2007",
+      "tag": "beta",
+      "description": {
+        "en": "self-hosted multi-agent platform with persistent sandboxes and demonstration-based learning, `docker compose up`."
+      },
+      "stars": 5,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "OpenGrokBot",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/wolfqing/OpenGrokBot",
+      "repo": "wolfqing/OpenGrokBot",
+      "author": "wolfqing",
+      "tag": "beta",
+      "description": {
+        "en": "self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials."
+      },
+      "stars": 7,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "sand",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/alokwhitewolf/sand",
+      "repo": "alokwhitewolf/sand",
+      "author": "alokwhitewolf",
+      "tag": "experimental",
+      "description": {
+        "en": "unofficial terminal bridge to message your Bots from the CLI, since Grok Bot doesn't ship one."
+      },
+      "stars": 0,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [],
+      "skills": 0,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    },
+    {
+      "name": "XinyunOpenBot",
+      "section": "Self-hosted Grok Bot alternatives, runtimes and bridges",
+      "url": "https://github.com/dongpen-max/XinyunOpenBot",
+      "repo": "dongpen-max/XinyunOpenBot",
+      "author": "dongpen-max",
+      "tag": "beta",
+      "description": {
+        "en": "Chinese-first desktop alternative with OpenAI-compatible relay endpoints, a cloud desktop and per-bot voices."
+      },
+      "stars": 5,
+      "license": "MIT",
+      "archived": false,
+      "added": "2026-08-31",
+      "ships": [
+        "skills only"
+      ],
+      "skills": 1,
+      "mcp_component": false,
+      "open_agent_plugins_schema": false,
+      "marketplace_pinned_ref": null
+    }
+  ]
+}

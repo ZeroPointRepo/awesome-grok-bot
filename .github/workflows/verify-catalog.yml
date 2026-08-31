@@ -1,0 +1,70 @@
+name: verify-catalog
+
+on:
+  schedule:
+    # DAILY, not weekly, and this repo only. Its rival ships 2-4 dated catalog refreshes a day and
+    # the ecosystem genuinely moves that fast: the events section alone gains and loses rows most
+    # days. Nothing here fabricates a commit — the job commits only when the generated files
+    # actually changed, so a quiet day leaves no trace, which is the honest outcome.
+    #
+    # Off the hour deliberately. :00 is the most contended slot on GitHub's scheduler and runs
+    # there are silently DROPPED under load — this portfolio lost every scheduled run for a full
+    # week that way (2026-08-24 -> 2026-08-31) with every workflow still reporting state:active.
+    # The minute is allocated portfolio-wide in PORTFOLIO.json -> tooling.cron_minute_map.
+    # Do not "tidy" this back to :00.
+    - cron: '53 8 * * *' # every day, 08:53 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One walk at a time, per repo. Every scheduled workflow here walks the same catalog through the
+# same installation-wide 5,000 REST calls/hour, so two overlapping walks drain each other
+# mid-walk regardless of the budget either one started with (AK evidence, 2026-08-27). The group
+# is shared by name across this repo's scheduled workflows, so the overlap is STRUCTURALLY
+# impossible rather than merely unlikely. QUEUE, never cancel: a catalog walk that gets killed
+# half-way publishes a partial catalog, which is the exact failure the shrink guard exists to
+# catch. This matters more here than anywhere else in the portfolio, because this job runs DAILY
+# and therefore has seven times the chance of landing on top of the Monday link and health
+# sweeps. pr-validate is deliberately NOT in this group — contributor PRs must never queue
+# behind a catalog walk.
+concurrency:
+  group: catalog-walk
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Rebuild the catalog, the coverage table and every number on the page
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/build-catalog.mjs .
+
+      - name: Re-read every event from its own registration page
+        # Runs even if the catalog step failed: an event that has already happened is the most
+        # visible kind of rot on this page and a past event still returns HTTP 200, so nothing
+        # else in CI will ever catch it. Expired rows are DELETED here, never greyed out.
+        if: always()
+        run: node .github/scripts/refresh-events.mjs .
+
+      - name: Commit only if something actually changed
+        # A commit on a day when nothing moved would be a fabricated cadence signal, which is the
+        # same dishonesty as a padded entry. No diff, no commit.
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CATALOG.md catalog.csv plugins.json badges .github/data/first-seen.json README.md EVENTS.md
+          if git diff --cached --quiet; then
+            echo "Nothing changed today."
+            exit 0
+          fi
+          git commit -m "Daily refresh: catalog, coverage, events [skip ci]"
+          git push

@@ -2,13 +2,19 @@
 
 > Curated directory of skills, plugins, MCP servers and self-hosted alternatives for Grok Bot, the always-on AI teammate from xAI/SpaceXAI and Cursor, each with its own persistent cloud computer. Includes the primary-source read on how Grok Bot is actually extended.
 
-This repository has one data surface: `README.md`. There is no generated catalog file, no CSV and
-no JSON feed here. Entries are markdown bullets under H2 headings, each carrying the entry name, its
-repository or docs link, the author and a one line description.
+This repository has one curated surface and four generated ones. `README.md` is written by hand and
+is where entries are added; `CATALOG.md`, `catalog.csv`, `plugins.json` and `EVENTS.md` are rebuilt
+from live sources and are never edited by hand. Prefer a generated file when you want fields; prefer
+the README when you want the reasoning.
 
 ## Files
 
-- [README.md](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/README.md): the whole list. Headings cover what Grok Bot is and how it is actually extended, pricing and access, a comparison against OpenClaw and Hermes Agent, events and community, the catalog itself, and cross-references to adjacent lists.
+- [README.md](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/README.md): the curated list. Headings cover what Grok Bot is and how it is actually extended, pricing and access, a comparison against OpenClaw and Hermes Agent, events and community, the catalog itself, and cross-references to adjacent lists. Entries are markdown bullets under H3 headings, each carrying the entry name, its repository link, the author, a one line description and a stability tag.
+- [CATALOG.md](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/CATALOG.md): every entry as one table row, with stars, licence, skill count and which manifest formats it actually ships.
+- [catalog.csv](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/catalog.csv): the same set as CSV, one row per entry, with the manifest columns split out per client plus the open Agent Plugins schema flag.
+- [plugins.json](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json): the same set as JSON, with a top level `count` and `updated` date.
+- [EVENTS.md](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/EVENTS.md): every upcoming Grok Bot meetup, workshop and hackathon, with the organiser's local time and the UTC equivalent, rebuilt from each registration page. Events that have started are deleted rather than kept.
+- [badges/](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/badges/entries.json): shields.io endpoint payloads for the entry count, the `.grok-plugin` share and the last-checked timestamp. The counts rendered on the README come from these, so no number on the page is typed by hand.
 - [CONTRIBUTING.md](https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/CONTRIBUTING.md): the bar an entry has to clear and the exact format a new entry uses.
 
 ## What is checked here, and what is not
@@ -20,6 +26,11 @@ repository or docs link, the author and a one line description.
 - Every linked repository is re-resolved through the GitHub API weekly, which catches the renames,
   archives and deletions that a plain HTTP check passes clean because all three still return 200.
   Links are swept for rot on the same cadence.
+- Which manifest formats an entry ships is read from that repository's own file tree, never inferred
+  from its name or its description. A tree that could not be read is reported as "Not established"
+  and counted apart from both buckets, never as "no manifest found".
+- Marketplace entries are resolved at the exact commit xAI's marketplace pins, not at the source
+  repository's HEAD, because the pinned commit is what actually gets loaded.
 - No entry carries a per-entry verification mark in this repository. Presence in the list means the
   entry resolved and was read against a primary source at its last pass, nothing stronger.
 - This is a curated list, not a security review. Anything installed here runs with the permissions
@@ -27,7 +38,8 @@ repository or docs link, the author and a one line description.
 
 ## How an agent should use this list
 
-1. Fetch `README.md` once. It is a single file and it is the complete list.
+1. Fetch `catalog.csv` or `plugins.json` for fields, or `README.md` for the descriptions and the
+   reasoning. Each is complete on its own; the counts in all of them come from the same run.
 2. Before answering "how do I extend Grok Bot", read the extension-mechanism section. It is the part
    most often got wrong from memory.
 3. Take install and configuration commands verbatim from the fenced block beside the entry.
