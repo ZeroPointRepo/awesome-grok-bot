@@ -55,6 +55,11 @@ const drop = (why) => { drops.push(why); console.log('  DROP ' + why); };
 const num = (n) => (n == null ? '' : Number(n).toLocaleString('en-US'));
 const csvCell = (v) => { const s = v == null ? '' : String(v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
 
+/* lastFailure carries WHY the most recent read failed. Without it every failure mode collapses
+   into "unreadable", and a 25-second timeout on a very large response is indistinguishable in the
+   log from a 403 or a 404 — which is how a CI-only failure survived three rounds of fixes aimed
+   at the wrong cause. */
+let lastFailure = '';
 async function getText(url, headers = {}, tries = 3, timeoutMs = 25000) {
   for (let i = 0; i < tries; i++) {
     const ctl = new AbortController();
@@ -62,10 +67,10 @@ async function getText(url, headers = {}, tries = 3, timeoutMs = 25000) {
     try {
       const r = await fetch(url, { headers, signal: ctl.signal });
       clearTimeout(t);
-      if (r.status === 403 || r.status === 429) { await sleep(2000 * (i + 1)); continue; }
-      if (!r.ok) return null;
+      if (r.status === 403 || r.status === 429) { lastFailure = `HTTP ${r.status} (rate limit or forbidden)`; await sleep(2000 * (i + 1)); continue; }
+      if (!r.ok) { lastFailure = `HTTP ${r.status}`; return null; }
       return await r.text();
-    } catch { clearTimeout(t); await sleep(1000 * (i + 1)); }
+    } catch (err) { clearTimeout(t); lastFailure = err && err.name === 'AbortError' ? `timed out after ${timeoutMs}ms` : `network error: ${err && err.message}`; await sleep(1000 * (i + 1)); }
   }
   return null;
 }
@@ -149,7 +154,12 @@ async function treeAt(slug, ref) {
      match the ordinary run exactly. */
   const f = process.env.FORCE_TRUNCATED || '';
   const forced = f === '1' || (!!f && slug.includes(f));
-  const out = { ok: !!(t && t.tree) && !t.truncated && !forced, truncated: forced || !!(t && t.truncated), paths: t && t.tree ? t.tree.filter((x) => x.type === 'blob').map((x) => x.path) : [] };
+  const out = {
+    ok: !!(t && t.tree) && !t.truncated && !forced,
+    truncated: forced || !!(t && t.truncated),
+    reason: forced ? 'forced by FORCE_TRUNCATED' : (t && t.truncated ? 'truncated by size' : (t && t.tree ? '' : lastFailure || 'no tree in the response')),
+    paths: t && t.tree ? t.tree.filter((x) => x.type === 'blob').map((x) => x.path) : [],
+  };
   treeCache.set(key, out);
   return out;
 }
@@ -226,12 +236,19 @@ const worker = async () => {
     let prefix = base ? base.replace(/\/$/, '') + '/' : '';
     let rel = tree.paths.filter((p) => !prefix || p.startsWith(prefix)).map((p) => (prefix ? p.slice(prefix.length) : p));
     let shallow = false;
-    if (tree.truncated) {
+    /* Fires on ANY unusable tree, not only a truncated one. The failure that shipped was a 25
+       second timeout on a single very large recursive response in CI, which local runs never hit
+       because the box is faster; gating the repair on `truncated` meant the repair never ran
+       where it was needed. The assembled read replaces one enormous call with several small ones,
+       which is the right shape for a timeout as well as for a truncation. */
+    if (!tree.ok) {
+      console.log(`  RETRY ${e.name}: tree read ${tree.reason || 'failed'}; rebuilding it from bounded subtrees`);
       /* prefix strips the base off a TREE path; filePrefix (below) puts it back on for a raw file
          read. Conflating the two sends every pinned sub-path read to the repository root, which
          the forced-shallow control caught before it could ship. */
       const sub = await subtreeAt(pin ? pin.repo : slug, ref, base);
       if (sub) { tree = sub; prefix = ''; rel = sub.paths; shallow = true; }
+      else console.log(`  RETRY ${e.name}: the assembled read did not resolve either (${lastFailure || 'unknown'})`);
     }
     const set = new Set(rel);
 
@@ -278,7 +295,7 @@ const worker = async () => {
       ships, skills, shallow, mcp: mcpFiles.length > 0, mcpFiles: mcpFiles.length,
       rootManifest: set.has('plugin.json'), openSchema, openSchemaPaths, consumedOpen, openSchemaRepoWide,
       known: tree.ok && !schemaReadFailed,
-      why: tree.ok ? (schemaReadFailed ? 'a plugin.json could not be read' : '') : 'file tree unreadable or truncated',
+      why: tree.ok ? (schemaReadFailed ? 'a plugin.json could not be read' : '') : `file tree unusable: ${tree.reason || 'unknown'}`,
     });
   }
 };
