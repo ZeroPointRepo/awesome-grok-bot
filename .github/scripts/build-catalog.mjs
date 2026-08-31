@@ -60,14 +60,27 @@ const csvCell = (v) => { const s = v == null ? '' : String(v); return /[",\n]/.t
    log from a 403 or a 404 — which is how a CI-only failure survived three rounds of fixes aimed
    at the wrong cause. */
 let lastFailure = '';
-async function getText(url, headers = {}, tries = 3, timeoutMs = 25000) {
+async function getText(url, headers = {}, tries = 5, timeoutMs = 25000) {
   for (let i = 0; i < tries; i++) {
     const ctl = new AbortController();
     const t = setTimeout(() => ctl.abort(), timeoutMs);
     try {
       const r = await fetch(url, { headers, signal: ctl.signal });
       clearTimeout(t);
-      if (r.status === 403 || r.status === 429) { lastFailure = `HTTP ${r.status} (rate limit or forbidden)`; await sleep(2000 * (i + 1)); continue; }
+      if (r.status === 403 || r.status === 429) {
+        /* GitHub answers a SECONDARY rate limit with 403 and tells you how long to wait, in
+           `retry-after` or in `x-ratelimit-reset`. A fixed two-second backoff ignores both and
+           burns its retries inside the penalty window, which reads downstream as "this repository
+           is forbidden" and lands in the catalog as a missing manifest. Wait what it asks for. */
+        const ra = Number(r.headers.get('retry-after'));
+        const reset = Number(r.headers.get('x-ratelimit-reset'));
+        const remaining = Number(r.headers.get('x-ratelimit-remaining'));
+        const waitMs = Number.isFinite(ra) && ra > 0 ? ra * 1000
+          : (remaining === 0 && Number.isFinite(reset) ? Math.max(0, reset * 1000 - Date.now()) : 5000 * (i + 1));
+        lastFailure = `HTTP ${r.status} (rate limited, asked for ${Math.round(waitMs / 1000)}s)`;
+        await sleep(Math.min(waitMs + 1000, 90000));
+        continue;
+      }
       if (!r.ok) { lastFailure = `HTTP ${r.status}`; return null; }
       return await r.text();
     } catch (err) { clearTimeout(t); lastFailure = err && err.name === 'AbortError' ? `timed out after ${timeoutMs}ms` : `network error: ${err && err.message}`; await sleep(1000 * (i + 1)); }
@@ -299,7 +312,9 @@ const worker = async () => {
     });
   }
 };
-await Promise.all(Array.from({ length: 6 }, worker));
+/* Four, not six. The burst is what trips the secondary limit, and a catalog walk has no deadline
+   worth trading correctness for. */
+await Promise.all(Array.from({ length: 4 }, worker));
 
 entries.sort((a, b) => (a.section || '').localeCompare(b.section || '') || a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
 
