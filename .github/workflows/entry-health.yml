@@ -11,17 +11,34 @@ name: Entry health
 
 on:
   schedule:
-    # Mondays, 07:00 UTC (one hour after the link check)
-    - cron: "0 7 * * 1"
+    # Off the hour deliberately. :00 is the most contended slot on GitHub's scheduler and runs
+    # there are silently DROPPED under load — this portfolio lost every scheduled run for a full
+    # week that way (2026-08-24 -> 2026-08-31) with every workflow still reporting state:active.
+    # The minute is allocated portfolio-wide in PORTFOLIO.json -> tooling.cron_minute_map.
+    # Do not "tidy" this back to :00.
+    - cron: "19 7 * * 1" # Mondays 07:19 UTC
   workflow_dispatch:
 
 permissions:
   contents: read
   issues: write
 
+# One walk at a time, per repo. Every scheduled workflow here walks the same catalog through the
+# same installation-wide 5,000 REST calls/hour, so two overlapping walks drain each other
+# mid-walk regardless of the budget either one started with (AK evidence, 2026-08-27). The group
+# is shared by name across this repo's scheduled workflows, so the overlap is STRUCTURALLY
+# impossible rather than merely unlikely. QUEUE, never cancel: a catalog walk that gets killed
+# half-way publishes a partial catalog, which is the exact failure the shrink guard exists to
+# catch. pr-validate is deliberately NOT in this group — contributor PRs must never queue behind
+# a catalog walk.
+concurrency:
+  group: catalog-walk
+  cancel-in-progress: false
+
 jobs:
   entry-health:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
