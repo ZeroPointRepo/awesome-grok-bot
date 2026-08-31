@@ -399,10 +399,12 @@
       "license": null,
       "archived": false,
       "added": "2026-08-31",
-      "ships": null,
-      "skills": 0,
-      "mcp_component": null,
-      "open_agent_plugins_schema": null,
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 3,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
       "marketplace_pinned_ref": "HEAD"
     },
     {
@@ -485,7 +487,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 6325,
+      "stars": 6326,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -600,7 +602,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 279895,
+      "stars": 279896,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -742,10 +744,12 @@
       "license": null,
       "archived": false,
       "added": "2026-08-31",
-      "ships": null,
-      "skills": 0,
-      "mcp_component": null,
-      "open_agent_plugins_schema": null,
+      "ships": [
+        ".grok-plugin"
+      ],
+      "skills": 3,
+      "mcp_component": true,
+      "open_agent_plugins_schema": false,
       "marketplace_pinned_ref": null
     },
     {

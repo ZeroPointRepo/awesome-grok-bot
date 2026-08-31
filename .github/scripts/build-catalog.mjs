@@ -166,7 +166,7 @@ async function treeAt(slug, ref) {
      broken. The control that matters is FORCE_TRUNCATED=xai-org: the numbers it produces must
      match the ordinary run exactly. */
   const f = process.env.FORCE_TRUNCATED || '';
-  const forced = f === '1' || (!!f && slug.includes(f));
+  const forced = f === '1' || f === 'probe' || (!!f && slug.includes(f));
   const out = {
     ok: !!(t && t.tree) && !t.truncated && !forced,
     truncated: forced || !!(t && t.truncated),
@@ -191,6 +191,10 @@ async function treeAt(slug, ref) {
    An entry whose base path IS the repository root has no smaller subtree to fall back to, so it
    correctly stays Not established rather than being papered over. */
 async function subtreeAt(slug, ref, base) {
+  /* FORCE_TRUNCATED=probe disables this tier too, so the raw manifest probe below it can be run
+     and compared against a full read. A last resort nobody exercises is a last resort nobody
+     knows is wrong. */
+  if (process.env.FORCE_TRUNCATED === 'probe') return null;
   let sha = ref;
   for (const seg of base.split('/').filter(Boolean)) {
     const t = await gh(`/repos/${slug}/git/trees/${encodeURIComponent(sha)}`);
@@ -215,6 +219,41 @@ async function subtreeAt(slug, ref, base) {
     for (const b of part.tree) if (b.type === 'blob') paths.push(`${dir.path}/${b.path}`);
   }
   return { ok: true, paths };
+}
+
+/* TIER THREE, and the reason it exists is a hard limit rather than a bug. The scheduled run uses
+   the workflow's own GITHUB_TOKEN, and that token is refused (403) on the git trees API for
+   xai-org/plugin-marketplace no matter how long it waits — two full minutes of header-directed
+   backoff still ended in 403. raw.githubusercontent, meanwhile, serves the same repository fine,
+   which is how the marketplace manifest itself is read.
+
+   So the last resort asks raw for the canonical manifest paths directly. This is NOT the
+   path-guessing that this file warns about elsewhere: guessing means inventing where a vendor
+   MIGHT have put a manifest inside a layout you have not read. These five paths are what the
+   formats ARE — a manifest that is not at `.grok-plugin/plugin.json` is not a `.grok-plugin`
+   manifest — so probing them enumerates the question completely rather than sampling it.
+
+   What it CANNOT establish: SKILL.md counts, MCP configs, and - this one matters most - whether
+   the entry carries an open Agent Plugins manifest. Netlify proved that last one during the
+   control run: its open plugin.json lives at `agent-plugin/plugin.json`, a path no canonical list
+   contains, so probing found three manifests and missed the open one. Reported as a false, that
+   silently understates the single number this list is read for. All four fields come back
+   UNKNOWN, not zero, and stay unknown all the way through to the table and the denominators.
+   An entry resolved this way has established manifest directories and nothing else, and the
+   difference is visible rather than averaged away. */
+async function probeManifests(slug, ref, base) {
+  const at = (f) => `https://raw.githubusercontent.com/${slug}/${ref}/${base ? base.replace(/\/$/, '') + '/' : ''}${f}`;
+  const candidates = MANIFESTS.flatMap(([, dir]) => [`${dir}/plugin.json`, `${dir}/marketplace.json`]);
+  const found = [];
+  let anyAnswer = false;
+  for (const f of candidates) {
+    const t = await getText(at(f), GH, 2, 15000);
+    if (t == null) { if (/HTTP 404/.test(lastFailure)) anyAnswer = true; continue; }
+    anyAnswer = true;
+    found.push(f);
+  }
+  if (!anyAnswer) return null; // nothing answered at all: this is not evidence of absence
+  return { ok: true, paths: found, manifestsOnly: true };
 }
 
 async function carriesOpenSchema(slug, ref, file) {
@@ -249,6 +288,7 @@ const worker = async () => {
     let prefix = base ? base.replace(/\/$/, '') + '/' : '';
     let rel = tree.paths.filter((p) => !prefix || p.startsWith(prefix)).map((p) => (prefix ? p.slice(prefix.length) : p));
     let shallow = false;
+    let manifestsOnly = false;
     /* Fires on ANY unusable tree, not only a truncated one. The failure that shipped was a 25
        second timeout on a single very large recursive response in CI, which local runs never hit
        because the box is faster; gating the repair on `truncated` meant the repair never ran
@@ -259,15 +299,19 @@ const worker = async () => {
       /* prefix strips the base off a TREE path; filePrefix (below) puts it back on for a raw file
          read. Conflating the two sends every pinned sub-path read to the repository root, which
          the forced-shallow control caught before it could ship. */
-      const sub = await subtreeAt(pin ? pin.repo : slug, ref, base);
-      if (sub) { tree = sub; prefix = ''; rel = sub.paths; shallow = true; }
-      else console.log(`  RETRY ${e.name}: the assembled read did not resolve either (${lastFailure || 'unknown'})`);
+      let sub = await subtreeAt(pin ? pin.repo : slug, ref, base);
+      if (!sub) {
+        console.log(`  RETRY ${e.name}: the assembled read did not resolve either (${lastFailure || 'unknown'}); falling back to a direct manifest probe`);
+        sub = await probeManifests(pin ? pin.repo : slug, ref, base);
+      }
+      if (sub) { tree = sub; prefix = ''; rel = sub.paths; shallow = true; manifestsOnly = !!sub.manifestsOnly; }
+      else console.log(`  RETRY ${e.name}: the manifest probe did not answer either (${lastFailure || 'unknown'})`);
     }
     const set = new Set(rel);
 
     const ships = {};
     for (const [key, dir] of MANIFESTS) ships[key] = set.has(`${dir}/plugin.json`) || set.has(`${dir}/marketplace.json`);
-    const skills = rel.filter((p) => /(^|\/)SKILL\.md$/i.test(p)).length;
+    const skills = manifestsOnly ? null : rel.filter((p) => /(^|\/)SKILL\.md$/i.test(p)).length;
     const mcp = rel.some((p) => /(^|\/)\.?mcp(_?config|_?servers)?\.json$/i.test(p)) || /mcp/i.test(meta.description || '') === false && false;
     const mcpFiles = rel.filter((p) => /(^|\/)\.?mcp(_?config|_?servers)?\.json$/i.test(p));
 
@@ -305,8 +349,10 @@ const worker = async () => {
       slug: meta.full_name, repo: meta.full_name, base, ref,
       stars: meta.stars, license: meta.license, archived: meta.archived, pushedAt: meta.pushed_at,
       repoDescription: meta.description, pinned: !!pin, pinnedRef: pin ? pin.ref : null,
-      ships, skills, shallow, mcp: mcpFiles.length > 0, mcpFiles: mcpFiles.length,
-      rootManifest: set.has('plugin.json'), openSchema, openSchemaPaths, consumedOpen, openSchemaRepoWide,
+      ships, skills, shallow, manifestsOnly, mcp: manifestsOnly ? null : mcpFiles.length > 0, mcpFiles: mcpFiles.length,
+      rootManifest: manifestsOnly ? null : set.has('plugin.json'),
+      openSchema: manifestsOnly ? null : openSchema,
+      openSchemaPaths, consumedOpen: manifestsOnly ? null : consumedOpen, openSchemaRepoWide: manifestsOnly ? null : openSchemaRepoWide,
       known: tree.ok && !schemaReadFailed,
       why: tree.ok ? (schemaReadFailed ? 'a plugin.json could not be read' : '') : `file tree unusable: ${tree.reason || 'unknown'}`,
     });
@@ -356,9 +402,12 @@ if (fs.existsSync(catalogPath)) {
 /* ---------- 6. the derived numbers ---------- */
 const est = entries.filter((e) => e.known);
 const shipCount = (k) => est.filter((e) => e.ships[k]).length;
-const openCount = est.filter((e) => e.openSchema).length;
-const mcpCount = est.filter((e) => e.mcp).length;
-const skillsOnly = est.filter((e) => e.skills > 0 && !MANIFESTS.some(([k]) => e.ships[k]) && !e.rootManifest).length;
+const openKnown = est.filter((e) => e.openSchema != null);
+const openCount = openKnown.filter((e) => e.openSchema).length;
+const mcpKnown = est.filter((e) => e.mcp != null);
+const mcpCount = mcpKnown.filter((e) => e.mcp).length;
+const fieldUnknown = est.filter((e) => e.manifestsOnly).length;
+const skillsOnly = est.filter((e) => e.skills != null && e.skills > 0 && !MANIFESTS.some(([k]) => e.ships[k]) && !e.rootManifest).length;
 const grokManifest = shipCount('grok');
 const vendorCount = pins.size;
 const vendorOpenConsumed = est.filter((e) => e.pinned && e.consumedOpen).length;
@@ -371,6 +420,7 @@ const manifestsOf = (e) => {
   else if (e.rootManifest) out.push('plugin.json');
   if (!out.length && e.mcp) out.push('MCP only');
   if (!out.length && e.skills) out.push('skills only');
+  if (e.manifestsOnly) out.push('other formats not established');
   return out;
 };
 const manifestCell = (e) => (!e.known ? 'Not established' : manifestsOf(e).join(', ') || 'No manifest');
@@ -379,12 +429,12 @@ const manifestCell = (e) => (!e.known ? 'Not established' : manifestsOf(e).join(
 const md = [];
 md.push(`# Grok Bot catalog: all ${entries.length} entries, with what each one ships\n`);
 md.push(`Every entry on [README.md](README.md), re-resolved from its own repository on ${today}. This file is the whole set.\n`);
-md.push(`**${grokManifest}** ship a \`.grok-plugin\` manifest, the format Grok Bot loads. **${openCount}** carry a \`plugin.json\` on the open Agent Plugins standard. **${mcpCount}** bring an MCP server component${unknown ? `. **${unknown}** could not be established this run` : ''}.\n`);
+md.push(`**${grokManifest}** ship a \`.grok-plugin\` manifest, the format Grok Bot loads. **${openCount}** of the ${openKnown.length} that could be checked carry a \`plugin.json\` on the open Agent Plugins standard. **${mcpCount}** of the ${mcpKnown.length} that could be checked bring an MCP server component${unknown ? `. **${unknown}** could not be established at all this run` : ''}.\n`);
 md.push('`Ships` is manifest presence in that repository, read from its file tree. Nothing is inferred from a name or a description. Marketplace entries are read at the commit xAI pins, not at HEAD.\n');
 md.push('| Entry | Section | Author | Stars | Ships | Skills | Licence | Added |');
 md.push('|---|---|---|---:|---|---:|---|---|');
 for (const e of entries) {
-  md.push(`| [${e.name}](${e.url}) | ${e.subsection || e.section} | ${e.author} | ${num(e.stars)} | ${manifestCell(e)} | ${e.skills || ''} | ${e.license || ''} | ${seen.entries[e.repo || e.name] || ''} |`);
+  md.push(`| [${e.name}](${e.url}) | ${e.subsection || e.section} | ${e.author} | ${num(e.stars)} | ${manifestCell(e)} | ${e.skills == null ? '?' : (e.skills || '')} | ${e.license || ''} | ${seen.entries[e.repo || e.name] || ''} |`);
 }
 md.push('\n---\n');
 md.push('<sub>Unofficial, community-maintained. Not affiliated with or endorsed by xAI/SpaceXAI or Cursor.</sub>');
@@ -432,12 +482,13 @@ const coverageBlock = [
   '|---|---:|',
   ...MANIFESTS.map(([k, dir, label]) => `| \`${dir}/\` manifest${k === 'grok' ? ', the format Grok Bot loads' : `, so it also loads in ${label}`} | ${shipCount(k)} |`)
     .filter((_, idx) => shipCount(MANIFESTS[idx][0]) > 0),
-  `| \`plugin.json\` on the open Agent Plugins standard | ${openCount} |`,
-  `| An MCP server component | ${mcpCount} |`,
+  `| \`plugin.json\` on the open Agent Plugins standard | ${openCount}${openKnown.length < est.length ? ` of ${openKnown.length} checked` : ''} |`,
+  `| An MCP server component | ${mcpCount}${mcpKnown.length < est.length ? ` of ${mcpKnown.length} checked` : ''} |`,
   `| \`SKILL.md\` skills and no plugin manifest | ${skillsOnly} |`,
   ...(unknown ? [`| Could not be established this run | ${unknown} |`] : []),
   '',
   `Read from each repository's own file tree on ${today}. Marketplace entries are read at the commit xAI pins, not at HEAD.`,
+  ...(fieldUnknown ? [`${fieldUnknown} entr${fieldUnknown === 1 ? 'y' : 'ies'} answered on manifest directories but not on skills, MCP or the open standard this run, and ${fieldUnknown === 1 ? 'is' : 'are'} left out of those rows rather than counted as zero.`] : []),
 ].join('\n');
 
 const marketplaceBlock = [
@@ -514,6 +565,6 @@ let ecosystemBlock = null;
 }
 
 console.log(`\nWrote CATALOG.md (${entries.length}), catalog.csv, plugins.json, 3 badges, first-seen ledger.`);
-console.log(`Ships: ${grokManifest} .grok-plugin, ${shipCount('cursor')} .cursor-plugin, ${shipCount('claude')} .claude-plugin, ${openCount} open plugin.json, ${mcpCount} MCP, ${skillsOnly} skills-only, ${unknown} not established.`);
+console.log(`Ships: ${grokManifest} .grok-plugin, ${shipCount('cursor')} .cursor-plugin, ${shipCount('claude')} .claude-plugin, ${openCount}/${openKnown.length} open plugin.json, ${mcpCount}/${mcpKnown.length} MCP, ${skillsOnly} skills-only, ${unknown} not established, ${fieldUnknown} manifest-only.`);
 console.log(`Marketplace: ${vendorCount} vendor plugins, ${vendorOpenConsumed} carrying the open $schema in the CONSUMED manifest, ${vendorOpenAnywhere} carrying it anywhere in the pinned tree (${vendorOpenNames.join(', ') || 'none'}).`);
 console.log(drops.length ? `${drops.length} drop(s) this run, listed above.` : 'No drops this run.');
