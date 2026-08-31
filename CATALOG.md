@@ -2,7 +2,7 @@
 
 Every entry on [README.md](README.md), re-resolved from its own repository on 2026-08-31. This file is the whole set.
 
-**19** ship a `.grok-plugin` manifest, the format Grok Bot loads. **6** of the 63 that could be checked carry a `plugin.json` on the open Agent Plugins standard. **26** of the 63 that could be checked bring an MCP server component.
+**19** ship a `.grok-plugin` manifest, the format Grok Bot loads. **6** of the 61 that could be checked carry a `plugin.json` on the open Agent Plugins standard. **24** of the 61 that could be checked bring an MCP server component.
 
 `Ships` is manifest presence in that repository, read from its file tree. Nothing is inferred from a name or a description. Marketplace entries are read at the commit xAI pins, not at HEAD.
 
@@ -15,7 +15,7 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [base44](https://github.com/base44/skills) | Official xAI plugin marketplace | Base44 | 88 | .cursor-plugin, .claude-plugin, .codex-plugin | 9 | MIT | 2026-08-31 |
 | [browser-use](https://github.com/browser-use/plugins) | Official xAI plugin marketplace | Browser Use | 15 | .grok-plugin | 1 |  | 2026-08-31 |
 | [campfiresms-grok-bot](https://github.com/campfiresms/campfiresms-grok-bot) | Grok Bot plugins and MCP servers | CampfireSMS | 0 | .cursor-plugin | 1 | MIT | 2026-08-31 |
-| [chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official xAI plugin marketplace | Chrome DevTools | 50,250 | .cursor-plugin, .claude-plugin | 6 | Apache-2.0 | 2026-08-31 |
+| [chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official xAI plugin marketplace | Chrome DevTools | 50,251 | .cursor-plugin, .claude-plugin | 6 | Apache-2.0 | 2026-08-31 |
 | [cloudflare](https://github.com/cloudflare/skills) | Official xAI plugin marketplace | Cloudflare | 2,747 | .cursor-plugin, .claude-plugin | 8 | Apache-2.0 | 2026-08-31 |
 | [exa](https://github.com/exa-labs/exa-grok-plugin) | Official xAI plugin marketplace | Exa | 1 | .grok-plugin | 1 |  | 2026-08-31 |
 | [figma](https://github.com/figma/mcp-server-guide) | Official xAI plugin marketplace | Figma | 1,940 | .cursor-plugin, .claude-plugin | 14 |  | 2026-08-31 |
@@ -25,7 +25,7 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [mcp-fetch-worker](https://github.com/jkpe/mcp-fetch-worker) | Grok Bot plugins and MCP servers | jkpe | 1 | No manifest |  |  | 2026-08-31 |
 | [mongodb](https://github.com/mongodb/agent-skills/tree/HEAD/plugins/mongodb) | Official xAI plugin marketplace | MongoDB | 181 | .grok-plugin, .cursor-plugin, .claude-plugin, .codex-plugin | 14 | Apache-2.0 | 2026-08-31 |
 | [mongodb-atlas](https://github.com/mongodb/agent-skills/tree/HEAD/plugins/mongodb-atlas) | Official xAI plugin marketplace | MongoDB | 181 | .grok-plugin, .cursor-plugin, .claude-plugin, .codex-plugin | 12 | Apache-2.0 | 2026-08-31 |
-| [neon](https://github.com/xai-org/plugin-marketplace/tree/HEAD/external_plugins/neon) | Official xAI plugin marketplace | Neon | 201 | .grok-plugin | 3 |  | 2026-08-31 |
+| [neon](https://github.com/xai-org/plugin-marketplace/tree/HEAD/external_plugins/neon) | Official xAI plugin marketplace | Neon | 201 | .grok-plugin, other formats not established | ? |  | 2026-08-31 |
 | [netlify](https://github.com/netlify/context-and-tools) | Official xAI plugin marketplace | Netlify | 36 | .grok-plugin, .cursor-plugin, .claude-plugin, open plugin.json | 46 | MIT | 2026-08-31 |
 | [nexfade-grok-plugin](https://github.com/NexFade/nexfade-grok-plugin) | Grok Bot plugins and MCP servers | NexFade | 0 | .grok-plugin | 1 | MIT | 2026-08-31 |
 | [orgx-grokbot-plugin](https://github.com/useorgx/orgx-grokbot-plugin) | Grok Bot plugins and MCP servers | OrgX | 0 | .grok-plugin, .cursor-plugin | 3 | MIT | 2026-08-31 |
@@ -34,13 +34,13 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [recallsmith](https://github.com/koreysmith123/recallsmith) | Grok Bot plugins and MCP servers | koreysmith123 | 0 | .grok-plugin, .cursor-plugin, open plugin.json | 2 | MIT | 2026-08-31 |
 | [sentry](https://github.com/getsentry/plugin-grok) | Official xAI plugin marketplace | Sentry | 1 | .grok-plugin | 8 | MIT | 2026-08-31 |
 | [stripe](https://github.com/stripe/ai/tree/HEAD/providers/grok/plugin) | Official xAI plugin marketplace | Stripe | 1,781 | .grok-plugin | 8 | MIT | 2026-08-31 |
-| [superpowers](https://github.com/obra/superpowers) | Official xAI plugin marketplace | obra | 279,896 | .cursor-plugin, .claude-plugin, .codex-plugin | 14 | MIT | 2026-08-31 |
+| [superpowers](https://github.com/obra/superpowers) | Official xAI plugin marketplace | obra | 279,899 | .cursor-plugin, .claude-plugin, .codex-plugin | 14 | MIT | 2026-08-31 |
 | [tavily](https://github.com/tavily-ai/tavily-grok-plugin) | Official xAI plugin marketplace | Tavily | 2 | .grok-plugin | 8 | MIT | 2026-08-31 |
 | [tesla-fleet-mcp](https://github.com/supervised-nl/tesla-fleet-mcp) | Grok Bot plugins and MCP servers | supervised-nl | 0 | MCP only | 3 | MIT | 2026-08-31 |
 | [tinyfish](https://github.com/tinyfish-io/tinyfish-web-agent-integrations/tree/HEAD/grok) | Official xAI plugin marketplace | TinyFish | 18 | .grok-plugin | 5 | MIT | 2026-08-31 |
 | [vercel](https://github.com/vercel/vercel-plugin) | Official xAI plugin marketplace | Vercel | 270 | .cursor-plugin, .claude-plugin | 52 | NOASSERTION | 2026-08-31 |
 | [wix](https://github.com/wix/skills) | Official xAI plugin marketplace | Wix | 27 | .cursor-plugin, .claude-plugin, .codex-plugin, plugin.json | 21 | MIT | 2026-08-31 |
-| [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) | Official xAI plugin marketplace | xAI | 201 | .grok-plugin | 3 |  | 2026-08-31 |
+| [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) | Official xAI plugin marketplace | xAI | 201 | .grok-plugin, other formats not established | ? |  | 2026-08-31 |
 | [yourai-context-plugin](https://github.com/Melade-Inc/yourai-context-plugin) | Grok Bot plugins and MCP servers | Melade | 0 | .claude-plugin, open plugin.json | 1 | Apache-2.0 | 2026-08-31 |
 | [botskills](https://github.com/PramodDutta/botskills) | Grok Bot skills | PramodDutta | 2 | skills only | 1 | MIT | 2026-08-31 |
 | [botteams](https://github.com/ellelion/botteams) | Grok Bot skills | ellelion | 0 | skills only | 1 | MIT | 2026-08-31 |

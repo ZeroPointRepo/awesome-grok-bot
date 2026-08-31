@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 50250,
+      "stars": 50251,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -400,10 +400,11 @@
       "archived": false,
       "added": "2026-08-31",
       "ships": [
-        ".grok-plugin"
+        ".grok-plugin",
+        "other formats not established"
       ],
-      "skills": 3,
-      "mcp_component": true,
+      "skills": null,
+      "mcp_component": false,
       "open_agent_plugins_schema": false,
       "marketplace_pinned_ref": "HEAD"
     },
@@ -602,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 279896,
+      "stars": 279899,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -745,10 +746,11 @@
       "archived": false,
       "added": "2026-08-31",
       "ships": [
-        ".grok-plugin"
+        ".grok-plugin",
+        "other formats not established"
       ],
-      "skills": 3,
-      "mcp_component": true,
+      "skills": null,
+      "mcp_component": false,
       "open_agent_plugins_schema": false,
       "marketplace_pinned_ref": null
     },
