@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "count": 63,
   "entries": [
     {
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 50251,
+      "stars": 50369,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -193,7 +193,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2747,
+      "stars": 2754,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -238,7 +238,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1940,
+      "stars": 1941,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -268,10 +268,10 @@
       "ships": [
         ".grok-plugin"
       ],
-      "skills": 10,
+      "skills": 11,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "af6c6c083ccfd74ae476761068ee4311a56e8282"
+      "marketplace_pinned_ref": "7100b62d09a40673fe1688175431b1baff7ed262"
     },
     {
       "name": "GrokBotfun",
@@ -358,7 +358,7 @@
       "skills": 14,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "b4ea8150a020b9babaddc6c271c6dc177c06a83f"
+      "marketplace_pinned_ref": "47cc46148f53145eb9b880d2bf1aa89bc9097818"
     },
     {
       "name": "mongodb-atlas",
@@ -383,7 +383,7 @@
       "skills": 12,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "b4ea8150a020b9babaddc6c271c6dc177c06a83f"
+      "marketplace_pinned_ref": "47cc46148f53145eb9b880d2bf1aa89bc9097818"
     },
     {
       "name": "neon",
@@ -395,7 +395,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 201,
+      "stars": 203,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -488,17 +488,17 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 6326,
+      "stars": 6455,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
       "ships": [
         ".cursor-plugin"
       ],
-      "skills": 47,
+      "skills": 48,
       "mcp_component": false,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "bdf7aa355337897f167153e05069aca505dae17c"
+      "marketplace_pinned_ref": "fd878692de15a3069c21c8f429eb0b9f2fe178fa"
     },
     {
       "name": "railway",
@@ -569,7 +569,7 @@
       "skills": 8,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "7f9d7823a68a7668867786a573ef587ef2783f7d"
+      "marketplace_pinned_ref": "91e0cb6c79730e02bcf8f7dbcb1795e677fe8cc5"
     },
     {
       "name": "stripe",
@@ -581,7 +581,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1781,
+      "stars": 1784,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -591,7 +591,7 @@
       "skills": 8,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "1dc126b93cc62e28aff7e00e51406dfeb8ac88d5"
+      "marketplace_pinned_ref": "9f39fa607a63582d8c5b62aaf6fa4898b9c7caac"
     },
     {
       "name": "superpowers",
@@ -603,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 279899,
+      "stars": 280286,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -693,7 +693,7 @@
       "description": {
         "en": "manage deployments, check build status, read logs, configure domains."
       },
-      "stars": 270,
+      "stars": 271,
       "license": "NOASSERTION",
       "archived": false,
       "added": "2026-08-31",
@@ -716,7 +716,7 @@
       "description": {
         "en": "build, manage and deploy Wix sites and apps: eCommerce, CMS and dashboard extensions."
       },
-      "stars": 27,
+      "stars": 28,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -741,7 +741,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 201,
+      "stars": 203,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -809,7 +809,7 @@
       "description": {
         "en": "fifteen company teams as single markdown files: one installer prompt creates the named Bots, the group chat and the routines."
       },
-      "stars": 0,
+      "stars": 3,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -895,7 +895,7 @@
       "description": {
         "en": "scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team."
       },
-      "stars": 4,
+      "stars": 7,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -981,7 +981,7 @@
       "description": {
         "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
       },
-      "stars": 34,
+      "stars": 40,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -991,7 +991,7 @@
         ".claude-plugin",
         "open plugin.json"
       ],
-      "skills": 16,
+      "skills": 17,
       "mcp_component": false,
       "open_agent_plugins_schema": true,
       "marketplace_pinned_ref": null
@@ -1337,7 +1337,7 @@
       "description": {
         "en": "self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials."
       },
-      "stars": 7,
+      "stars": 8,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",

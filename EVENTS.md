@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**17 upcoming**, soonest first. Rebuilt from each registration page on 2026-08-31.
+**17 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-01.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -75,14 +75,14 @@ Hosted by Cursor Macau, John Ku, Roy LEE. [Registration page](https://luma.com/c
 ### Grok Bot Meetup Chengdu
 <!-- event: pdj34ofn -->
 
-**Location on the registration page** · Sep 5, 14:30 local (UTC+8) · 06:30 UTC
+**Location on the registration page** · Sep 5, 14:30 local (UTC+8) · 06:30 UTC · 4 spots left
 
 Hosted by Cursor Chengdu, China, Orange Wang, TTcooper. [Registration page](https://luma.com/pdj34ofn)
 
 ### Grok Bot Meetup Tel Aviv
 <!-- event: cursor-qdl0 -->
 
-**Tel Aviv-Yafo, IL** · Sep 8, 19:00 local (UTC+3) · 16:00 UTC · Sarona
+**Tel Aviv-Yafo, IL** · Sep 8, 19:00 local (UTC+3) · 16:00 UTC · Sarona · waitlist, sold out
 
 Hosted by Cursor Tel Aviv, Israel, Elie Steinbock, Vlad Tansky. [Registration page](https://luma.com/cursor-qdl0)
 
@@ -117,7 +117,7 @@ Hosted by Cursor Monterrey, Mexico, Aileen Villanueva. [Registration page](https
 ### Grok Bot Meetup Las Vegas
 <!-- event: cursor-kaua -->
 
-**Las Vegas, US** · Sep 15, 18:00 local (UTC-7) · 01:00 UTC · Las Vegas, NV · 2 spots left
+**Las Vegas, US** · Sep 15, 18:00 local (UTC-7) · 01:00 UTC · Las Vegas, NV
 
 Hosted by Cursor Las Vegas, US, Chris Ford. [Registration page](https://luma.com/cursor-kaua)
 

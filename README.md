@@ -124,9 +124,9 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **388,198★** and Hermes Agent at **238,775★**, pulled from the GitHub API on 2026-08-31. Grok
+OpenClaw is at **388,466★** and Hermes Agent at **239,320★**, pulled from the GitHub API on 2026-09-01. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
-marketplace at **201★**, 20 days after launch. Numbers this size move daily, so treat them as a snapshot.
+marketplace at **203★**, 21 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
 
 ## ⭐ Pick of the Week
@@ -193,7 +193,7 @@ Next 8, soonest first. All 17 upcoming, with hosts, venues and times, are in **[
 | An MCP server component | 24 of 61 checked |
 | `SKILL.md` skills and no plugin manifest | 11 |
 
-Read from each repository's own file tree on 2026-08-31. Marketplace entries are read at the commit xAI pins, not at HEAD.
+Read from each repository's own file tree on 2026-09-01. Marketplace entries are read at the commit xAI pins, not at HEAD.
 2 entries answered on manifest directories but not on skills, MCP or the open standard this run, and are left out of those rows rather than counted as zero.
 <!-- coverage:end -->
 
