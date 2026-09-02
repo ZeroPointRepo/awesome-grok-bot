@@ -216,6 +216,7 @@ Read from each repository's own file tree on 2026-09-01. Marketplace entries are
 
 ### Grok Bot plugins and MCP servers
 
+- [adlicio](https://github.com/daniel-ddtech/adlicio-plugin) by [Adlicio](https://tryadlicio.com) — hosted MCP for customer-voice research: comments and reviews from Reddit, YouTube, TikTok, Amazon and 20+ sources. **[production]**
 - [agentcouch](https://github.com/stoyan-stoyanov/agentcouch-plugins) by [AgentCouch](https://agentcouch.dev) — hosted messaging rooms for Grok Bot to talk with other people's agents across clients and machines. **[production]**
 - [campfiresms-grok-bot](https://github.com/campfiresms/campfiresms-grok-bot) by [CampfireSMS](https://github.com/campfiresms) — hosted SMS bridge over five MCP tools plus a safety skill, on one revocable phone-bound credential. **[beta]**
 - [GrokBotfun](https://github.com/GrokBotfun/GrokBotfun) by [GrokBotfun](https://github.com/GrokBotfun) — deploy pump.fun tokens from your agent; ships an MCP server plus a Cursor-marketplace-format plugin (not the open agent-plugins.org spec, despite the repo description). **[experimental]**
