@@ -211,6 +211,7 @@ Read from each repository's own file tree on 2026-09-01. Marketplace entries are
 - [grokmd](https://github.com/Aiworkflow360/grokmd) by [Aiworkflow360](https://github.com/Aiworkflow360) — twenty `GROK.md` character files written from primary sources, plus the spec and review checklist for writing your own. **[beta]**
 - [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) by [galleonlabs](https://github.com/galleonlabs) — seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review. **[beta]**
 - [overnight](https://github.com/Archive228/overnight) by [Archive228](https://github.com/Archive228) — six-bot crew for sourced short-form video, with one role per boundary and a human gate before anything publishes. **[experimental]**
+- [SEOAgent](https://github.com/Baxter-Inc/seoagent-npm) by [Baxter Inc](https://github.com/Baxter-Inc) — SEO skill that audits pages, fixes metadata, and drafts SEO pages in the repo. **[production]**
 - [thin-grok-bot-deep-work-on-cli](https://github.com/Luca-Blight/thin-grok-bot-deep-work-on-cli) by [Luca-Blight](https://github.com/Luca-Blight) — keeps the Bot mesh for routing and hands long builds to Cursor CLI, Cursor cloud agents or the grok CLI. **[beta]**
 - [werewolf-gamemaster](https://github.com/Heyvhuang/werewolf-gamemaster) by [Heyvhuang](https://github.com/Heyvhuang) — one Bot runs a stateful game of Werewolf: roles and night actions stay in 1:1 chats, turn tokens stop out-of-order replies. **[experimental]**
 
