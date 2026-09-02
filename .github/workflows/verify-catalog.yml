@@ -43,6 +43,29 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Re-resolve every entry against its canonical name
+        # SECURITY, not hygiene. When a repository is renamed or transferred, the old path keeps
+        # redirecting until somebody claims the vacated name; from that moment every link we
+        # publish points at whoever took it, and nothing looks broken in the meantime because the
+        # redirect returns 200 the whole time. Keyed by IMMUTABLE repository id: resolving the
+        # slug follows the redirect, so once a squatter holds the old name a slug-keyed lookup
+        # returns the squatter and confirms our stale link as canonical.
+        # Runs FIRST so a rename found today is already fixed on the page every step below reads.
+        # continue-on-error, not `if: always()` on everything downstream: a walk that could not
+        # establish 95% of its facts exits non-zero on purpose, and that must show as a failed
+        # step. It must not also cancel the catalog rebuild underneath it — the two read
+        # different sources and a REST hiccup in one is not a reason to publish nothing.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/resolve-names.mjs README.md CONTRIBUTING.md
+
+      - name: Add the canonical-name result to the run summary
+        # A silent clean run and a silent broken run look identical. The report always says how
+        # many were resolved by immutable id, how many by slug, and how many were not established.
+        if: always()
+        run: cat canonical-names-report.md >> "$GITHUB_STEP_SUMMARY" || true
+
       - name: Rebuild the catalog, the coverage table and every number on the page
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -61,7 +84,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add CATALOG.md catalog.csv plugins.json badges .github/data/first-seen.json README.md EVENTS.md
+          git add CATALOG.md catalog.csv plugins.json badges .github/data/first-seen.json .github/data/repo-ids.json README.md EVENTS.md
           if git diff --cached --quiet; then
             echo "Nothing changed today."
             exit 0

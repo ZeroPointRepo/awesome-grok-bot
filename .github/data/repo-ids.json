@@ -1,0 +1,285 @@
+{
+  "_note": "GitHub numeric repository id for every entry this list links to, recorded the first time the entry resolves. The id is immutable and survives a rename or a transfer; the slug does not, and once a vacated slug is claimed by somebody else, a slug-keyed lookup returns the new owner and reports the stale link as correct. Written by .github/scripts/resolve-names.mjs, never edited by hand.",
+  "ids": {
+    "1nc0gn30/grok-bot-for-linux-and-android": {
+      "id": 1348191119,
+      "full_name": "1nc0gn30/grok-bot-for-linux-and-android"
+    },
+    "520xiaomumu/grok-bot-intro-v2": {
+      "id": 1331969176,
+      "full_name": "520xiaomumu/grok-bot-intro-v2"
+    },
+    "adamanz/grok-bot-skill": {
+      "id": 1337376212,
+      "full_name": "adamanz/grok-bot-skill"
+    },
+    "agentmindcloud/grok-bot-super": {
+      "id": 1331855384,
+      "full_name": "AgentMindCloud/grok-bot-super"
+    },
+    "aiworkflow360/grokmd": {
+      "id": 1346096730,
+      "full_name": "Aiworkflow360/grokmd"
+    },
+    "alokwhitewolf/sand": {
+      "id": 1331337953,
+      "full_name": "alokwhitewolf/sand"
+    },
+    "anil-matcha/open-grok-bot": {
+      "id": 1340344224,
+      "full_name": "Anil-matcha/open-grok-bot"
+    },
+    "archive228/foreman": {
+      "id": 1347276579,
+      "full_name": "Archive228/foreman"
+    },
+    "archive228/imagine-mcp": {
+      "id": 1347274405,
+      "full_name": "Archive228/imagine-mcp"
+    },
+    "archive228/overnight": {
+      "id": 1347274409,
+      "full_name": "Archive228/overnight"
+    },
+    "axiomhq/skills": {
+      "id": 1138613685,
+      "full_name": "axiomhq/skills"
+    },
+    "base44/skills": {
+      "id": 1137320217,
+      "full_name": "base44/skills"
+    },
+    "bcharleson/grokbot-for-gtm": {
+      "id": 1341047240,
+      "full_name": "bcharleson/grokbot-for-gtm"
+    },
+    "blockedpath/grok-bot-setup": {
+      "id": 1331921576,
+      "full_name": "BlockedPath/grok-bot-setup"
+    },
+    "browser-use/plugins": {
+      "id": 1268661539,
+      "full_name": "browser-use/plugins"
+    },
+    "campfiresms/campfiresms-grok-bot": {
+      "id": 1349668063,
+      "full_name": "campfiresms/campfiresms-grok-bot"
+    },
+    "chromedevtools/chrome-devtools-mcp": {
+      "id": 1054793726,
+      "full_name": "ChromeDevTools/chrome-devtools-mcp"
+    },
+    "cloudflare/skills": {
+      "id": 1113922795,
+      "full_name": "cloudflare/skills"
+    },
+    "cobusgreyling/grok-bot-templates": {
+      "id": 1350500438,
+      "full_name": "cobusgreyling/grok-bot-templates"
+    },
+    "codeaashu/grokbot-shim": {
+      "id": 1337425996,
+      "full_name": "codeaashu/grokbot-shim"
+    },
+    "cursor/plugins": {
+      "id": 1140229822,
+      "full_name": "cursor/plugins"
+    },
+    "davefmurray/grok-bot-discord": {
+      "id": 1336479425,
+      "full_name": "davefmurray/grok-bot-discord"
+    },
+    "dongpen-max/xinyunopenbot": {
+      "id": 1334056579,
+      "full_name": "dongpen-max/XinyunOpenBot"
+    },
+    "ellelion/botteams": {
+      "id": 1341114616,
+      "full_name": "ellelion/botteams"
+    },
+    "exa-labs/exa-grok-plugin": {
+      "id": 1278589599,
+      "full_name": "exa-labs/exa-grok-plugin"
+    },
+    "figma/mcp-server-guide": {
+      "id": 1032420465,
+      "full_name": "figma/mcp-server-guide"
+    },
+    "firecrawl/firecrawl-grok-plugin": {
+      "id": 1266672799,
+      "full_name": "firecrawl/firecrawl-grok-plugin"
+    },
+    "galleonlabs/hypergrok-trading-desk": {
+      "id": 1335748354,
+      "full_name": "galleonlabs/hypergrok-trading-desk"
+    },
+    "getsentry/plugin-grok": {
+      "id": 1266734299,
+      "full_name": "getsentry/plugin-grok"
+    },
+    "glorics/omarchy-grok-bot": {
+      "id": 1350468693,
+      "full_name": "glorics/omarchy-grok-bot"
+    },
+    "grokbotfun/grokbotfun": {
+      "id": 1331360694,
+      "full_name": "GrokBotfun/GrokBotfun"
+    },
+    "haegong/grok-bot-profiles": {
+      "id": 1346654903,
+      "full_name": "HAEGONG/grok-bot-profiles"
+    },
+    "heyvhuang/werewolf-gamemaster": {
+      "id": 1335057884,
+      "full_name": "Heyvhuang/werewolf-gamemaster"
+    },
+    "igorwarzocha/grok-codex-router": {
+      "id": 1348869783,
+      "full_name": "IgorWarzocha/grok-codex-router"
+    },
+    "ishandutta2007/open-grokbot": {
+      "id": 1332651440,
+      "full_name": "ishandutta2007/open-grokbot"
+    },
+    "jeffhuber/grokbot-imessage-skill": {
+      "id": 1331477635,
+      "full_name": "jeffhuber/grokbot-imessage-skill"
+    },
+    "jkpe/mcp-fetch-worker": {
+      "id": 1345111433,
+      "full_name": "jkpe/mcp-fetch-worker"
+    },
+    "jordangarrison/grok-bot-flake": {
+      "id": 1331397863,
+      "full_name": "jordangarrison/grok-bot-flake"
+    },
+    "kargatharaakash/grok-bot-usage": {
+      "id": 1347815601,
+      "full_name": "Kargatharaakash/grok-bot-usage"
+    },
+    "koreysmith123/recallsmith": {
+      "id": 1351872592,
+      "full_name": "koreysmith123/recallsmith"
+    },
+    "luca-blight/thin-grok-bot-deep-work-on-cli": {
+      "id": 1349914554,
+      "full_name": "Luca-Blight/thin-grok-bot-deep-work-on-cli"
+    },
+    "madebywelch/guaca": {
+      "id": 1335221105,
+      "full_name": "madebywelch/guaca"
+    },
+    "melade-inc/yourai-context-plugin": {
+      "id": 1348002595,
+      "full_name": "Melade-Inc/yourai-context-plugin"
+    },
+    "mongodb/agent-skills": {
+      "id": 1167755544,
+      "full_name": "mongodb/agent-skills"
+    },
+    "neondatabase/agent-skills": {
+      "id": 1138578572,
+      "full_name": "neondatabase/agent-skills"
+    },
+    "netlify/context-and-tools": {
+      "id": 1104896279,
+      "full_name": "netlify/context-and-tools"
+    },
+    "nexfade/nexfade-grok-plugin": {
+      "id": 1348555212,
+      "full_name": "NexFade/nexfade-grok-plugin"
+    },
+    "nousresearch/hermes-agent": {
+      "id": 1024554267,
+      "full_name": "NousResearch/hermes-agent"
+    },
+    "obra/superpowers": {
+      "id": 1073224795,
+      "full_name": "obra/superpowers"
+    },
+    "openclaw/openclaw": {
+      "id": 1103012935,
+      "full_name": "openclaw/openclaw"
+    },
+    "pramoddutta/botskills": {
+      "id": 1345619241,
+      "full_name": "PramodDutta/botskills"
+    },
+    "railwayapp/railway-skills": {
+      "id": 1127614661,
+      "full_name": "railwayapp/railway-skills"
+    },
+    "scriptedalchemy/grok-bot-cli": {
+      "id": 1339901047,
+      "full_name": "ScriptedAlchemy/grok-bot-cli"
+    },
+    "stoyan-stoyanov/agentcouch-plugins": {
+      "id": 1274806435,
+      "full_name": "stoyan-stoyanov/agentcouch-plugins"
+    },
+    "stripe/ai": {
+      "id": 886826524,
+      "full_name": "stripe/ai"
+    },
+    "supervised-nl/tesla-fleet-mcp": {
+      "id": 1339858954,
+      "full_name": "supervised-nl/tesla-fleet-mcp"
+    },
+    "tavily-ai/tavily-grok-plugin": {
+      "id": 1304258741,
+      "full_name": "tavily-ai/tavily-grok-plugin"
+    },
+    "tinyfish-io/tinyfish-web-agent-integrations": {
+      "id": 1154790400,
+      "full_name": "tinyfish-io/tinyfish-web-agent-integrations"
+    },
+    "uncle-gizmo/grok-bot-info": {
+      "id": 1331404693,
+      "full_name": "Uncle-Gizmo/grok-bot-info"
+    },
+    "useorgx/orgx-grokbot-plugin": {
+      "id": 1331428690,
+      "full_name": "useorgx/orgx-grokbot-plugin"
+    },
+    "vercel/vercel-plugin": {
+      "id": 1172750294,
+      "full_name": "vercel/vercel-plugin"
+    },
+    "wix/skills": {
+      "id": 1141663197,
+      "full_name": "wix/skills"
+    },
+    "wolfqing/opengrokbot": {
+      "id": 1331719870,
+      "full_name": "wolfqing/OpenGrokBot"
+    },
+    "xai-org/plugin-marketplace": {
+      "id": 1240118170,
+      "full_name": "xai-org/plugin-marketplace"
+    },
+    "zeropointrepo/awesome-agent-plugins": {
+      "id": 1332056401,
+      "full_name": "ZeroPointRepo/awesome-agent-plugins"
+    },
+    "zeropointrepo/awesome-cursor-plugins": {
+      "id": 1345761300,
+      "full_name": "ZeroPointRepo/awesome-cursor-plugins"
+    },
+    "zeropointrepo/awesome-dsh-plugins": {
+      "id": 1341546900,
+      "full_name": "ZeroPointRepo/awesome-dsh-plugins"
+    },
+    "zeropointrepo/awesome-fx-skills": {
+      "id": 1343444151,
+      "full_name": "ZeroPointRepo/awesome-fx-skills"
+    },
+    "zeropointrepo/awesome-hermes-skills": {
+      "id": 1223597497,
+      "full_name": "ZeroPointRepo/awesome-hermes-skills"
+    },
+    "zeropointrepo/awesome-praxist-plugins": {
+      "id": 1349247948,
+      "full_name": "ZeroPointRepo/awesome-praxist-plugins"
+    }
+  }
+}
