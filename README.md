@@ -124,9 +124,9 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **388,573★** and Hermes Agent at **239,669★**, pulled from the GitHub API on 2026-09-02. Grok
+OpenClaw is at **388,607★** and Hermes Agent at **239,811★**, pulled from the GitHub API on 2026-09-02. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
-marketplace at **205★**, 22 days after launch. Numbers this size move daily, so treat them as a snapshot.
+marketplace at **207★**, 22 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
 
 ## ⭐ Pick of the Week
@@ -161,7 +161,7 @@ Last week's pick, [chrome-devtools](https://github.com/ChromeDevTools/chrome-dev
 <!-- events:start -->
 Next 8, soonest first. All 17 upcoming, with hosts, venues and times, are in **[EVENTS.md](EVENTS.md)**.
 
-- **Sep 2** · Nijmegen, NL — [Build with Grok Bot: Nijmegen](https://luma.com/fw7ovtge) *(3 spots left)*
+- **Sep 2** · Nijmegen, NL — [Build with Grok Bot: Nijmegen](https://luma.com/fw7ovtge) *(2 spots left)*
 - **Sep 3** · Barranquilla, CO — [Grokbot Hackathon Barranquilla](https://luma.com/lgttu49h)
 - **Sep 3** · San Francisco, US — [Grok Bot build night for women](https://luma.com/a16zgrokbotbuildnight)
 - **Sep 3** · Villahermosa, MX — [Grok Bot Villahermosa Meetup](https://luma.com/cursor-9mh5)

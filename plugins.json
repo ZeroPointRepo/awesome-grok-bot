@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 50465,
+      "stars": 50511,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -193,7 +193,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2762,
+      "stars": 2765,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -238,7 +238,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1944,
+      "stars": 1946,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -395,7 +395,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 205,
+      "stars": 207,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -488,7 +488,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 6577,
+      "stars": 6604,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -603,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 280584,
+      "stars": 280696,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -741,7 +741,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 205,
+      "stars": 207,
       "license": null,
       "archived": false,
       "added": "2026-08-31",

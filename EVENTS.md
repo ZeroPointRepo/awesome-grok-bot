@@ -12,7 +12,7 @@ and greyed out.
 ### Build with Grok Bot: Nijmegen
 <!-- event: fw7ovtge -->
 
-**Nijmegen, NL** · Sep 2, 16:00 local (UTC+2) · 14:00 UTC · StartUp Nijmegen · 3 spots left
+**Nijmegen, NL** · Sep 2, 16:00 local (UTC+2) · 14:00 UTC · StartUp Nijmegen · 2 spots left
 
 Hosted by SpaceXAI for Nijmegen, Netherlands, Thijs Sondag, Diego Menchaca. [Registration page](https://luma.com/fw7ovtge)
 
@@ -82,7 +82,7 @@ Hosted by SpaceXAI for Chengdu, China, Orange Wang, TTcooper. [Registration page
 ### Grok Bot Meetup Tel Aviv
 <!-- event: cursor-qdl0 -->
 
-**Tel Aviv-Yafo, IL** · Sep 8, 19:00 local (UTC+3) · 16:00 UTC · Sarona · waitlist, sold out
+**Tel Aviv-Yafo, IL** · Sep 8, 19:00 local (UTC+3) · 16:00 UTC · Yisra'el Bak St 1 · waitlist, sold out
 
 Hosted by SpaceXAI for Tel Aviv, Israel, Elie Steinbock, Vlad Tansky. [Registration page](https://luma.com/cursor-qdl0)
 
