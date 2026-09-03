@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "count": 63,
   "entries": [
     {
@@ -80,7 +80,7 @@
       "description": {
         "en": "query logs and metrics in APL, run SRE investigations, build dashboards and manage monitors."
       },
-      "stars": 15,
+      "stars": 16,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 50511,
+      "stars": 50805,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -193,7 +193,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2765,
+      "stars": 2770,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -238,7 +238,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1946,
+      "stars": 1954,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -246,10 +246,10 @@
         ".cursor-plugin",
         ".claude-plugin"
       ],
-      "skills": 14,
+      "skills": 16,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "7f6562c4900fafb46e5e8fd3cc8ced954779bab3"
+      "marketplace_pinned_ref": "ae7e5e5f80da20f1dd7445e0c6ae5ac58a5b0bce"
     },
     {
       "name": "firecrawl",
@@ -395,7 +395,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 207,
+      "stars": 211,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -488,7 +488,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 6604,
+      "stars": 6718,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -498,7 +498,7 @@
       "skills": 48,
       "mcp_component": false,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "b9ddc83c32972210b8a94d389130713e8eed346e"
+      "marketplace_pinned_ref": "efa2a531985e0a8084d36ff3cf87233be8a9f34b"
     },
     {
       "name": "railway",
@@ -510,7 +510,7 @@
       "description": {
         "en": "deploy services, read build logs and manage environment variables."
       },
-      "stars": 320,
+      "stars": 321,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -581,7 +581,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1786,
+      "stars": 1789,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -591,7 +591,7 @@
       "skills": 8,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "9f39fa607a63582d8c5b62aaf6fa4898b9c7caac"
+      "marketplace_pinned_ref": "cf681787184a493e7106b0ae1ee88a1fede65017"
     },
     {
       "name": "superpowers",
@@ -603,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 280696,
+      "stars": 281117,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -693,7 +693,7 @@
       "description": {
         "en": "manage deployments, check build status, read logs, configure domains."
       },
-      "stars": 273,
+      "stars": 275,
       "license": "NOASSERTION",
       "archived": false,
       "added": "2026-08-31",
@@ -701,10 +701,10 @@
         ".cursor-plugin",
         ".claude-plugin"
       ],
-      "skills": 52,
+      "skills": 54,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "c4a1c4e2e16feefb1d9f2ad2a4a451abd0ae91c6"
+      "marketplace_pinned_ref": "7b0a6f61b254b0149bb644cadfb588a5c46df0c2"
     },
     {
       "name": "wix",
@@ -741,7 +741,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 207,
+      "stars": 211,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -981,7 +981,7 @@
       "description": {
         "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
       },
-      "stars": 43,
+      "stars": 48,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1093,7 +1093,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 30,
+      "stars": 32,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1113,7 +1113,7 @@
       "description": {
         "en": "Discord Gateway bridge so a Bot shows online and wakes on `@mention`, with fail-closed guild, channel and author allowlists."
       },
-      "stars": 2,
+      "stars": 1,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1337,7 +1337,7 @@
       "description": {
         "en": "self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials."
       },
-      "stars": 8,
+      "stars": 9,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",

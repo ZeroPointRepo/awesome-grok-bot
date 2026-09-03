@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**17 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-02.
+**16 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-03.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -9,19 +9,12 @@ and greyed out.
 
 ---
 
-### Build with Grok Bot: Nijmegen
-<!-- event: fw7ovtge -->
-
-**Nijmegen, NL** · Sep 2, 16:00 local (UTC+2) · 14:00 UTC · StartUp Nijmegen · 2 spots left
-
-Hosted by SpaceXAI for Nijmegen, Netherlands, Thijs Sondag, Diego Menchaca. [Registration page](https://luma.com/fw7ovtge)
-
 ### Grokbot Hackathon Barranquilla
 <!-- event: lgttu49h -->
 
 **Barranquilla, CO** · Sep 3, 16:00 local (UTC-5) · 21:00 UTC · Cra. 50 #72-126
 
-Hosted by SpaceXAI for Barranquilla, Colombia, Anuar Harb. [Registration page](https://luma.com/lgttu49h)
+Hosted by SpaceXAI for Barranquilla, Colombia, Anuar Harb, Grace Torres. [Registration page](https://luma.com/lgttu49h)
 
 ### Grok Bot build night for women
 <!-- event: a16zgrokbotbuildnight -->
@@ -33,7 +26,7 @@ Hosted by SpaceXAI Community, Sunita Rao, Yoko Li. [Registration page](https://l
 ### Grok Bot Villahermosa Meetup
 <!-- event: cursor-9mh5 -->
 
-**Villahermosa, MX** · Sep 3, 19:00 local (UTC-6) · 01:00 UTC · LATI - Laboratorio de Arte, Tecnología e Innovación
+**Villahermosa, MX** · Sep 3, 19:00 local (UTC-6) · 01:00 UTC · LATI - Laboratorio de Arte, Tecnología e Innovación · 2 spots left
 
 Hosted by SpaceXAI for Villahermosa, Mexico, Fernando Diaz. [Registration page](https://luma.com/cursor-9mh5)
 
