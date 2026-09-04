@@ -217,6 +217,7 @@ Read from each repository's own file tree on 2026-09-04. Marketplace entries are
 ### Grok Bot plugins and MCP servers
 
 - [agentcouch](https://github.com/stoyan-stoyanov/agentcouch-plugins) by [AgentCouch](https://agentcouch.dev) — hosted messaging rooms for Grok Bot to talk with other people's agents across clients and machines. **[production]**
+- [blindoracle-sdk](https://github.com/craigmbrown/blindoracle-sdk) by [craigmbrown](https://github.com/craigmbrown) — Grok Bot kit (examples/grok-bot-kit): one pasted line registers a Bot on the BlindOracle agent marketplace with a free ERC-8004 passport, a role-scoped MCP tool list, HMAC-signed instructions and $0.01 proof calls; nine roles, five report-only. **[beta]**
 - [campfiresms-grok-bot](https://github.com/campfiresms/campfiresms-grok-bot) by [CampfireSMS](https://github.com/campfiresms) — hosted SMS bridge over five MCP tools plus a safety skill, on one revocable phone-bound credential. **[beta]**
 - [GrokBotfun](https://github.com/GrokBotfun/GrokBotfun) by [GrokBotfun](https://github.com/GrokBotfun) — deploy pump.fun tokens from your agent; ships an MCP server plus a Cursor-marketplace-format plugin (not the open agent-plugins.org spec, despite the repo description). **[experimental]**
 - [imagine-mcp](https://github.com/Archive228/imagine-mcp) by [Archive228](https://github.com/Archive228) — remote MCP for xAI image, video and speech generation that returns a persistent blob URL and a per-call cost receipt. **[beta]**
