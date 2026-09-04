@@ -124,9 +124,9 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **388,714★** and Hermes Agent at **240,538★**, pulled from the GitHub API on 2026-09-03. Grok
+OpenClaw is at **388,822★** and Hermes Agent at **241,223★**, pulled from the GitHub API on 2026-09-04. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
-marketplace at **211★**, 23 days after launch. Numbers this size move daily, so treat them as a snapshot.
+marketplace at **212★**, 24 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
 
 ## ⭐ Pick of the Week
@@ -159,16 +159,16 @@ Last week's pick, [chrome-devtools](https://github.com/ChromeDevTools/chrome-dev
 ### Upcoming Grok Bot meetups, workshops and hackathons
 
 <!-- events:start -->
-Next 8, soonest first. All 16 upcoming, with hosts, venues and times, are in **[EVENTS.md](EVENTS.md)**.
+Next 8, soonest first. All 11 upcoming, with hosts, venues and times, are in **[EVENTS.md](EVENTS.md)**.
 
-- **Sep 3** · Barranquilla, CO — [Grokbot Hackathon Barranquilla](https://luma.com/lgttu49h)
-- **Sep 3** · San Francisco, US — [Grok Bot build night for women](https://luma.com/a16zgrokbotbuildnight)
-- **Sep 3** · Villahermosa, MX — [Grok Bot Villahermosa Meetup](https://luma.com/cursor-9mh5) *(2 spots left)*
-- **Sep 4** · Pasig, PH — [Grok Bot Meetup Manila](https://luma.com/grok-bot-manila-01)
-- **Sep 4** · Singapore, SG — [Grok Bot Meetup Singapore](https://luma.com/grokbotsg) *(waitlist, sold out)*
 - **Sep 4** · Online — [Grok Bot Meetup Istanbul (Online)](https://luma.com/grok-bot-istanbul)
 - **Sep 5** · Vadodara, IN — [Grok Bot Meetup Vadodara](https://luma.com/grokbot-vad-1)
+- **Sep 5** · Venue on the registration page — [Grok Bot Meetup Chengdu](https://luma.com/pdj34ofn) *(waitlist, sold out)*
 - **Sep 5** · Zhu Hai Shi, CN — [Grok Bot Macau Student Workshop｜Creativity with AI](https://luma.com/cursor-macau-creativity-workshop-2026-sep) *(waitlist, sold out)*
+- **Sep 8** · Tel Aviv-Yafo, IL — [Grok Bot Meetup Tel Aviv](https://luma.com/cursor-qdl0) *(waitlist, sold out)*
+- **Sep 9** · Online — [Grok Bot Cotonou Hackathon (Virtual)](https://luma.com/cursor-hack-benin)
+- **Sep 9** · Minato City, JP — [Grok Bot Meetup Tokyo](https://luma.com/grokbottokyo)
+- **Sep 9** · København, DK — [Grok Bot Copenhagen Meetup](https://luma.com/cursor-t9m9)
 <!-- events:end -->
 
 ### Where the Grok Bot community talks
@@ -193,7 +193,7 @@ Next 8, soonest first. All 16 upcoming, with hosts, venues and times, are in **[
 | An MCP server component | 24 of 61 checked |
 | `SKILL.md` skills and no plugin manifest | 11 |
 
-Read from each repository's own file tree on 2026-09-03. Marketplace entries are read at the commit xAI pins, not at HEAD.
+Read from each repository's own file tree on 2026-09-04. Marketplace entries are read at the commit xAI pins, not at HEAD.
 2 entries answered on manifest directories but not on skills, MCP or the open standard this run, and are left out of those rows rather than counted as zero.
 <!-- coverage:end -->
 

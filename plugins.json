@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "count": 63,
   "entries": [
     {
@@ -102,7 +102,7 @@
       "description": {
         "en": "build and deploy Base44 full-stack apps through the CLI and the JavaScript/TypeScript SDK."
       },
-      "stars": 88,
+      "stars": 89,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 50805,
+      "stars": 50885,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -193,7 +193,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2770,
+      "stars": 2776,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -238,7 +238,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1954,
+      "stars": 1958,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -395,7 +395,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 211,
+      "stars": 212,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -488,7 +488,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 6718,
+      "stars": 6832,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -498,7 +498,7 @@
       "skills": 48,
       "mcp_component": false,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "efa2a531985e0a8084d36ff3cf87233be8a9f34b"
+      "marketplace_pinned_ref": "7314f723a487ec406b6369fe5865ba034cfed166"
     },
     {
       "name": "railway",
@@ -581,7 +581,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1789,
+      "stars": 1790,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -591,7 +591,7 @@
       "skills": 8,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "cf681787184a493e7106b0ae1ee88a1fede65017"
+      "marketplace_pinned_ref": "68382523846ea5bfad75ba1ef58dc5db031d0a5a"
     },
     {
       "name": "superpowers",
@@ -603,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 281117,
+      "stars": 281648,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -716,7 +716,7 @@
       "description": {
         "en": "build, manage and deploy Wix sites and apps: eCommerce, CMS and dashboard extensions."
       },
-      "stars": 28,
+      "stars": 29,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -741,7 +741,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 211,
+      "stars": 212,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -895,7 +895,7 @@
       "description": {
         "en": "scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team."
       },
-      "stars": 7,
+      "stars": 9,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -981,7 +981,7 @@
       "description": {
         "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
       },
-      "stars": 48,
+      "stars": 53,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1093,7 +1093,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 32,
+      "stars": 37,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1255,7 +1255,7 @@
       "description": {
         "en": "local desktop app where a crew of agents message each other in their own worktrees; everything runs on your machine."
       },
-      "stars": 29,
+      "stars": 31,
       "license": "AGPL-3.0",
       "archived": false,
       "added": "2026-08-31",
@@ -1297,7 +1297,7 @@
       "description": {
         "en": "local-first bot workspace on FastAPI and Next.js with a deny-by-default action gateway and an audit trail."
       },
-      "stars": 2,
+      "stars": 3,
       "license": null,
       "archived": false,
       "added": "2026-08-31",

@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**16 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-03.
+**11 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-04.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -8,41 +8,6 @@ registration page. Events that have already started are removed from this file r
 and greyed out.
 
 ---
-
-### Grokbot Hackathon Barranquilla
-<!-- event: lgttu49h -->
-
-**Barranquilla, CO** · Sep 3, 16:00 local (UTC-5) · 21:00 UTC · Cra. 50 #72-126
-
-Hosted by SpaceXAI for Barranquilla, Colombia, Anuar Harb, Grace Torres. [Registration page](https://luma.com/lgttu49h)
-
-### Grok Bot build night for women
-<!-- event: a16zgrokbotbuildnight -->
-
-**San Francisco, US** · Sep 3, 17:00 local (UTC-7) · 00:00 UTC · a16z
-
-Hosted by SpaceXAI Community, Sunita Rao, Yoko Li. [Registration page](https://luma.com/a16zgrokbotbuildnight)
-
-### Grok Bot Villahermosa Meetup
-<!-- event: cursor-9mh5 -->
-
-**Villahermosa, MX** · Sep 3, 19:00 local (UTC-6) · 01:00 UTC · LATI - Laboratorio de Arte, Tecnología e Innovación · 2 spots left
-
-Hosted by SpaceXAI for Villahermosa, Mexico, Fernando Diaz. [Registration page](https://luma.com/cursor-9mh5)
-
-### Grok Bot Meetup Manila
-<!-- event: grok-bot-manila-01 -->
-
-**Pasig, PH** · Sep 4, 17:00 local (UTC+8) · 09:00 UTC · Pasig, Philippines
-
-Hosted by SpaceXAI for Manila, Philippines, John Paul Poliquit, Migi D. [Registration page](https://luma.com/grok-bot-manila-01)
-
-### Grok Bot Meetup Singapore
-<!-- event: grokbotsg -->
-
-**Singapore, SG** · Sep 4, 18:00 local (UTC+8) · 10:00 UTC · Singapore · waitlist, sold out
-
-Hosted by SpaceXAI for Singapore, Brian Chew, Sherry Jiang. [Registration page](https://luma.com/grokbotsg)
 
 ### Grok Bot Meetup Istanbul [Online]
 <!-- event: grok-bot-istanbul -->
@@ -58,19 +23,19 @@ Hosted by SpaceXAI for Istanbul, Türkiye, Gürkan Fikret Günak. [Registration 
 
 Hosted by SpaceXAI for Vadodara, India, Srujal Shah. [Registration page](https://luma.com/grokbot-vad-1)
 
+### Grok Bot Meetup Chengdu
+<!-- event: pdj34ofn -->
+
+**Location on the registration page** · Sep 5, 14:00 local (UTC+8) · 06:00 UTC · waitlist, sold out
+
+Hosted by SpaceXAI for Chengdu, China, Orange Wang, TTcooper. [Registration page](https://luma.com/pdj34ofn)
+
 ### Grok Bot Macau Student Workshop｜Creativity with AI
 <!-- event: cursor-macau-creativity-workshop-2026-sep -->
 
 **Zhu Hai Shi, CN** · Sep 5, 14:30 local (UTC+8) · 06:30 UTC · 澳門大學橫琴校區 · waitlist, sold out
 
 Hosted by SpaceXAI for Macau, John Ku, Roy LEE. [Registration page](https://luma.com/cursor-macau-creativity-workshop-2026-sep)
-
-### Grok Bot Meetup Chengdu
-<!-- event: pdj34ofn -->
-
-**Location on the registration page** · Sep 5, 14:30 local (UTC+8) · 06:30 UTC · waitlist, sold out
-
-Hosted by SpaceXAI for Chengdu, China, Orange Wang, TTcooper. [Registration page](https://luma.com/pdj34ofn)
 
 ### Grok Bot Meetup Tel Aviv
 <!-- event: cursor-qdl0 -->
