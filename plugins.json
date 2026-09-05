@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "count": 63,
   "entries": [
     {
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 50885,
+      "stars": 50989,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -193,7 +193,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2776,
+      "stars": 2779,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -238,7 +238,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1958,
+      "stars": 1961,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -395,7 +395,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 212,
+      "stars": 220,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -488,7 +488,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 6832,
+      "stars": 6884,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -498,7 +498,7 @@
       "skills": 48,
       "mcp_component": false,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "7314f723a487ec406b6369fe5865ba034cfed166"
+      "marketplace_pinned_ref": "93b00b89ef425a9c1bac0d0b317dfc49c930ac99"
     },
     {
       "name": "railway",
@@ -510,7 +510,7 @@
       "description": {
         "en": "deploy services, read build logs and manage environment variables."
       },
-      "stars": 321,
+      "stars": 320,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -523,7 +523,7 @@
       "skills": 1,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "5d1e97178f86c82795d6737928bd641e0552166a"
+      "marketplace_pinned_ref": "950acebcef3445f3915ea0709876c3ba9c237a7f"
     },
     {
       "name": "recallsmith",
@@ -581,7 +581,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1790,
+      "stars": 1791,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -603,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 281648,
+      "stars": 281940,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -726,10 +726,10 @@
         ".codex-plugin",
         "plugin.json"
       ],
-      "skills": 21,
+      "skills": 49,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "6277ddff7bc62102d06d969d76e41f81eb86d48e"
+      "marketplace_pinned_ref": "572357b791a91a5138c050e08eb718b150be21cb"
     },
     {
       "name": "xai-org/plugin-marketplace",
@@ -741,7 +741,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 212,
+      "stars": 220,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -895,7 +895,7 @@
       "description": {
         "en": "scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team."
       },
-      "stars": 9,
+      "stars": 10,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -917,7 +917,7 @@
       "description": {
         "en": "numbered outbound motion for a Bot: intake, sending infrastructure, list build, email, LinkedIn, reply handling, daily ops."
       },
-      "stars": 4,
+      "stars": 6,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -939,7 +939,7 @@
       "description": {
         "en": "read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync)."
       },
-      "stars": 18,
+      "stars": 19,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1093,7 +1093,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 37,
+      "stars": 40,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1255,7 +1255,7 @@
       "description": {
         "en": "local desktop app where a crew of agents message each other in their own worktrees; everything runs on your machine."
       },
-      "stars": 31,
+      "stars": 32,
       "license": "AGPL-3.0",
       "archived": false,
       "added": "2026-08-31",
@@ -1337,7 +1337,7 @@
       "description": {
         "en": "self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials."
       },
-      "stars": 9,
+      "stars": 10,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",

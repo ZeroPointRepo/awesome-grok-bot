@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**11 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-04.
+**7 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-05.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -8,34 +8,6 @@ registration page. Events that have already started are removed from this file r
 and greyed out.
 
 ---
-
-### Grok Bot Meetup Istanbul [Online]
-<!-- event: grok-bot-istanbul -->
-
-**Online** · Sep 4, 20:00 local (UTC+3) · 17:00 UTC
-
-Hosted by SpaceXAI for Istanbul, Türkiye, Gürkan Fikret Günak. [Registration page](https://luma.com/grok-bot-istanbul)
-
-### Grok Bot Meetup Vadodara
-<!-- event: grokbot-vad-1 -->
-
-**Vadodara, IN** · Sep 5, 10:00 local (UTC+5:30) · 04:30 UTC · Vadodara, India
-
-Hosted by SpaceXAI for Vadodara, India, Srujal Shah. [Registration page](https://luma.com/grokbot-vad-1)
-
-### Grok Bot Meetup Chengdu
-<!-- event: pdj34ofn -->
-
-**Location on the registration page** · Sep 5, 14:00 local (UTC+8) · 06:00 UTC · waitlist, sold out
-
-Hosted by SpaceXAI for Chengdu, China, Orange Wang, TTcooper. [Registration page](https://luma.com/pdj34ofn)
-
-### Grok Bot Macau Student Workshop｜Creativity with AI
-<!-- event: cursor-macau-creativity-workshop-2026-sep -->
-
-**Zhu Hai Shi, CN** · Sep 5, 14:30 local (UTC+8) · 06:30 UTC · 澳門大學橫琴校區 · waitlist, sold out
-
-Hosted by SpaceXAI for Macau, John Ku, Roy LEE. [Registration page](https://luma.com/cursor-macau-creativity-workshop-2026-sep)
 
 ### Grok Bot Meetup Tel Aviv
 <!-- event: cursor-qdl0 -->
