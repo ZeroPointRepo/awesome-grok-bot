@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-05",
+  "updated": "2026-09-06",
   "count": 63,
   "entries": [
     {
@@ -126,7 +126,7 @@
       "description": {
         "en": "give the Bot a real browser, either the user's own Chrome with its logins or an isolated cloud one."
       },
-      "stars": 16,
+      "stars": 18,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 50989,
+      "stars": 51099,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -193,7 +193,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2779,
+      "stars": 2791,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -238,7 +238,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1961,
+      "stars": 1962,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -345,7 +345,7 @@
       "description": {
         "en": "connect any self-managed MongoDB deployment through its own MCP server using your connection string."
       },
-      "stars": 181,
+      "stars": 182,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -370,7 +370,7 @@
       "description": {
         "en": "the managed Atlas half: sign in to explore data and manage clusters, projects, users and network access."
       },
-      "stars": 181,
+      "stars": 182,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -395,7 +395,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 220,
+      "stars": 224,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -488,7 +488,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 6884,
+      "stars": 6948,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -581,7 +581,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1791,
+      "stars": 1792,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -603,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 281940,
+      "stars": 282198,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -741,7 +741,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 220,
+      "stars": 224,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -895,7 +895,7 @@
       "description": {
         "en": "scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team."
       },
-      "stars": 10,
+      "stars": 11,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -981,7 +981,7 @@
       "description": {
         "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
       },
-      "stars": 53,
+      "stars": 55,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1093,7 +1093,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 40,
+      "stars": 41,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1213,7 +1213,7 @@
       "description": {
         "en": "routes Bot inference to a ChatGPT Codex subscription by patching the VM; the author warns it can break installs or get an account restricted."
       },
-      "stars": 0,
+      "stars": 1,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
