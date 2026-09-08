@@ -124,9 +124,9 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **389,080★** and Hermes Agent at **242,777★**, pulled from the GitHub API on 2026-09-07. Grok
+OpenClaw is at **389,188★** and Hermes Agent at **243,199★**, pulled from the GitHub API on 2026-09-08. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
-marketplace at **228★**, 27 days after launch. Numbers this size move daily, so treat them as a snapshot.
+marketplace at **229★**, 28 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
 
 ## ⭐ Pick of the Week
@@ -164,7 +164,7 @@ Next 7, soonest first. All 7 upcoming, with hosts, venues and times, are in **[E
 - **Sep 8** · Tel Aviv-Yafo, IL — [Grok Bot Meetup Tel Aviv](https://luma.com/cursor-qdl0) *(waitlist, sold out)*
 - **Sep 9** · Online — [Grok Bot Cotonou Hackathon (Virtual)](https://luma.com/cursor-hack-benin)
 - **Sep 9** · Minato City, JP — [Grok Bot Meetup Tokyo](https://luma.com/grokbottokyo)
-- **Sep 9** · København, DK — [Grok Bot Copenhagen Meetup](https://luma.com/cursor-t9m9)
+- **Sep 9** · København, DK — [Grok Bot Copenhagen Meetup](https://luma.com/cursor-t9m9) *(5 spots left)*
 - **Sep 10** · Monterrey, MX — [Grok Meetup Monterrey](https://luma.com/cursor-wgsj)
 - **Sep 15** · Las Vegas, US — [Grok Bot Meetup Las Vegas](https://luma.com/cursor-kaua)
 - **Oct 3** · Monterrey, MX — [Grok Monterrey Hackathon](https://luma.com/5ohq71b3)
@@ -192,7 +192,7 @@ Next 7, soonest first. All 7 upcoming, with hosts, venues and times, are in **[E
 | An MCP server component | 24 of 61 checked |
 | `SKILL.md` skills and no plugin manifest | 11 |
 
-Read from each repository's own file tree on 2026-09-07. Marketplace entries are read at the commit xAI pins, not at HEAD.
+Read from each repository's own file tree on 2026-09-08. Marketplace entries are read at the commit xAI pins, not at HEAD.
 2 entries answered on manifest directories but not on skills, MCP or the open standard this run, and are left out of those rows rather than counted as zero.
 <!-- coverage:end -->
 

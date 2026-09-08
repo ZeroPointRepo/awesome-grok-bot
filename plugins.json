@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "count": 63,
   "entries": [
     {
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 51234,
+      "stars": 51325,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -193,7 +193,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2794,
+      "stars": 2799,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -238,7 +238,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1963,
+      "stars": 1965,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -283,7 +283,7 @@
       "description": {
         "en": "deploy pump.fun tokens from your agent; ships an MCP server plus a Cursor-marketplace-format plugin (not the open agent-plugins.org spec, despite the repo description)."
       },
-      "stars": 0,
+      "stars": 1,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -395,7 +395,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 228,
+      "stars": 229,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -488,7 +488,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 7021,
+      "stars": 7068,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -603,7 +603,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 282579,
+      "stars": 282983,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -693,7 +693,7 @@
       "description": {
         "en": "manage deployments, check build status, read logs, configure domains."
       },
-      "stars": 275,
+      "stars": 276,
       "license": "NOASSERTION",
       "archived": false,
       "added": "2026-08-31",
@@ -741,7 +741,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 228,
+      "stars": 229,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -939,7 +939,7 @@
       "description": {
         "en": "read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync)."
       },
-      "stars": 19,
+      "stars": 20,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -981,7 +981,7 @@
       "description": {
         "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
       },
-      "stars": 55,
+      "stars": 57,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1093,7 +1093,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 43,
+      "stars": 44,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1193,7 +1193,7 @@
       "description": {
         "en": "`gbu`: weekly usage and on-demand spend for several Cursor accounts in one terminal, zero dependencies."
       },
-      "stars": 1,
+      "stars": 2,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1255,7 +1255,7 @@
       "description": {
         "en": "local desktop app where a crew of agents message each other in their own worktrees; everything runs on your machine."
       },
-      "stars": 32,
+      "stars": 33,
       "license": "AGPL-3.0",
       "archived": false,
       "added": "2026-08-31",
@@ -1297,7 +1297,7 @@
       "description": {
         "en": "local-first bot workspace on FastAPI and Next.js with a deny-by-default action gateway and an audit trail."
       },
-      "stars": 3,
+      "stars": 4,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -1337,7 +1337,7 @@
       "description": {
         "en": "self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials."
       },
-      "stars": 11,
+      "stars": 14,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",

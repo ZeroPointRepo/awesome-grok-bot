@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**7 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-07.
+**7 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-08.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -33,7 +33,7 @@ Hosted by SpaceXAI for Tokyo, Japan, Asahi. [Registration page](https://luma.com
 ### Grok Bot Copenhagen Meetup
 <!-- event: cursor-t9m9 -->
 
-**København, DK** · Sep 9, 17:00 local (UTC+2) · 15:00 UTC · Trustpilot A/S
+**København, DK** · Sep 9, 17:00 local (UTC+2) · 15:00 UTC · Trustpilot A/S · 5 spots left
 
 Hosted by SpaceXAI for Copenhagen, Denmark, Fernando Abolafio, Alex Ribin. [Registration page](https://luma.com/cursor-t9m9)
 
