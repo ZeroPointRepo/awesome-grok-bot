@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**7 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-08.
+**6 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-09.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -8,13 +8,6 @@ registration page. Events that have already started are removed from this file r
 and greyed out.
 
 ---
-
-### Grok Bot Meetup Tel Aviv
-<!-- event: cursor-qdl0 -->
-
-**Tel Aviv-Yafo, IL** · Sep 8, 19:00 local (UTC+3) · 16:00 UTC · Yisra'el Bak St 1 · waitlist, sold out
-
-Hosted by SpaceXAI for Tel Aviv, Israel, Elie Steinbock, Vlad Tansky. [Registration page](https://luma.com/cursor-qdl0)
 
 ### Grok Bot Cotonou Hackathon (Virtual)
 <!-- event: cursor-hack-benin -->
@@ -26,14 +19,14 @@ Hosted by SpaceXAI for Cotonou, Benin, Africa, Aina René Régis KIKI, DAVY AGON
 ### Grok Bot Meetup Tokyo
 <!-- event: grokbottokyo -->
 
-**Minato City, JP** · Sep 9, 19:00 local (UTC+9) · 10:00 UTC · Minato City, Japan
+**Minato City, JP** · Sep 9, 19:00 local (UTC+9) · 10:00 UTC · Minato City, Japan · waitlist, sold out
 
-Hosted by SpaceXAI for Tokyo, Japan, Asahi. [Registration page](https://luma.com/grokbottokyo)
+Hosted by SpaceXAI for Tokyo, Japan, Asahi, Shimpei. [Registration page](https://luma.com/grokbottokyo)
 
 ### Grok Bot Copenhagen Meetup
 <!-- event: cursor-t9m9 -->
 
-**København, DK** · Sep 9, 17:00 local (UTC+2) · 15:00 UTC · Trustpilot A/S · 5 spots left
+**København, DK** · Sep 9, 17:00 local (UTC+2) · 15:00 UTC · Trustpilot A/S · waitlist, sold out
 
 Hosted by SpaceXAI for Copenhagen, Denmark, Fernando Abolafio, Alex Ribin. [Registration page](https://luma.com/cursor-t9m9)
 
@@ -47,7 +40,7 @@ Hosted by SpaceXAI for Monterrey, Mexico, Aileen Villanueva. [Registration page]
 ### Grok Bot Meetup Las Vegas
 <!-- event: cursor-kaua -->
 
-**Las Vegas, US** · Sep 15, 18:00 local (UTC-7) · 01:00 UTC · Las Vegas, NV
+**Las Vegas, US** · Sep 15, 18:00 local (UTC-7) · 01:00 UTC · Las Vegas, NV · waitlist, sold out
 
 Hosted by SpaceXAI for Las Vegas, US, Chris Ford. [Registration page](https://luma.com/cursor-kaua)
 
