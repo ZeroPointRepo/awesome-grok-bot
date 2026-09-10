@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**6 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-09.
+**3 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-10.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -9,31 +9,10 @@ and greyed out.
 
 ---
 
-### Grok Bot Cotonou Hackathon (Virtual)
-<!-- event: cursor-hack-benin -->
-
-**Online** · Sep 9, 10:30 local (UTC+1) · 09:30 UTC
-
-Hosted by SpaceXAI for Cotonou, Benin, Africa, Aina René Régis KIKI, DAVY AGONMA. [Registration page](https://luma.com/cursor-hack-benin)
-
-### Grok Bot Meetup Tokyo
-<!-- event: grokbottokyo -->
-
-**Minato City, JP** · Sep 9, 19:00 local (UTC+9) · 10:00 UTC · Minato City, Japan · waitlist, sold out
-
-Hosted by SpaceXAI for Tokyo, Japan, Asahi, Shimpei. [Registration page](https://luma.com/grokbottokyo)
-
-### Grok Bot Copenhagen Meetup
-<!-- event: cursor-t9m9 -->
-
-**København, DK** · Sep 9, 17:00 local (UTC+2) · 15:00 UTC · Trustpilot A/S · waitlist, sold out
-
-Hosted by SpaceXAI for Copenhagen, Denmark, Fernando Abolafio, Alex Ribin. [Registration page](https://luma.com/cursor-t9m9)
-
 ### Grok Meetup Monterrey
 <!-- event: cursor-wgsj -->
 
-**Monterrey, MX** · Sep 10, 18:00 local (UTC-6) · 00:00 UTC · HUB de Innovación y Emprendimiento Eduardo Garza T.
+**Monterrey, MX** · Sep 10, 18:00 local (UTC-6) · 00:00 UTC · HUB de Innovación y Emprendimiento Eduardo Garza T. · 2 spots left
 
 Hosted by SpaceXAI for Monterrey, Mexico, Aileen Villanueva. [Registration page](https://luma.com/cursor-wgsj)
 
