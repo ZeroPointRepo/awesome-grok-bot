@@ -69,7 +69,7 @@ in the wild, not assumed:**
    <!-- convergence:start -->
    xAI's own [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) is where this gets
    interesting, because the answer is now two things at once. Every manifest the marketplace actually loads
-   was re-read at the exact commit xAI pins: **0 of the 25 published plugins carry the open spec's `$schema`
+   was re-read at the exact commit xAI pins: **0 of the 27 published plugins carry the open spec's `$schema`
    in the manifest that gets consumed.** But **3** of those vendors — chrome-devtools and netlify and stripe — *also* publish, in the
    very same commit xAI pins, a first-class `plugin.json` carrying
    `https://agent-plugins.org/schemas/1.0.0/plugin.schema.json`. Convergence on the open
@@ -124,9 +124,9 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **389,331★** and Hermes Agent at **244,001★**, pulled from the GitHub API on 2026-09-10. Grok
+OpenClaw is at **389,421★** and Hermes Agent at **244,361★**, pulled from the GitHub API on 2026-09-11. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
-marketplace at **235★**, 30 days after launch. Numbers this size move daily, so treat them as a snapshot.
+marketplace at **236★**, 31 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
 
 ## ⭐ Pick of the Week
@@ -159,9 +159,8 @@ Last week's pick, [chrome-devtools](https://github.com/ChromeDevTools/chrome-dev
 ### Upcoming Grok Bot meetups, workshops and hackathons
 
 <!-- events:start -->
-Next 3, soonest first. All 3 upcoming, with hosts, venues and times, are in **[EVENTS.md](EVENTS.md)**.
+Next 2, soonest first. All 2 upcoming, with hosts, venues and times, are in **[EVENTS.md](EVENTS.md)**.
 
-- **Sep 10** · Monterrey, MX — [Grok Meetup Monterrey](https://luma.com/cursor-wgsj) *(2 spots left)*
 - **Sep 15** · Las Vegas, US — [Grok Bot Meetup Las Vegas](https://luma.com/cursor-kaua) *(waitlist, sold out)*
 - **Oct 3** · Monterrey, MX — [Grok Monterrey Hackathon](https://luma.com/5ohq71b3)
 <!-- events:end -->
@@ -188,7 +187,7 @@ Next 3, soonest first. All 3 upcoming, with hosts, venues and times, are in **[E
 | An MCP server component | 25 of 61 checked |
 | `SKILL.md` skills and no plugin manifest | 11 |
 
-Read from each repository's own file tree on 2026-09-10. Marketplace entries are read at the commit xAI pins, not at HEAD.
+Read from each repository's own file tree on 2026-09-11. Marketplace entries are read at the commit xAI pins, not at HEAD.
 2 entries answered on manifest directories but not on skills, MCP or the open standard this run, and are left out of those rows rather than counted as zero.
 <!-- coverage:end -->
 
@@ -225,9 +224,9 @@ Read from each repository's own file tree on 2026-09-10. Marketplace entries are
 #### Official xAI plugin marketplace
 
 <!-- marketplace:start -->
-xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) — 25 vendor plugins in
+xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) — 27 vendor plugins in
 `.grok-plugin` format, the same plugin surface Grok Bot inherits under Cursor's plugin/MCP policy. All
-25 are listed below, each resolved at the exact commit the marketplace pins.
+27 are listed below, each resolved at the exact commit the marketplace pins.
 <!-- marketplace:end -->
 
 - [axiom](https://github.com/axiomhq/skills) by [Axiom](https://github.com/axiomhq) — query logs and metrics in APL, run SRE investigations, build dashboards and manage monitors. **[production]**
