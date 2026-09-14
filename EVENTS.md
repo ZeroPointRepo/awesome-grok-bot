@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**2 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-13.
+**2 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-14.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the

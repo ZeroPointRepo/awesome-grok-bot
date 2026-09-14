@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "count": 63,
   "entries": [
     {
@@ -126,7 +126,7 @@
       "description": {
         "en": "give the Bot a real browser, either the user's own Chrome with its logins or an isolated cloud one."
       },
-      "stars": 18,
+      "stars": 19,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 51783,
+      "stars": 51880,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -194,7 +194,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2825,
+      "stars": 2829,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -239,7 +239,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1981,
+      "stars": 1986,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -306,7 +306,7 @@
       "description": {
         "en": "remote MCP for xAI image, video and speech generation that returns a persistent blob URL and a per-call cost receipt."
       },
-      "stars": 0,
+      "stars": 1,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -396,7 +396,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 245,
+      "stars": 247,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -489,7 +489,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 7569,
+      "stars": 7655,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -499,7 +499,7 @@
       "skills": 50,
       "mcp_component": false,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "889ec4b68fa5aab0e867dad71ec3fdf386ae48f3"
+      "marketplace_pinned_ref": "5bf2b1544db739998121a306340631963c2ff3de"
     },
     {
       "name": "railway",
@@ -582,7 +582,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1802,
+      "stars": 1804,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -604,7 +604,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 285940,
+      "stars": 286390,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -694,7 +694,7 @@
       "description": {
         "en": "manage deployments, check build status, read logs, configure domains."
       },
-      "stars": 283,
+      "stars": 284,
       "license": "NOASSERTION",
       "archived": false,
       "added": "2026-08-31",
@@ -742,7 +742,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 245,
+      "stars": 247,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -852,7 +852,7 @@
       "description": {
         "en": "list, message and create Grok Bots from the terminal using the local desktop session, no token copying."
       },
-      "stars": 8,
+      "stars": 9,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -940,7 +940,7 @@
       "description": {
         "en": "read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync)."
       },
-      "stars": 21,
+      "stars": 23,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -982,7 +982,7 @@
       "description": {
         "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
       },
-      "stars": 61,
+      "stars": 63,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1094,7 +1094,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 58,
+      "stars": 59,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1256,7 +1256,7 @@
       "description": {
         "en": "local desktop app where a crew of agents message each other in their own worktrees; everything runs on your machine."
       },
-      "stars": 34,
+      "stars": 33,
       "license": "AGPL-3.0",
       "archived": false,
       "added": "2026-08-31",
