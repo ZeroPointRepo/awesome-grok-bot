@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**2 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-14.
+**1 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-16.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -8,13 +8,6 @@ registration page. Events that have already started are removed from this file r
 and greyed out.
 
 ---
-
-### Grok Bot Meetup Las Vegas
-<!-- event: cursor-kaua -->
-
-**Las Vegas, US** · Sep 15, 18:00 local (UTC-7) · 01:00 UTC · Las Vegas, NV · waitlist, sold out
-
-Hosted by SpaceXAI for Las Vegas, US, Chris Ford. [Registration page](https://luma.com/cursor-kaua)
 
 ### Grok Monterrey Hackathon
 <!-- event: 5ohq71b3 -->
