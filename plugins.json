@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "count": 63,
   "entries": [
     {
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 52103,
+      "stars": 52174,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -194,7 +194,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2839,
+      "stars": 2844,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -239,7 +239,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 1996,
+      "stars": 1999,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -396,7 +396,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 252,
+      "stars": 254,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -432,7 +432,7 @@
       "skills": 45,
       "mcp_component": true,
       "open_agent_plugins_schema": true,
-      "marketplace_pinned_ref": "b4fd870cf2f1f4cc66b28ead16277e1d799b510f"
+      "marketplace_pinned_ref": "eddd0a3c67642651097a65b2d2d4194eaec173a1"
     },
     {
       "name": "nexfade-grok-plugin",
@@ -489,7 +489,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 7963,
+      "stars": 8138,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -582,7 +582,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1821,
+      "stars": 1822,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -592,7 +592,7 @@
       "skills": 9,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "9dde68ae5ef35b015166abfd1f189f4c729f93ad"
+      "marketplace_pinned_ref": "38d8933bffbdba219ba530803316bb3a4fbaee0d"
     },
     {
       "name": "superpowers",
@@ -604,7 +604,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 287353,
+      "stars": 287813,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -694,7 +694,7 @@
       "description": {
         "en": "manage deployments, check build status, read logs, configure domains."
       },
-      "stars": 283,
+      "stars": 284,
       "license": "NOASSERTION",
       "archived": false,
       "added": "2026-08-31",
@@ -742,7 +742,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 252,
+      "stars": 254,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -940,7 +940,7 @@
       "description": {
         "en": "read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync)."
       },
-      "stars": 23,
+      "stars": 24,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1136,7 +1136,7 @@
       "description": {
         "en": "Nix flake that repackages the official Linux `.deb` (no source build)."
       },
-      "stars": 4,
+      "stars": 5,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -1176,7 +1176,7 @@
       "description": {
         "en": "adapters CLI and custom model-provider bridges (DeepSeek, Claude, Grok, OpenAI)."
       },
-      "stars": 12,
+      "stars": 13,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
