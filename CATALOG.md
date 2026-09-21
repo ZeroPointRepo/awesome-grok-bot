@@ -1,6 +1,6 @@
 # Grok Bot catalog: all 63 entries, with what each one ships
 
-Every entry on [README.md](README.md), re-resolved from its own repository on 2026-09-20. This file is the whole set.
+Every entry on [README.md](README.md), re-resolved from its own repository on 2026-09-21. This file is the whole set.
 
 **19** ship a `.grok-plugin` manifest, the format Grok Bot loads. **8** of the 61 that could be checked carry a `plugin.json` on the open Agent Plugins standard. **26** of the 61 that could be checked bring an MCP server component.
 
@@ -13,12 +13,12 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [agentcouch](https://github.com/stoyan-stoyanov/agentcouch-plugins) | Grok Bot plugins and MCP servers | AgentCouch | 0 | .cursor-plugin, .claude-plugin, .codex-plugin, open plugin.json | 2 | MIT | 2026-08-31 |
 | [axiom](https://github.com/axiomhq/skills) | Official xAI plugin marketplace | Axiom | 16 | .grok-plugin | 7 | MIT | 2026-08-31 |
 | [base44](https://github.com/base44/skills) | Official xAI plugin marketplace | Base44 | 90 | .cursor-plugin, .claude-plugin, .codex-plugin | 9 | MIT | 2026-08-31 |
-| [browser-use](https://github.com/browser-use/plugins) | Official xAI plugin marketplace | Browser Use | 21 | .grok-plugin | 1 |  | 2026-08-31 |
+| [browser-use](https://github.com/browser-use/plugins) | Official xAI plugin marketplace | Browser Use | 22 | .grok-plugin | 1 |  | 2026-08-31 |
 | [campfiresms-grok-bot](https://github.com/campfiresms/campfiresms-grok-bot) | Grok Bot plugins and MCP servers | CampfireSMS | 0 | .cursor-plugin | 1 | MIT | 2026-08-31 |
-| [chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official xAI plugin marketplace | Chrome DevTools | 52,345 | .cursor-plugin, .claude-plugin, open plugin.json | 7 | Apache-2.0 | 2026-08-31 |
-| [cloudflare](https://github.com/cloudflare/skills) | Official xAI plugin marketplace | Cloudflare | 2,873 | .cursor-plugin, .claude-plugin | 8 | Apache-2.0 | 2026-08-31 |
+| [chrome-devtools](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Official xAI plugin marketplace | Chrome DevTools | 52,406 | .cursor-plugin, .claude-plugin, open plugin.json | 7 | Apache-2.0 | 2026-08-31 |
+| [cloudflare](https://github.com/cloudflare/skills) | Official xAI plugin marketplace | Cloudflare | 2,884 | .cursor-plugin, .claude-plugin | 8 | Apache-2.0 | 2026-08-31 |
 | [exa](https://github.com/exa-labs/exa-grok-plugin) | Official xAI plugin marketplace | Exa | 1 | .grok-plugin | 1 |  | 2026-08-31 |
-| [figma](https://github.com/figma/mcp-server-guide) | Official xAI plugin marketplace | Figma | 2,003 | .cursor-plugin, .claude-plugin | 30 |  | 2026-08-31 |
+| [figma](https://github.com/figma/mcp-server-guide) | Official xAI plugin marketplace | Figma | 2,008 | .cursor-plugin, .claude-plugin | 30 |  | 2026-08-31 |
 | [firecrawl](https://github.com/firecrawl/firecrawl-grok-plugin) | Official xAI plugin marketplace | Firecrawl | 9 | .grok-plugin | 11 |  | 2026-08-31 |
 | [GrokBotfun](https://github.com/GrokBotfun/GrokBotfun) | Grok Bot plugins and MCP servers | GrokBotfun | 2 | .cursor-plugin |  |  | 2026-08-31 |
 | [imagine-mcp](https://github.com/Archive228/imagine-mcp) | Grok Bot plugins and MCP servers | Archive228 | 1 | No manifest |  | MIT | 2026-08-31 |
@@ -29,17 +29,17 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [netlify](https://github.com/netlify/context-and-tools) | Official xAI plugin marketplace | Netlify | 37 | .grok-plugin, .cursor-plugin, .claude-plugin, open plugin.json | 45 | MIT | 2026-08-31 |
 | [nexfade-grok-plugin](https://github.com/NexFade/nexfade-grok-plugin) | Grok Bot plugins and MCP servers | NexFade | 0 | .grok-plugin | 1 | MIT | 2026-08-31 |
 | [orgx-grokbot-plugin](https://github.com/useorgx/orgx-grokbot-plugin) | Grok Bot plugins and MCP servers | OrgX | 0 | .grok-plugin, .cursor-plugin | 3 | MIT | 2026-08-31 |
-| [pstack](https://github.com/cursor/plugins/tree/HEAD/pstack) | Official xAI plugin marketplace | Cursor | 8,203 | .cursor-plugin | 50 |  | 2026-08-31 |
-| [railway](https://github.com/railwayapp/railway-skills/tree/HEAD/plugins/railway) | Official xAI plugin marketplace | Railway | 325 | .grok-plugin, .cursor-plugin, .claude-plugin, .codex-plugin | 1 | MIT | 2026-08-31 |
+| [pstack](https://github.com/cursor/plugins/tree/HEAD/pstack) | Official xAI plugin marketplace | Cursor | 8,260 | .cursor-plugin | 50 |  | 2026-08-31 |
+| [railway](https://github.com/railwayapp/railway-skills/tree/HEAD/plugins/railway) | Official xAI plugin marketplace | Railway | 327 | .grok-plugin, .cursor-plugin, .claude-plugin, .codex-plugin | 1 | MIT | 2026-08-31 |
 | [recallsmith](https://github.com/koreysmith123/recallsmith) | Grok Bot plugins and MCP servers | koreysmith123 | 0 | .grok-plugin, .cursor-plugin, open plugin.json | 2 | MIT | 2026-08-31 |
 | [sentry](https://github.com/getsentry/plugin-grok) | Official xAI plugin marketplace | Sentry | 1 | .grok-plugin | 8 | MIT | 2026-08-31 |
-| [stripe](https://github.com/stripe/ai/tree/HEAD/providers/grok/plugin) | Official xAI plugin marketplace | Stripe | 1,830 | .grok-plugin | 10 | MIT | 2026-08-31 |
-| [superpowers](https://github.com/obra/superpowers) | Official xAI plugin marketplace | obra | 288,971 | .cursor-plugin, .claude-plugin, .codex-plugin | 15 | MIT | 2026-08-31 |
+| [stripe](https://github.com/stripe/ai/tree/HEAD/providers/grok/plugin) | Official xAI plugin marketplace | Stripe | 1,829 | .grok-plugin | 10 | MIT | 2026-08-31 |
+| [superpowers](https://github.com/obra/superpowers) | Official xAI plugin marketplace | obra | 289,461 | .cursor-plugin, .claude-plugin, .codex-plugin | 15 | MIT | 2026-08-31 |
 | [tavily](https://github.com/tavily-ai/tavily-grok-plugin) | Official xAI plugin marketplace | Tavily | 2 | .grok-plugin | 8 | MIT | 2026-08-31 |
 | [tesla-fleet-mcp](https://github.com/supervised-nl/tesla-fleet-mcp) | Grok Bot plugins and MCP servers | supervised-nl | 0 | MCP only | 3 | MIT | 2026-08-31 |
 | [tinyfish](https://github.com/tinyfish-io/tinyfish-web-agent-integrations/tree/HEAD/grok) | Official xAI plugin marketplace | TinyFish | 18 | .grok-plugin | 5 | MIT | 2026-08-31 |
 | [vercel](https://github.com/vercel/vercel-plugin) | Official xAI plugin marketplace | Vercel | 287 | .cursor-plugin, .claude-plugin | 55 | NOASSERTION | 2026-08-31 |
-| [wix](https://github.com/wix/skills) | Official xAI plugin marketplace | Wix | 32 | .cursor-plugin, .claude-plugin, .codex-plugin, plugin.json | 49 | MIT | 2026-08-31 |
+| [wix](https://github.com/wix/skills) | Official xAI plugin marketplace | Wix | 31 | .cursor-plugin, .claude-plugin, .codex-plugin, plugin.json | 49 | MIT | 2026-08-31 |
 | [xai-org/plugin-marketplace](https://github.com/xai-org/plugin-marketplace) | Official xAI plugin marketplace | xAI | 261 | .grok-plugin, other formats not established | ? |  | 2026-08-31 |
 | [yourai-context-plugin](https://github.com/Melade-Inc/yourai-context-plugin) | Grok Bot plugins and MCP servers | Melade | 0 | .claude-plugin, open plugin.json | 1 | Apache-2.0 | 2026-08-31 |
 | [botskills](https://github.com/PramodDutta/botskills) | Grok Bot skills | PramodDutta | 2 | skills only | 1 | MIT | 2026-08-31 |
@@ -48,7 +48,7 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [grok-bot-skill](https://github.com/adamanz/grok-bot-skill) | Grok Bot skills | adamanz | 9 | .claude-plugin | 1 | MIT | 2026-08-31 |
 | [grok-bot-super](https://github.com/AgentMindCloud/grok-bot-super) | Grok Bot skills | AgentMindCloud | 1 | skills only | 9 | MIT | 2026-08-31 |
 | [grok-bot-templates](https://github.com/cobusgreyling/grok-bot-templates) | Grok Bot skills | cobusgreyling | 12 | skills only | 47 | MIT | 2026-08-31 |
-| [grokbot-for-gtm](https://github.com/bcharleson/grokbot-for-gtm) | Grok Bot skills | bcharleson | 9 | skills only | 11 | MIT | 2026-08-31 |
+| [grokbot-for-gtm](https://github.com/bcharleson/grokbot-for-gtm) | Grok Bot skills | bcharleson | 10 | skills only | 11 | MIT | 2026-08-31 |
 | [grokbot-imessage-skill](https://github.com/jeffhuber/grokbot-imessage-skill) | Grok Bot skills | jeffhuber | 25 | skills only | 1 | MIT | 2026-08-31 |
 | [grokmd](https://github.com/Aiworkflow360/grokmd) | Grok Bot skills | Aiworkflow360 | 0 | No manifest |  | NOASSERTION | 2026-08-31 |
 | [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) | Grok Bot skills | galleonlabs | 67 | .grok-plugin, .cursor-plugin, .claude-plugin, open plugin.json | 17 | MIT | 2026-08-31 |
@@ -63,12 +63,12 @@ Every entry on [README.md](README.md), re-resolved from its own repository on 20
 | [grok-bot-setup](https://github.com/BlockedPath/grok-bot-setup) | Self-hosted Grok Bot alternatives, runtimes and bridges | BlockedPath | 13 | No manifest |  | MIT | 2026-08-31 |
 | [grok-bot-usage](https://github.com/Kargatharaakash/grok-bot-usage) | Self-hosted Grok Bot alternatives, runtimes and bridges | Kargatharaakash | 2 | No manifest |  | MIT | 2026-08-31 |
 | [grok-codex-router](https://github.com/IgorWarzocha/grok-codex-router) | Self-hosted Grok Bot alternatives, runtimes and bridges | IgorWarzocha | 1 | skills only | 1 | MIT | 2026-08-31 |
-| [grokbot-shim](https://github.com/codeaashu/grokbot-shim) | Self-hosted Grok Bot alternatives, runtimes and bridges | codeaashu | 22 | No manifest |  | ISC | 2026-08-31 |
+| [grokbot-shim](https://github.com/codeaashu/grokbot-shim) | Self-hosted Grok Bot alternatives, runtimes and bridges | codeaashu | 23 | No manifest |  | ISC | 2026-08-31 |
 | [guaca](https://github.com/madebywelch/guaca) | Self-hosted Grok Bot alternatives, runtimes and bridges | madebywelch | 34 | skills only | 2 | AGPL-3.0 | 2026-08-31 |
 | [omarchy-grok-bot](https://github.com/glorics/omarchy-grok-bot) | Self-hosted Grok Bot alternatives, runtimes and bridges | glorics | 0 | No manifest |  | MIT | 2026-08-31 |
 | [open-grok-bot](https://github.com/Anil-matcha/open-grok-bot) | Self-hosted Grok Bot alternatives, runtimes and bridges | Anil-matcha | 7 | No manifest |  |  | 2026-08-31 |
-| [open-grokbot](https://github.com/ishandutta2007/open-grokbot) | Self-hosted Grok Bot alternatives, runtimes and bridges | ishandutta2007 | 5 | No manifest |  | MIT | 2026-08-31 |
-| [OpenGrokBot](https://github.com/wolfqing/OpenGrokBot) | Self-hosted Grok Bot alternatives, runtimes and bridges | wolfqing | 24 | No manifest |  | MIT | 2026-08-31 |
+| [open-grokbot](https://github.com/ishandutta2007/open-grokbot) | Self-hosted Grok Bot alternatives, runtimes and bridges | ishandutta2007 | 6 | No manifest |  | MIT | 2026-08-31 |
+| [OpenGrokBot](https://github.com/wolfqing/OpenGrokBot) | Self-hosted Grok Bot alternatives, runtimes and bridges | wolfqing | 25 | No manifest |  | MIT | 2026-08-31 |
 | [sand](https://github.com/alokwhitewolf/sand) | Self-hosted Grok Bot alternatives, runtimes and bridges | alokwhitewolf | 0 | No manifest |  | MIT | 2026-08-31 |
 | [XinyunOpenBot](https://github.com/dongpen-max/XinyunOpenBot) | Self-hosted Grok Bot alternatives, runtimes and bridges | dongpen-max | 6 | skills only | 1 | MIT | 2026-08-31 |
 
