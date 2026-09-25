@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "count": 63,
   "entries": [
     {
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 52548,
+      "stars": 52585,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -194,7 +194,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2897,
+      "stars": 2907,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -239,7 +239,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 2016,
+      "stars": 2019,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -396,7 +396,7 @@
       "description": {
         "en": "Neon Serverless Postgres: manage projects and databases, pick a connection method, branch for migration testing."
       },
-      "stars": 269,
+      "stars": 268,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -489,7 +489,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 8531,
+      "stars": 8592,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -499,7 +499,7 @@
       "skills": 50,
       "mcp_component": false,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "53e579f1481697931fc44f5445171397cfa2b24b"
+      "marketplace_pinned_ref": "12d587dfb20741cafc376c42c696c5f6e2a64487"
     },
     {
       "name": "railway",
@@ -582,7 +582,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1830,
+      "stars": 1831,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -592,7 +592,7 @@
       "skills": 10,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "99ef7ddd24df10b78f2e0eba98c577349dd01611"
+      "marketplace_pinned_ref": "a682cd5788a6fbcc64dadf872ea91d1f0da1908c"
     },
     {
       "name": "superpowers",
@@ -604,7 +604,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 290912,
+      "stars": 291352,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -694,7 +694,7 @@
       "description": {
         "en": "manage deployments, check build status, read logs, configure domains."
       },
-      "stars": 288,
+      "stars": 289,
       "license": "NOASSERTION",
       "archived": false,
       "added": "2026-08-31",
@@ -702,10 +702,10 @@
         ".cursor-plugin",
         ".claude-plugin"
       ],
-      "skills": 55,
+      "skills": 57,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "1a2a5cd21f991d816bcf9ac9184ba14a8b1cb2b8"
+      "marketplace_pinned_ref": "95fdc4581f2f8becba437e8c95d416af2dc94605"
     },
     {
       "name": "wix",
@@ -717,7 +717,7 @@
       "description": {
         "en": "build, manage and deploy Wix sites and apps: eCommerce, CMS and dashboard extensions."
       },
-      "stars": 31,
+      "stars": 32,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -730,7 +730,7 @@
       "skills": 49,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "8fc544d319c4a4dfc7ccf3ba4adf328e1fa9866f"
+      "marketplace_pinned_ref": "d40289a47fda4f4efd0b5fef0c599cc64432be66"
     },
     {
       "name": "xai-org/plugin-marketplace",
@@ -742,7 +742,7 @@
       "description": {
         "en": "the official marketplace itself: the vendor set above plus the `.grok-plugin` manifest format they all use."
       },
-      "stars": 269,
+      "stars": 268,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -1094,7 +1094,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 64,
+      "stars": 65,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1240,7 +1240,7 @@
       "description": {
         "en": "runs the installed Grok Bot app against a local host runtime, a local Chrome/XFCE desktop and Codex or OpenAI-compatible models."
       },
-      "stars": 23,
+      "stars": 25,
       "license": "ISC",
       "archived": false,
       "added": "2026-08-31",
@@ -1260,7 +1260,7 @@
       "description": {
         "en": "local desktop app where a crew of agents message each other in their own worktrees; everything runs on your machine."
       },
-      "stars": 34,
+      "stars": 35,
       "license": "AGPL-3.0",
       "archived": false,
       "added": "2026-08-31",
@@ -1302,7 +1302,7 @@
       "description": {
         "en": "local-first bot workspace on FastAPI and Next.js with a deny-by-default action gateway and an audit trail."
       },
-      "stars": 7,
+      "stars": 8,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -1322,7 +1322,7 @@
       "description": {
         "en": "self-hosted multi-agent platform with persistent sandboxes and demonstration-based learning, `docker compose up`."
       },
-      "stars": 7,
+      "stars": 8,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1342,7 +1342,7 @@
       "description": {
         "en": "self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials."
       },
-      "stars": 26,
+      "stars": 28,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
