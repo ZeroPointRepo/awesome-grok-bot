@@ -70,7 +70,7 @@ in the wild, not assumed:**
    xAI's own [official plugin marketplace](https://github.com/xai-org/plugin-marketplace) is where this gets
    interesting, because the answer is now two things at once. Every manifest the marketplace actually loads
    was re-read at the exact commit xAI pins: **0 of the 29 published plugins carry the open spec's `$schema`
-   in the manifest that gets consumed.** But **3** of those vendors — chrome-devtools and netlify and stripe — *also* publish, in the
+   in the manifest that gets consumed.** But **4** of those vendors — chrome-devtools and cloudflare and netlify and stripe — *also* publish, in the
    very same commit xAI pins, a first-class `plugin.json` carrying
    `https://agent-plugins.org/schemas/1.0.0/plugin.schema.json`. Convergence on the open
    standard is real and it is incomplete: the vendors have shipped it, and the loader does not read it yet.
@@ -124,9 +124,9 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **390,687★** and Hermes Agent at **249,619★**, pulled from the GitHub API on 2026-09-28. Grok
+OpenClaw is at **390,754★** and Hermes Agent at **249,912★**, pulled from the GitHub API on 2026-09-29. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
-marketplace at **269★**, 48 days after launch. Numbers this size move daily, so treat them as a snapshot.
+marketplace at **271★**, 49 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
 
 ## ⭐ Pick of the Week
@@ -181,12 +181,12 @@ Next 1, soonest first. All 1 upcoming, with hosts, venues and times, are in **[E
 | `.grok-plugin/` manifest, the format Grok Bot loads | 19 |
 | `.cursor-plugin/` manifest, so it also loads in Cursor | 20 |
 | `.claude-plugin/` manifest, so it also loads in Claude Code | 16 |
-| `.codex-plugin/` manifest, so it also loads in Codex | 7 |
-| `plugin.json` on the open Agent Plugins standard | 8 of 61 checked |
+| `.codex-plugin/` manifest, so it also loads in Codex | 8 |
+| `plugin.json` on the open Agent Plugins standard | 9 of 61 checked |
 | An MCP server component | 26 of 61 checked |
 | `SKILL.md` skills and no plugin manifest | 11 |
 
-Read from each repository's own file tree on 2026-09-28. Marketplace entries are read at the commit xAI pins, not at HEAD.
+Read from each repository's own file tree on 2026-09-29. Marketplace entries are read at the commit xAI pins, not at HEAD.
 2 entries answered on manifest directories but not on skills, MCP or the open standard this run, and are left out of those rows rather than counted as zero.
 <!-- coverage:end -->
 
@@ -201,7 +201,7 @@ Read from each repository's own file tree on 2026-09-28. Marketplace entries are
 - [grok-bot-templates](https://github.com/cobusgreyling/grok-bot-templates) by [cobusgreyling](https://github.com/cobusgreyling) — scored operating contracts (job, never-list, L1 default, CI). Paste START.md, tap a team. **[beta]**
 - [grokbot-for-gtm](https://github.com/bcharleson/grokbot-for-gtm) by [bcharleson](https://github.com/bcharleson) — numbered outbound motion for a Bot: intake, sending infrastructure, list build, email, LinkedIn, reply handling, daily ops. **[beta]**
 - [grokbot-imessage-skill](https://github.com/jeffhuber/grokbot-imessage-skill) by [jeffhuber](https://github.com/jeffhuber) — read, triage, search and send iMessages on macOS via a local, privacy-first launchd helper (no cloud sync). **[beta]**
-- [grokmd](https://github.com/Aiworkflow360/grokmd) by [Aiworkflow360](https://github.com/Aiworkflow360) — twenty `GROK.md` character files written from primary sources, plus the spec and review checklist for writing your own. **[beta]**
+- [grokmd](https://github.com/ljmccolm/grokmd) by [Aiworkflow360](https://github.com/Aiworkflow360) — twenty `GROK.md` character files written from primary sources, plus the spec and review checklist for writing your own. **[beta]**
 - [HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk) by [galleonlabs](https://github.com/galleonlabs) — seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review. **[beta]**
 - [overnight](https://github.com/Archive228/overnight) by [Archive228](https://github.com/Archive228) — six-bot crew for sourced short-form video, with one role per boundary and a human gate before anything publishes. **[experimental]**
 - [thin-grok-bot-deep-work-on-cli](https://github.com/Luca-Blight/thin-grok-bot-deep-work-on-cli) by [Luca-Blight](https://github.com/Luca-Blight) — keeps the Bot mesh for routing and hands long builds to Cursor CLI, Cursor cloud agents or the grok CLI. **[beta]**
