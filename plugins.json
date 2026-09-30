@@ -2,7 +2,7 @@
   "name": "awesome-grok-bot",
   "url": "https://github.com/ZeroPointRepo/awesome-grok-bot",
   "source": "https://raw.githubusercontent.com/ZeroPointRepo/awesome-grok-bot/main/plugins.json",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "count": 63,
   "entries": [
     {
@@ -170,7 +170,7 @@
       "description": {
         "en": "drive and inspect a live Chrome: performance traces, network requests, source-mapped console errors."
       },
-      "stars": 52716,
+      "stars": 52777,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -194,7 +194,7 @@
       "description": {
         "en": "manage Workers, KV, R2, DNS and deployments from the agent."
       },
-      "stars": 2936,
+      "stars": 2945,
       "license": "Apache-2.0",
       "archived": false,
       "added": "2026-08-31",
@@ -241,7 +241,7 @@
       "description": {
         "en": "read designs, variables and components straight out of Figma files."
       },
-      "stars": 2028,
+      "stars": 2032,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -491,7 +491,7 @@
       "description": {
         "en": "agent playbooks for investigation, design, review, verification and parallel subagent work."
       },
-      "stars": 8933,
+      "stars": 9061,
       "license": null,
       "archived": false,
       "added": "2026-08-31",
@@ -526,7 +526,7 @@
       "skills": 1,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "f48070c9542cc8bb22306deb6264c61675a27e70"
+      "marketplace_pinned_ref": "4db2ee90245d61be0ffea28280164373ac3f96c0"
     },
     {
       "name": "recallsmith",
@@ -584,7 +584,7 @@
       "description": {
         "en": "payments, subscriptions and billing objects from the agent, test mode included."
       },
-      "stars": 1845,
+      "stars": 1849,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -594,7 +594,7 @@
       "skills": 10,
       "mcp_component": true,
       "open_agent_plugins_schema": false,
-      "marketplace_pinned_ref": "f23b5bad7a5b20d403bb11cf425044b85ee7c716"
+      "marketplace_pinned_ref": "6a482a7ab5aa0a2e461f68c5c1ea107232a80a45"
     },
     {
       "name": "superpowers",
@@ -606,7 +606,7 @@
       "description": {
         "en": "the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows."
       },
-      "stars": 292645,
+      "stars": 293169,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -696,7 +696,7 @@
       "description": {
         "en": "manage deployments, check build status, read logs, configure domains."
       },
-      "stars": 290,
+      "stars": 294,
       "license": "NOASSERTION",
       "archived": false,
       "added": "2026-08-31",
@@ -719,7 +719,7 @@
       "description": {
         "en": "build, manage and deploy Wix sites and apps: eCommerce, CMS and dashboard extensions."
       },
-      "stars": 32,
+      "stars": 33,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -984,7 +984,7 @@
       "description": {
         "en": "seven-agent Hyperliquid trading desk for Grok Bot: research, size, execute, review."
       },
-      "stars": 69,
+      "stars": 70,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1096,7 +1096,7 @@
       "description": {
         "en": "`gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session."
       },
-      "stars": 70,
+      "stars": 71,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",
@@ -1262,7 +1262,7 @@
       "description": {
         "en": "local desktop app where a crew of agents message each other in their own worktrees; everything runs on your machine."
       },
-      "stars": 36,
+      "stars": 37,
       "license": "AGPL-3.0",
       "archived": false,
       "added": "2026-08-31",
@@ -1344,7 +1344,7 @@
       "description": {
         "en": "self-hosted, open-source Grok Bot alternative assembled from OpenClaw plus any model you bring; your hardware, your credentials."
       },
-      "stars": 31,
+      "stars": 33,
       "license": "MIT",
       "archived": false,
       "added": "2026-08-31",

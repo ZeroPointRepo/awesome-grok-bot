@@ -1,6 +1,6 @@
 # Grok Bot events: every upcoming meetup, workshop and hackathon
 
-**1 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-29.
+**1 upcoming**, soonest first. Rebuilt from each registration page on 2026-09-30.
 The front page of [README.md](README.md) carries the next few as one-liners; this file is the whole set.
 
 Times are the organiser's own local time with the UTC equivalent beside it, both read from the
@@ -12,7 +12,7 @@ and greyed out.
 ### Grok Monterrey Hackathon
 <!-- event: 5ohq71b3 -->
 
-**Location on the registration page** · Oct 3, 10:00 local (UTC-6) · 16:00 UTC
+**Location on the registration page** · Oct 3, 10:00 local (UTC-6) · 16:00 UTC · waitlist, sold out
 
 Hosted by SpaceXAI for Monterrey, Mexico, Aileen Villanueva, Monterrey Tech Week. [Registration page](https://luma.com/5ohq71b3)
 

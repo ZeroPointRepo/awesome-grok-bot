@@ -124,9 +124,9 @@ number you see elsewhere as unconfirmed until xAI states it.
 | Best fit | Teams already paying for Cursor/SuperGrok who want an always-on coworker with zero infra to run | Full control, multi-channel personal assistant, zero cost | Background execution, personalization that compounds over time |
 
 <!-- ecosystem:start -->
-OpenClaw is at **390,754★** and Hermes Agent at **249,912★**, pulled from the GitHub API on 2026-09-29. Grok
+OpenClaw is at **390,814★** and Hermes Agent at **250,182★**, pulled from the GitHub API on 2026-09-30. Grok
 Bot is a closed product with no comparable figure: the largest repo in its third-party ecosystem is xAI's own
-marketplace at **271★**, 49 days after launch. Numbers this size move daily, so treat them as a snapshot.
+marketplace at **271★**, 50 days after launch. Numbers this size move daily, so treat them as a snapshot.
 <!-- ecosystem:end -->
 
 ## ⭐ Pick of the Week
@@ -161,7 +161,7 @@ Last week's pick, [chrome-devtools](https://github.com/ChromeDevTools/chrome-dev
 <!-- events:start -->
 Next 1, soonest first. All 1 upcoming, with hosts, venues and times, are in **[EVENTS.md](EVENTS.md)**.
 
-- **Oct 3** · Venue on the registration page — [Grok Monterrey Hackathon](https://luma.com/5ohq71b3)
+- **Oct 3** · Venue on the registration page — [Grok Monterrey Hackathon](https://luma.com/5ohq71b3) *(waitlist, sold out)*
 <!-- events:end -->
 
 ### Where the Grok Bot community talks
@@ -186,7 +186,7 @@ Next 1, soonest first. All 1 upcoming, with hosts, venues and times, are in **[E
 | An MCP server component | 26 of 61 checked |
 | `SKILL.md` skills and no plugin manifest | 11 |
 
-Read from each repository's own file tree on 2026-09-29. Marketplace entries are read at the commit xAI pins, not at HEAD.
+Read from each repository's own file tree on 2026-09-30. Marketplace entries are read at the commit xAI pins, not at HEAD.
 2 entries answered on manifest directories but not on skills, MCP or the open standard this run, and are left out of those rows rather than counted as zero.
 <!-- coverage:end -->
 
