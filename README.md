@@ -134,7 +134,7 @@ marketplace at **276★**, 54 days after launch. Numbers this size move daily, s
 **[HyperGrok](https://github.com/galleonlabs/hypergrok-trading-desk)** by
 [galleonlabs](https://github.com/galleonlabs) — merged this week, and the first entry here that treats a
 Bot as staff rather than as a tool. It is seven specialist roles (research, sizing, execution, review and
-three more) with full system prompts and sixteen skills for working with Hyperliquid, wired together as a
+three more) with full system prompts and seventeen skills for working with Hyperliquid, wired together as a
 Trading Floor group chat.
 
 What it does in thirty seconds: point your Bot at `SETUP.md`, let it create the seven Bots and the group
