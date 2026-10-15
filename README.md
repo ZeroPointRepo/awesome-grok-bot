@@ -217,6 +217,7 @@ Read from each repository's own file tree on 2026-10-04. Marketplace entries are
 - [orgx-grokbot-plugin](https://github.com/useorgx/orgx-grokbot-plugin) by [OrgX](https://useorgx.com) — OrgX MCP wiring, initiative-aware skills and specialist agent packs, packaged in Cursor's `.grok-plugin` manifest format. **[beta]**
 - [recallsmith](https://github.com/koreysmith123/recallsmith) by [koreysmith123](https://github.com/koreysmith123) — private experiential memory per Bot on local embeddings and pgvector, installed by handing a new Bot the repo URL. **[experimental]**
 - [tesla-fleet-mcp](https://github.com/supervised-nl/tesla-fleet-mcp) by [supervised-nl](https://github.com/supervised-nl) — Tesla Fleet API over Streamable HTTP; climate, charge and lock need Tesla's own proxy and a virtual key on the car. **[beta]**
+- [varosity](https://github.com/varosity-ai/grok-bot) by [Varosity](https://varosity.ai) — hosted remote MCP that gives a Bot 60+ video, image, voice and music models (Veo 3.1, Kling 3.0, Seedance, Grok Imagine, FLUX, GPT Image 2, ElevenLabs, Suno); each result carries the remaining credit balance. **[production]**
 - [yourai-context-plugin](https://github.com/Melade-Inc/yourai-context-plugin) by [Melade](https://github.com/Melade-Inc) — read-only hosted connector for an organization's published knowledge library and the user's own recent computer activity. **[beta]**
 
 #### Official xAI plugin marketplace
