@@ -273,6 +273,8 @@ xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-mark
 
 - [grok-bot-info](https://github.com/Uncle-Gizmo/grok-bot-info) by [Uncle-Gizmo](https://github.com/Uncle-Gizmo) — public notes on what Grok Bot is for, safe example workflows, and how it fits alongside Grok Build and Grok Heavy. **[guide]**
 - [grok-bot-intro-v2](https://github.com/520xiaomumu/grok-bot-intro-v2) by [520xiaomumu](https://github.com/520xiaomumu) — 12-chapter Chinese-language autoplay intro deck. **[guide]**
+- [grok-bot-plugins-for-small-business](https://whatshouldmybotdo.com/guides/grok-bot-must-have-plugins-for-small-business) by [ChamathRosh](https://github.com/ChamathRosh) - which connectors and plugins a small business should add first, and where Firecrawl and Browser Use fit. **[guide]**
+- [what-can-grok-bot-do](https://whatshouldmybotdo.com/guides/what-can-grok-bot-do) by [ChamathRosh](https://github.com/ChamathRosh) - plain small-business examples from xAI's own pages, first bots to try and what to keep human. **[guide]**
 <!-- catalog:end -->
 
 ## Cross-reference
