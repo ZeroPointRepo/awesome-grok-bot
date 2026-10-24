@@ -273,6 +273,7 @@ xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-mark
 
 - [grok-bot-info](https://github.com/Uncle-Gizmo/grok-bot-info) by [Uncle-Gizmo](https://github.com/Uncle-Gizmo) — public notes on what Grok Bot is for, safe example workflows, and how it fits alongside Grok Build and Grok Heavy. **[guide]**
 - [grok-bot-intro-v2](https://github.com/520xiaomumu/grok-bot-intro-v2) by [520xiaomumu](https://github.com/520xiaomumu) — 12-chapter Chinese-language autoplay intro deck. **[guide]**
+- [grokguide.si](https://grokguide.si/) by [siuserxiaowei](https://github.com/siuserxiaowei) — Chinese-language Grok Bot tutorial site: beginner course plus step-by-step guides on setup, routines, skills and the Linux app. **[guide]**
 <!-- catalog:end -->
 
 ## Cross-reference
