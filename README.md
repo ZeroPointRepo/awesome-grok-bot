@@ -252,6 +252,7 @@ xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-mark
 
 ### Self-hosted Grok Bot alternatives, runtimes and bridges
 
+- [5dive](https://github.com/5dive-ai/5dive) by [5dive-ai](https://github.com/5dive-ai) — open-source, self-hosted alternative: Claude Code, Codex, Grok and other agent CLIs work as one team on your Linux server. **[beta]**
 - [foreman](https://github.com/Archive228/foreman) by [Archive228](https://github.com/Archive228) — declares a Bot crew in git, reconciles it against the account, and reports where work stopped, repeated or waited on you. **[beta]**
 - [grok-bot-cli](https://github.com/ScriptedAlchemy/grok-bot-cli) by [ScriptedAlchemy](https://github.com/ScriptedAlchemy) — `gbot`: create, update, message and inspect Bots, groups and threads from the terminal on the macOS app's own session. **[beta]**
 - [grok-bot-discord](https://github.com/davefmurray/grok-bot-discord) by [davefmurray](https://github.com/davefmurray) — Discord Gateway bridge so a Bot shows online and wakes on `@mention`, with fail-closed guild, channel and author allowlists. **[beta]**
