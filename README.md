@@ -242,6 +242,7 @@ xAI runs an [official plugin marketplace](https://github.com/xai-org/plugin-mark
 - [pstack](https://github.com/cursor/plugins/tree/HEAD/pstack) by [Cursor](https://github.com/cursor) — agent playbooks for investigation, design, review, verification and parallel subagent work. **[production]**
 - [railway](https://github.com/railwayapp/railway-skills/tree/HEAD/plugins/railway) by [Railway](https://github.com/railwayapp) — deploy services, read build logs and manage environment variables. **[production]**
 - [sentry](https://github.com/getsentry/plugin-grok) by [Sentry](https://github.com/getsentry) — read error reports, analyze stack traces and search issues by fingerprint from the agent. **[production]**
+- [specstream](https://github.com/Specstreamai/specstream-grok-plugin) by [SpecStream](https://specstream.ai) — live web data engine: fast search API, extract API, and remote MCP server. **[production]**
 - [stripe](https://github.com/stripe/ai/tree/HEAD/providers/grok/plugin) by [Stripe](https://github.com/stripe) — payments, subscriptions and billing objects from the agent, test mode included. **[production]**
 - [superpowers](https://github.com/obra/superpowers) by [obra](https://github.com/obra) — the largest general skill collection shipped in the marketplace; planning, debugging and writing workflows. **[production]**
 - [tavily](https://github.com/tavily-ai/tavily-grok-plugin) by [Tavily](https://github.com/tavily-ai) — web search, content extraction, crawling and deep research over a hosted MCP server with OAuth. **[production]**
