@@ -192,6 +192,7 @@ Read from each repository's own file tree on 2026-10-04. Marketplace entries are
 <!-- catalog:start -->
 ### Grok Bot skills
 
+- [botshelf-grok-bot-tools](https://github.com/BotShelfVampire/botshelf-grok-bot-tools) by [BotShelfVampire](https://github.com/BotShelfVampire) — unofficial skills, routine briefs, Bot setup sheets and checklists for Grok Bot; each states where it stops. Untested. **[experimental]**
 - [botskills](https://github.com/PramodDutta/botskills) by [PramodDutta](https://github.com/PramodDutta) — paste-ready `BOT.md` setups for Grok Bot and Rakazo; every listing declares the one irreversible action it never takes without you. **[beta]**
 - [botteams](https://github.com/ellelion/botteams) by [ellelion](https://github.com/ellelion) — fifteen company teams as single markdown files: one installer prompt creates the named Bots, the group chat and the routines. **[beta]**
 - [grok-bot-profiles](https://github.com/HAEGONG/grok-bot-profiles) by [HAEGONG](https://github.com/HAEGONG) — spec writer, bug reproducer, PR producer and PR verifier as separate Bots, each with an explicit point where its authority ends. **[beta]**
